@@ -411,7 +411,6 @@
                         </div>
 
                     </section>
-
                     <!-- END STATISTIC-->
 
                     <!--------------------------------data table----------------------->
@@ -1182,6 +1181,7 @@
                     <div class="container emp-profile">
                         <form method="post">
                             <div class="row justify-content-center">
+                                <p class=" card-title  text-center font-size13 txt-linee  mt-5">مشخصات  صاحب لیلیه</p>
                                 <div class="col-md-4 pl-5">
                                     <div class="profile-img  mt-1 mb-2 ">
                                         <img src="images/icon/Ramazan.jpg" alt="" style="height: 200px" />
@@ -1198,16 +1198,15 @@
                                         <input type="text" class="form-control mt-1 " placeholder="تخلص" value="" required="">
                                         <input type="text" class="form-control mt-1 " placeholder="شماره تماس" value="" required="">
                                         <input type="text" class="form-control mt-1 " placeholder="ایمیل ادرس" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder=" ولایت" value="" required="">
+
                                     </form>
                                 </div>
                                 <div class="col-md-4 pl-1 pr-5">
                                     <form action="#" class="form-group">
+                                        <input type="text" class="form-control mt-1 " placeholder=" ولایت" value="" required="">
                                         <input type="text" class="form-control mt-1 " placeholder="نام کاربری" value="" required="">
                                         <input type="text" class="form-control mt-1 " placeholder="رمز عبور" value="" required="">
                                         <input type="text" class="form-control mt-1 " placeholder="تاید رمز عبور" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="انترنت" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="غذای عالی" value="" required="">
                                     </form>
                                 </div>
                             </div>
@@ -1331,8 +1330,7 @@
     <!-- Main JS-->
     </body>
 @endsection
-{{--@section('foot')
-    @endsection--}}
+
 
 
 

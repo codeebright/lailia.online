@@ -24,6 +24,11 @@ Route::get('/demo', function () {
     return view('demo');
 
 });
+Route::get('/myHome', function () {
+
+    return view('myHome');
+
+});
 Route::get('/home', function () {
 
     return view('home');
@@ -49,7 +54,7 @@ Route::get('/khabgah_list', function () {
     return view('khabgha_list');
 
 });
-
+Route::post('adminUser','hostelOwnerController@store');
 
 
 
