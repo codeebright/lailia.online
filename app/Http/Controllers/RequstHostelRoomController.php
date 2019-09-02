@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Owner;
+use App\RequstHostelRoom;
 use Illuminate\Http\Request;
 
-class OwnerController extends Controller
+class RequstHostelRoomController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +14,7 @@ class OwnerController extends Controller
      */
     public function index()
     {
-        //passing the  adminPanels page info to the view
-        $owner = Owner::all();
-
-        return view('owner',compact('owner'));
+        //
     }
 
     /**
@@ -27,10 +24,7 @@ class OwnerController extends Controller
      */
     public function create()
     {
-        //create new adminUser
-        // load the create form (app/views/owner.blade.php/)
-        return view('owner');
-
+        //
     }
 
     /**
@@ -42,26 +36,15 @@ class OwnerController extends Controller
     public function store(Request $request)
     {
         //
-
-        $owner = new Owner($request);
-
-        $owner->name = request('name');
-        $owner->last_name = request('last_name');
-        $owner->phone= request('phone');
-        $owner->email= request('email');
-
-        $owner->save($owner);
-
-        return redirect('/Owner');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Owner  $owner
+     * @param  \App\RequstHostelRoom  $requstHostelRoom
      * @return \Illuminate\Http\Response
      */
-    public function show(Owner $owner)
+    public function show(RequstHostelRoom $requstHostelRoom)
     {
         //
     }
@@ -69,10 +52,10 @@ class OwnerController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Owner  $owner
+     * @param  \App\RequstHostelRoom  $requstHostelRoom
      * @return \Illuminate\Http\Response
      */
-    public function edit(Owner $owner)
+    public function edit(RequstHostelRoom $requstHostelRoom)
     {
         //
     }
@@ -81,10 +64,10 @@ class OwnerController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Owner  $owner
+     * @param  \App\RequstHostelRoom  $requstHostelRoom
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Owner $owner)
+    public function update(Request $request, RequstHostelRoom $requstHostelRoom)
     {
         //
     }
@@ -92,10 +75,10 @@ class OwnerController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Owner  $owner
+     * @param  \App\RequstHostelRoom  $requstHostelRoom
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Owner $owner)
+    public function destroy(RequstHostelRoom $requstHostelRoom)
     {
         //
     }

@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('adminUser', function () {
+/*Route::get('adminUser', function () {
     return view('adminUser');
-});
+});*/
 Route::get('/demo', function () {
 
     return view('demo');
@@ -54,7 +54,7 @@ Route::get('/khabgah_list', function () {
     return view('khabgha_list');
 
 });
-Route::post('adminUser','hostelOwnerController@store');
+
 
 
 
@@ -62,4 +62,8 @@ Route::get('my-home', 'HomeController@myHome');
 
 Route::get('my-users', 'HomeController@myUsers');
 
-
+Route::group(['prefix'=>'owner'],function(){
+    Route::get('/index','OwnerController@index')->name('owner.index');
+    Route::get('owner/create','OwnerController@create')->name('owner.create');
+    Route::post('owner/create','OwnerController@store')->name('owner.store');
+});

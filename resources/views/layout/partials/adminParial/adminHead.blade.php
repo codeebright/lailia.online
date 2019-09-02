@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
+    @yield('head')
     <meta charset="UTF-8">
     <title>adminHead</title>
-    @yield('head')
-    <link rel="stylesheet" href="{{asset('https://cdn.rawgit.com/enyo/dropzone/master/dist/dropzone.css')}}">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/enyo/dropzone/master/dist/dropzone.css">
     <link rel="stylesheet" href="{{asset('bootstraprtl/css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('bootstraprtl/css/bootstrap-grid.css')}}">
     <link rel="stylesheet" href="{{asset('bootstraprtl/css/fonts.css')}}">
@@ -13,8 +13,13 @@
     <link href="{{asset('bootstraprtl/css/material-design-iconic-font.min.css')}}" rel="stylesheet" media="all">
     <link href="{{asset('bootstraprtl/css/select2.min.css')}}" rel="stylesheet" media="all">
 </head>
-<body>
-@yield('foot')
+
+@yield('content')
+
+
+
+
+@yield('footer')
 <script src="{{asset('bootstraprtl/js/jquery-3.2.1.min.js')}}"></script>
 <script src="{{asset('bootstraprtl/js/popper.min.js')}}"></script>
 <script src="{{asset('bootstraprtl/js/bootstrap.min.js')}}"></script>
@@ -29,5 +34,4 @@
 <script src="{{asset('bootstraprtl/js/}Chart.bundle.min.js')}}"></script>
 <script src="{{asset('bootstraprtl/js/select2.min.js')}}"></script>
 <script src="{{asset('bootstraprtl/js/main.js')}}"></script>
-</body>
 </html>

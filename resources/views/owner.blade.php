@@ -1,7 +1,13 @@
 @extends('layout.partials.adminParial.adminHead')
 
+
 @section('head')
+@endsection
+@section('content')
+
     <body class="container-fluid" dir="rtl">
+
+
     <header class="header-desktop">
         <div class="section__content section__content--p30">
             <div class="container-fluid">
@@ -213,6 +219,8 @@
         </div>
     </header>
     <!-- END HEADER DESKTOP-->
+
+
     <section >
         <div class="row">
             <!--sidebar section -->
@@ -235,99 +243,20 @@
 
                         <nav class="navbar-sidebar2">
                             <ul class="list-unstyled navbar__list nav nav-tabs" id="myTab" role="tablist">
-                                <li class="active has-sub">
-                                    <a class="js-arrow" href="#">
-                                        <i class="fas fa-tachometer-alt"></i> داشبورد
-                                    <span class="arrow">
-                                        <i class="fas fa-angle-down"></i>
-                                    </span>
-                                    </a>
-                                    <ul class="list-unstyled navbar__sub-list js-sub-list  nav nav-tabs" id="myTab" role="tablist">
-                                        <li class="nav-item ">
-                                            <a  class="nav-link " id="home-tab" data-toggle="tab"
-                                                href="#home" role="tab" aria-controls="home" aria-selected="true">
-                                                <i class="fas fa-tachometer-alt"></i>امار و لیست اتاق ها</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a  class="nav-link " id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
-                                                <i class="fas fa-tachometer-alt"></i>تنظیمات اتاق</a>
-                                        </li>
-                                        <!--  <li class="nav-item">
-                                              <a  class="nav-link " id="contact-tab" data-toggle="tab"  href="#messages" role="tab" aria-controls="contact" aria-selected="false">
-                                                  <i class="fas fa-tachometer-alt"></i></a>
-                                          </li>-->
-                                        <li class="nav-item">
-                                            <a  class="nav-link " id="setting-tab" data-toggle="tab"  href="#settings" role="tab" aria-controls="contact" aria-selected="false">
-                                                <i class="fas fa-tachometer-alt"></i>تنظیات خوابگاه</a>
-                                        </li>
-                                    </ul>
 
-                                </li>
-                                <li class="nav-item">
-                                    <a href="inbox.html">
-                                        <i class="fas fa-chart-bar"></i>باکس ورودی</a>
-                                    <span class="inbox-num"></span>
-                                </li>
-                                <!--  <li>
-                                      <a href="#">
-                                          <i class="fas fa-shopping-basket"></i>eCommerce</a>
-                                  </li>-->
-                                <li class="has-sub">
-                                    <a class="js-arrow" href="#">
-                                        <i class="fas fa-trophy"></i>امکانات
-                                    <span class="arrow">
-                                        <i class="fas fa-angle-down"></i>
-                                    </span>
-                                    </a>
-                                    <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                        <li>
-                                            <a href="table.html">
-                                                <i class="fas fa-table"></i>جدول ها</a>
-                                        </li>
-                                        <li>
-                                            <a href="form.html">
-                                                <i class="far fa-check-square"></i>فورم</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fas fa-calendar-alt"></i>جانتری</a>
-                                        </li>
-                                        <li>
-                                            <a href="map.html">
-                                                <i class="fas fa-map-marker-alt"></i>نقشه</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="has-sub">
-                                    <a class="js-arrow" href="#">
-                                        <i class="fas fa-copy"></i>صفحات
-                                    <span class="arrow">
-                                        <i class="fas fa-angle-down"></i>
-                                    </span>
-                                    </a>
-                                    <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                        <li>
-                                            <a href="login.html">
-                                                <i class="fas fa-sign-in-alt"></i>ورود</a>
-                                        </li>
-                                        <li>
-                                            <a href="register.html">
-                                                <i class="fas fa-user"></i>ثبت کردن</a>
-                                        </li>
-                                        <li>
-                                            <a href="forget-pass.html">
-                                                <i class="fas fa-unlock-alt"></i>رمز عبور را فراموش کرده ام</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="has-sub">
-                                    <a class="js-arrow" href="#">
-                                        <i class="fas fa-desktop"></i>المینت های گرافیکی
-                                    <span class="arrow">
-                                        <i class="fas fa-angle-down"></i>
-                                    </span>
-                                    </a>
-                                </li>
+                                    <li class="nav-item ">
+                                        <a  class="nav-link " id="home-tab" data-toggle="tab"
+                                            href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                            <i class="fas fa-tachometer-alt"></i>امار و لیست اتاق ها</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a  class="nav-link " id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                                            <i class="fas fa-tachometer-alt"></i>تنظیمات اتاق</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a  class="nav-link " id="setting-tab" data-toggle="tab"  href="#settings" role="tab" aria-controls="contact" aria-selected="false">
+                                            <i class="fas fa-tachometer-alt"></i>تنظیات خوابگاه</a>
+                                    </li>
                             </ul>
                         </nav>
                     </div>
@@ -364,12 +293,11 @@
                 <!-----------------------------first tab the statistic and tabel content--------------------------->
                 <div class="tab-pane active " id="home" role="tabpanel" style="background-color: #f5f5f5">
                     <!-- STATISTIC-->
-                    <section class="statistic">
-                        <div class="row">
+                    <div class="col-md-12">
+                        <div class="row ml-4 mr-4 mt-5">
                             <div class="col-md-12">
-                                <div class=" section__content--p30" style="padding-top: 50px">
-                                    <div class="row">
-                                        <div class="col-md-6 col-lg-3">
+                                <div class="row ">
+                                        <div class="col-md-4">
                                             <div class="statistic__item">
                                                 <h2 class="number">۱۰۰</h2>
                                                 <span class="desc">اتاق های پر</span>
@@ -378,7 +306,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-3">
+                                        <div class="col-md-4">
                                             <div class="statistic__item">
                                                 <h2 class="number">۱۰</h2>
                                                 <span class="desc">اتاق خالی</span>
@@ -387,7 +315,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-3">
+                                        <div class="col-md-4">
                                             <div class="statistic__item">
                                                 <h2 class="number">۲۰۰</h2>
                                                 <span class="desc">بیستر های پر</span>
@@ -396,27 +324,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-3">
-                                            <div class="statistic__item">
-                                                <h2 class="number">AF۱,۰۸۰,۵۷۶</h2>
-                                                <span class="desc">مجموعه درامد ها</span>
-                                                <div class="icon">
-                                                    <i class="zmdi zmdi-money"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
-                            </div>
                         </div>
-
-                    </section>
-                    <!-- END STATISTIC-->
+                        </div>
+                                                            <!-- END STATISTIC-->
 
                     <!--------------------------------data table----------------------->
-                    <section>
-                        <div class="container">
-                            <div class="row">
+
+                        <div class="row ml-5 mr-5">
                                 <div class="col-md-12 pl-0 pr-0">
                                     <h3 class="title-5 m-b-35 m-t-75-35">جدول اتاق ها</h3>
                                     <div class="table-data__tool">
@@ -964,9 +879,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
 
+                </div>
                 </div>
                 <!-------------------room configeration part--------------------->
                 <div class="tab-pane" id="profile" role="tabpanel">
@@ -1178,43 +1092,46 @@
                 <div class="tab-pane" id="messages" role="tabpanel">.3..</div>
                 <!--hostel and profiel configeration tab-->
                 <div class="tab-pane" id="settings" role="tabpanel">
-                    <div class="container emp-profile">
-                        <form method="post">
+                    <div class="col-md-12">
+                        <div class="emp-profile mr-5 ml-5">
+                        <form method="post" action="owner">
+                            {{csrf_field()}}
                             <div class="row justify-content-center">
-                                <p class=" card-title  text-center font-size13 txt-linee  mt-5">مشخصات  صاحب لیلیه</p>
                                 <div class="col-md-4 pl-5">
-                                    <div class="profile-img  mt-1 mb-2 ">
-                                        <img src="images/icon/Ramazan.jpg" alt="" style="height: 200px" />
-                                        <div class="file btn btn-lg btn-primary">
-                                            Change Photo
-                                            <input type="file" name="file"/>
-                                        </div>
-                                    </div>
+                                    {{--<div class="profile-img  mt-1 mb-2 ">--}}
+                                        {{--<img src="images/icon/Ramazan.jpg" alt="" style="height: 200px" />--}}
+                                        {{--<div class="file btn btn-lg btn-primary">--}}
+                                            {{--Change Photo--}}
+                                            {{--<input type="file" name="file"/>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
 
                                 </div>
                                 <div class="col-md-4 pr-1">
-                                    <form action="#" class="form-group">
-                                        <input type="text" class="form-control mt-1 " placeholder="نام" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="تخلص" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="شماره تماس" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="ایمیل ادرس" value="" required="">
+                                 {{--   <form action="owner"></form>--}}
 
-                                    </form>
+                                        <input type="text" class="form-control mt-1 " placeholder="نام" value="" >
+                                        <input type="text" class="form-control mt-1 " placeholder="تخلص" value="" >
+                                        <input type="text" class="form-control mt-1 " placeholder="شماره تماس" value="" >
+                                        <input type="text" class="form-control mt-1 " placeholder="ایمیل ادرس" value="" >
+                                        <input type="text" class="form-control mt-1 " placeholder=" ولایت" value="" >
+
                                 </div>
                                 <div class="col-md-4 pl-1 pr-5">
-                                    <form action="#" class="form-group">
-                                        <input type="text" class="form-control mt-1 " placeholder=" ولایت" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="نام کاربری" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="رمز عبور" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="تاید رمز عبور" value="" required="">
-                                    </form>
+
+                                        <input type="text" class="form-control mt-1 " placeholder="نام کاربری" value="" >
+                                        <input type="text" class="form-control mt-1 " placeholder="رمز عبور" value="" >
+                                        <input type="text" class="form-control mt-1 " placeholder="تاید رمز عبور" value="" >
+                                        <input type="text" class="form-control mt-1 " placeholder="انترنت" value="" >
+                                        <input type="text" class="form-control mt-1 " placeholder="غذای عالی" value="" >
+
                                 </div>
                             </div>
-                            <div class="btn btn-primary" style="float: left">ذخیره</div>
+                            <button class="btn btn-primary" type="submit" style="float: left">ذخیره</button>
                         </form>
                     </div>
 
-                    <div class="container emp-profile">
+                     <div class=" emp-profile mr-5 ml-5">
                         <form method="post">
                             <div class="col-md-12">
                                 <div class="row mr-0 ml-0 ">
@@ -1266,7 +1183,8 @@
                         </form>
 
                     </div>
-                    <div class="container emp-profile">
+
+                    <div class=" emp-profile mr-5 ml-5">
                         <form action="">
                             <p class=" card-title  text-center font-size13 txt-linee  mt-5">مینوی غذایی</p>
                             <div class="row justify-content-center">
@@ -1311,7 +1229,9 @@
                             </div>
                         </form>
                     </div>
-                    <div class="container emp-profile">
+
+
+                    <div class=" emp-profile mr-5 ml-5">
                         <div class="col-sm-12 col-md-12 mt-lg-2 pl-3 pr-0">
                             <p class=" card-title  text-center font-size13 txt-linee mb-2 mt-2">عکس های غذا را انیجا بکشید</p>
                             <form action="/file-upload" class="dropzone dz-clickable" id="my-dropzone">
@@ -1322,13 +1242,22 @@
                             </form>
                         </div>
                     </div>
+
+                    </div>
+                    </div>
                 </div>
-            </div>
+
 
         </div>
+
     </section>
-    <!-- Main JS-->
-    </body>
+
+
+
+
+@endsection
+@section('footer')
+
 @endsection
 
 

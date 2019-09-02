@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateOwnersTable extends Migration
+class CreateRequstHostelRoomsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateOwnersTable extends Migration
      */
     public function up()
     {
-        Schema::create('owners', function (Blueprint $table) {
+        Schema::create('requst_hostel_rooms', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name',64);
-            $table->string('last_name',64);
-            $table->string('email',12);
-            $table->string('phone_number',12);
+            $table->unsignedInteger('customer_id');
+            $table->unsignedInteger('hostel_id');
+            $table->unsignedInteger('rooms_id');
             $table->softDeletes();
             $table->timestamps();
         });
@@ -31,6 +30,6 @@ class CreateOwnersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('owners');
+        Schema::dropIfExists('requst_hostel_rooms');
     }
 }
