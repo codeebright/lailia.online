@@ -14,11 +14,29 @@
                <i class="fa fa-home mt-4 text-center" style="font-size:45px; "></i>
 
                 {{--<h5 class="mt-3 text-center"> لیلیه نرگس  </h5>--}}
-                <div class="dis">
+                <!-- <div class="dis">
                     <p class="text-danger mb-1"><i class="fa fa-address-book">  آدرس :‌ تانک تیل دولتی  </i></p>
                     <p class="text-danger mb-1"><i class="fa fa-mail-bulk">  تانک تیل دولتی  </i> : ایمیل آدرس  </p>
                     <p class="text-danger mb-1"><i class="fa fa-phone">  شماره تماس   </i> :‌ 0730313101 </p>
-                </div>
+                </div> -->
+                @foreach($users as $user)
+                    <div class="dis">
+                        <p class="text-primary mb-3"> <span class="fa fa-phone">
+                            شماره تماس  : {{ $user->phone_number }}
+                            </span>
+                        </p>
+                        <p class="text-primary mb-3"><span class="fa fa-">
+                                آدرس فیسبوک ما  : {{ $user->fb }}    
+                            </span>
+                        </p>
+
+                        <p class="text-primary mb-4"> <span class="fa fa-address-book">
+                            ایمیل آدرس : {{ $user->email }}
+                            </span>
+                        </p>
+                    </div>
+                @endforeach
+                
             </div>
 
         </div>
