@@ -1,13 +1,9 @@
-<!-- Bootstrap core JavaScript
-
-================================================= -->
-
+{{--Bootstrap core JavaScript--}}
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="{{asset('bootstraprtl/js/jquery-3.3.1.slim.min.js')}}"></script>
+<script src="{{asset('bootstraprtl/js/jquery-3.3.1.min.js')}}"></script>
 <script src="{{asset('bootstraprtl/js/bootstrap.js')}}"></script>
 <script src="{{asset('bootstraprtl/js/fontawesome.js')}}"></script>
 <script src="{{asset('bootstraprtl/js/proper.js')}}"></script>
-
 
 <script>
     $(document).ready(function () {
@@ -17,15 +13,16 @@
         });
 
     });
-// room filtering script
+
+    // Room Filtering Script
     $(document).ready(function () {
         $("#select-home-btn").click(function () {
             $("#call").show();
             $("#select-home").hide();
         });
     });
-    //    image select
 
+    //Image Select
     $(document).ready(function () {
         $("#img1").click(function () {
             $("#image1").show();
@@ -50,4 +47,68 @@
             $("#seemore").show();
         });
     });
+
+    //Login & Register Script
+    //main-page script
+        $(document).ready(function () {
+            $("#btn-login").click(function () {
+                $("#second").show();
+                $("#first").hide();
+            });
+            $("#btn-register").click(function () {
+                $("#third").show();
+                $("#first").hide();
+            });
+            $("#login-register").click(function () {
+                $("#third").show();
+                $("#second").hide();
+            });
+
+            $("#register-login").click(function () {
+                $("#second").show();
+                $("#third").hide();
+            });
+        });
+
+  // Ajax Function
+function makeRequest(url,params,div_id)
+{
+  $.ajax({
+    url:url,
+    type:'post',
+    data:params,
+    success: function(data){
+
+    },
+    error :function( jqXhr,data ) {
+
+        if( jqXhr.status === 401 ) //redirect if not authenticated user.
+            $( location ).prop( 'pathname', 'auth/login' );
+        if( jqXhr.status === 422 ) {
+        //process validation errors here.
+        var errors = jqXhr.responseJSON; //this will get the errors response data.
+        //show them somewhere in the markup
+        //e.g
+        errorsHtml = '<div class="alert alert-danger"><ul>';
+
+        $.each( errors, function( key, value ) {
+            errorsHtml += '<li>' + value[0] + '</li>'; //showing only the first error.
+        });
+        console.log()
+        errorsHtml += '</ul></di>';
+        $( '#'+div_id).html( errorsHtml ); //appending to a <div id="form-errors"></div> inside form
+        } else {
+            /// do some thing else
+        }
+    }
+  })
+}
+
+// Login Function
+function login(url,form_id,div_id)
+{
+  var data = $('#'+form_id).serialize();
+  makeRequest(url,data,div_id);
+}
+
 </script>

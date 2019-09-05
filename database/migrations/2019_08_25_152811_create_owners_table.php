@@ -18,6 +18,8 @@ class CreateOwnersTable extends Migration
             $table->string('name',64);
             $table->string('email',12);
             $table->string('phone_number',12);
+            $table->string('password');
+            $table->string('password_confirm');
             $table->softDeletes();
             $table->timestamps();
         });
