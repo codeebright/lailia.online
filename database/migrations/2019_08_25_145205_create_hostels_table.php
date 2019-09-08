@@ -16,7 +16,10 @@ class CreateHostelsTable extends Migration
         Schema::create('hostels', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('email')->nullable();
+            $table->string('phone');
             $table->unsignedInteger('owner_id');
+            $table->boolean('type');
             $table->softDeletes();
             $table->timestamps();
         });

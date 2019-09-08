@@ -10,60 +10,16 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//
+//Route::get('/', function () {
+//    return view('welcome');
+//})->name('home');
 
-use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::resource('hostel','HostelController');
+Route::resource('food','FoodController');
+
+Route::get('/test', function () {
+    return view('cms.hostel.test');
 });
-/*Route::get('adminUser', function () {
-    return view('adminUser');
-});*/
-Route::get('/demo', function () {
-
-    return view('demo');
-
-});
-Route::get('/myHome', function () {
-
-    return view('myHome');
-
-});
-Route::get('/home', function () {
-
-    return view('home');
-
-});
-Route::get('/kh_page', function () {
-
-    return view('kh_page');
-
-});
-Route::get('/khabgah_search', function () {
-
-    return view('khabgah_search');
-
-});
-Route::get('/khabgah_details', function () {
-
-    return view('khabgah_details');
-
-});
-Route::get('/khabgah_list', function () {
-
-    return view('khabgha_list');
-
-});
-
-
-
-
-Route::get('my-home', 'HomeController@myHome');
-
-Route::get('my-users', 'HomeController@myUsers');
-
-Route::group(['prefix'=>'owner'],function(){
-    Route::get('/index','OwnerController@index')->name('owner.index');
-    Route::get('owner/create','OwnerController@create')->name('owner.create');
-    Route::post('owner/create','OwnerController@store')->name('owner.store');
-});
+// Route::get('hostel', 'HostelController@index');

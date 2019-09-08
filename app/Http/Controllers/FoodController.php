@@ -14,7 +14,8 @@ class FoodController extends Controller
      */
     public function index()
     {
-        //
+        // show the food from admin page configeration
+        return view('cms.hostel.food_menu');
     }
 
     /**

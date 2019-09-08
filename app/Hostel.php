@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class hostels extends Model
+class Hostel extends Model
 {
     //User Soft Delete
     use SoftDeletes;
@@ -48,7 +48,7 @@ class hostels extends Model
     //Has One Address
     public function address()
     {
-        return $this->belongsTo('App\Address');
+        return $this->hasMany('App\Address');
     }
 
     //HasMany Food Menu
