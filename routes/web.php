@@ -16,12 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('adminUser', function () {
+/*Route::get('adminUser', function () {
     return view('adminUser');
-});
+});*/
 Route::get('/demo', function () {
 
     return view('demo');
+
+});
+Route::get('/myHome', function () {
+
+    return view('myHome');
 
 });
 Route::get('/home', function () {
@@ -57,4 +62,16 @@ Route::get('my-home', 'HomeController@myHome');
 
 Route::get('my-users', 'HomeController@myUsers');
 
+Route::group(['prefix'=>'owner'],function(){
+    Route::get('/index','OwnerController@index')->name('owner.index');
+    Route::get('/create','OwnerController@create')->name('owner.create');
+    Route::post('/create','OwnerController@store')->name('owner.store');
+});
+//
+//Route::group(['prefix'=>'hostel'],function(){
+//    Route::get('/index','OwnerController@index')->name('hostel.index');
+//    Route::get('/create','OwnerController@create')->name('hostel.create');
+//    Route::post('/create','OwnerController@store')->name('hostel.store');
+//});
 
+Route::resource('/hostel','HostelController');

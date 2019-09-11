@@ -1,8 +1,11 @@
 @extends('layout.mainlayout')
 
 @section('content')
-
+        <!----------------search box ------------------>
+ 
     <section class="container-fluid main-page">
+
+
         <!--search-box-->
         <div class="row justify-content-center">
             <div class="col-md-4 ">
@@ -39,92 +42,131 @@
         <div class="row justify-content-center">
             <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4 small-device-hid ">
                 <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/18.jpg" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>بانوان</b></p></div>
-                            <div class="custom-prices card-text text-left">کرایه /ما ۵۰۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-12 col-sm-12 col-md-12 mb-2 ">
-                                    <span class="card-text">آدرس : برچی ایستاگا نانوای داخل کوجه</span>
-                                </div>
-
+                    <img  src="photo/coverphoto1.jpg" class="card-img-top card-img custom-card-img-height" alt="">
+                    <div class="card-footer">
+                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>بانوان</b></p></div>
+                        <div class="custom-prices card-text text-left">کرایه /ما ۵۰۰۰</div>
+                        <div class="row mt-3">
+                            <div class="col-12 col-sm-12 col-md-12 mb-2 ">
+                                <span class="card-text">آدرس : برچی استگاه داواخانه</span>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 ">
+            <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4">
                 <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/home1%20(2).jpg" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>تابش</b></p></div>
-                            <div class="custom-prices card-text text-left"> کرایه بر ماه ۸۰۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-12 col-sm-12 col-md-12 mb-2 ">
-                                    <span class=" card-text">آدرس: نارسیده به چهار راهی شهدای روشنای</span>
-                                </div>
+                    <img  src="photo/cover.png" class="card-img-top card-img custom-card-img-height" alt="">
+                    <div class="card-footer">
+                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>بانوان</b></p></div>
+                        <div class="custom-prices card-text text-left">کرایه /ما ۵۰۰۰</div>
+                        <div class="row mt-3">
+                            <div class="col-12 col-sm-12 col-md-12 mb-2 ">
+                                <span class="card-text">آدرس : برچی ایستاگا نانوای داخل کوجه</span>
                             </div>
+
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 ">
+            <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4">
                 <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/bilding.jpg" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>تابش</b></p></div>
-                            <div class="custom-prices card-text text-left"> کرایه بر ماه ۸۰۰۰</div>
-                            <div class="row mt-3">
-                                <div class=" col-md-12 mb-2 ">
-                                    <span class="card-text">آدرس : نارسیده به جهار راهی دهمزنگ</span>
-                                </div>
-
+                    <img  src="photo/coverphoto1.jpg" class="card-img-top card-img custom-card-img-height" alt="">
+                    <div class="card-footer">
+                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>بانوان</b></p></div>
+                        <div class="custom-prices card-text text-left">کرایه /ما ۵۰۰۰</div>
+                        <div class="row mt-3">
+                            <div class="col-12 col-sm-12 col-md-12 mb-2 ">
+                                <span class="card-text">آدرس : برچی ایستاگا نانوای داخل کوجه</span>
                             </div>
+
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 small-device-hid">
+            <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4 small-device-hid ">
                 <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/bilding%20(2).png" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>کامل</b></p></div>
-                            <div class="custom-prices card-text text-left"> کرایه بر ما ۴۵۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-12 col-sm-12 col-md-12 mb-2 ">
-                                    <span class="card-text">  آدرس : کارته جهار پهلوی پارک ابی کابل</span>
-                                </div>
-
+                    <img  src="photo/coverphoto1.jpg" class="card-img-top card-img custom-card-img-height" alt="">
+                    <div class="card-footer">
+                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>بانوان</b></p></div>
+                        <div class="custom-prices card-text text-left">کرایه /ما ۵۰۰۰</div>
+                        <div class="row mt-3">
+                            <div class="col-12 col-sm-12 col-md-12 mb-2 ">
+                                <span class="card-text">آدرس : برچی ایستاگا نانوای داخل کوجه</span>
                             </div>
+
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
-    </section>
-    <!---Map--->
-    <section class="container custom-margin">
-    <span class="fa fa-search-location d-flex justify-content-center" style="font-size: 50px; ">
-    </span>
-        <h5 class="text-center" style="text-shadow:  1px 1px 2px black; color: #1b1e21">یافتن خانه از نقشه</h5>
-        <div class=" justify-content-center thin-underline-style"></div>
         <div class="row justify-content-center">
-            <div class=" col-12 col-lg-12 col-md-12 px-sm-1">
-                <div class="card card-shadow custom-border-light common-negative-margin">
-                    <img class="img-fluid" src="img/map.jpg" alt="" style="width: 100%; height: 420px;">
+            <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4 small-device-hid ">
+                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
+                    <img  src="photo/coverphoto1.jpg" class="card-img-top card-img custom-card-img-height" alt="">
+                    <div class="card-footer">
+                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>بانوان</b></p></div>
+                        <div class="custom-prices card-text text-left">کرایه /ما ۵۰۰۰</div>
+                        <div class="row mt-3">
+                            <div class="col-12 col-sm-12 col-md-12 mb-2 ">
+                                <span class="card-text">آدرس : برچی استگاه داواخانه</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4">
+                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
+                    <img  src="photo/coverphoto1.jpg" class="card-img-top card-img custom-card-img-height" alt="">
+                    <div class="card-footer">
+                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>بانوان</b></p></div>
+                        <div class="custom-prices card-text text-left">کرایه /ما ۵۰۰۰</div>
+                        <div class="row mt-3">
+                            <div class="col-12 col-sm-12 col-md-12 mb-2 ">
+                                <span class="card-text">آدرس : برچی ایستاگا نانوای داخل کوجه</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4">
+                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
+                    <img  src="photo/coverphoto1.jpg" class="card-img-top card-img custom-card-img-height" alt="">
+                    <div class="card-footer">
+                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>بانوان</b></p></div>
+                        <div class="custom-prices card-text text-left">کرایه /ما ۵۰۰۰</div>
+                        <div class="row mt-3">
+                            <div class="col-12 col-sm-12 col-md-12 mb-2 ">
+                                <span class="card-text">آدرس : برچی ایستاگا نانوای داخل کوجه</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4 small-device-hid ">
+                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
+                    <img  src="photo/coverphoto1.jpg" class="card-img-top card-img custom-card-img-height" alt="">
+                    <div class="card-footer">
+                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>بانوان</b></p></div>
+                        <div class="custom-prices card-text text-left">کرایه /ما ۵۰۰۰</div>
+                        <div class="row mt-3">
+                            <div class="col-12 col-sm-12 col-md-12 mb-2 ">
+                                <span class="card-text">آدرس : برچی ایستاگا نانوای داخل کوجه</span>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </section>
+
+
 
 @endsection
 <b></b>

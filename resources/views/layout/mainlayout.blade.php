@@ -6,7 +6,6 @@
     @include('layout.partials.head')
 </head>
 <body dir="rtl">
-
 @include('layout.partials.nav')
 @include('layout.partials.header')
 @yield('content')

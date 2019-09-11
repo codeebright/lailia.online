@@ -5,607 +5,392 @@
         <!-- Small-hostel-properties -->
 <section class="container-fluid hostel">
     <!-- right-small-card / description-card -->
-    <div class="small-right-card">
-        <div class="card">
+        <div class="card small-right-card">
             <div class="card-img-top text-center">
                 <img src="image/khana_image_dmd/icons8-home-address-96.png" alt="" style="border-radius: 50%;">
             </div>
             <div class="card-title text-center">
-                لیله خصوصی بانوان دخترانه
+                <div class="mt-4"></div>
+               <i class="fa fa-home mt-4 text-center" style="font-size:45px; "></i>
+
+                {{--<h5 class="mt-3 text-center"> لیلیه نرگس  </h5>--}}
+                <div class="dis">
+                    <p class="text-danger mb-1"><i class="fa fa-address-book">  آدرس :‌ تانک تیل دولتی  </i></p>
+                    <p class="text-danger mb-1"><i class="fa fa-mail-bulk">  تانک تیل دولتی  </i> : ایمیل آدرس  </p>
+                    <p class="text-danger mb-1"><i class="fa fa-phone">  شماره تماس   </i> :‌ 0730313101 </p>
+                </div>
             </div>
-            <div class="card-subtitle justify-content-center px-3 mt-1">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Debitis dignissimos, exercitationem expedita fugit inventore ipsa maiores odio perspiciatis,
-                quia quisquam quo rem repudiandae saepe sapiente sequi similique, sit tempora voluptatibus!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ab aut, autem ducimus eaque error est fuga inventore ipsa ipsum,
-                itaque nam non obcaecati perspiciatis possimus qui repellendus tenetur ullam voluptatem.
-            </div>
-            <div class="card-subtitle text-center mt-2"><i class="fa fa-mail-bulk"> email: </i> dukhtarana@gmail.com</div>
-            <div class="card-subtitle text-center mt-2"><i class="fa fa-phone"> Phone </i>: 0202572416</div>
-            <div class="card-footer">
-                <p>آدرس : دشت برچی جاده شهید مزاری(رح) استگاه پل خشک کوچه امام رضا ع</p>
-            </div>
+
         </div>
-    </div>
 </section>  <!-- End-small-hostel-properties -->
 
-<!-- properties-inside-circle-section -->
-<section class="container">
-    <div class="row mt-5">
-        <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-2">
-            <div class="round">
-                <img src="khana%20image/wifi.PNG" alt="" class="round-img mt-1 ml-1">
-                <p class="text-center mt-2"> انترنت رایگان </p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-2">
-            <div class="round">
-                <img src="khana%20image/images%20(1).jpeg" alt="" class="round-img mt-1 ml-1">
-                <p class="text-center mt-2"> سه وقت غذا </p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-2">
-            <div class="round">
-                <img src="khana%20image/shear.jpg" alt="" class="round-img mt-1 ml-1">
-                <p class="text-center mt-2"> کتاب خانه مجهز </p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 small-device-hid mt-2">
-            <div class="round">
-                <img src="khana%20image/images.jpeg" alt="" class="round-img mt-1 ml-1">
-                <p class="text-center  mt-2"> محیط آرام </p>
-            </div>
-        </div>
+<div class="row mt-5">
+    <div class="clo-4 offset-5">
+        <h4 class="text-center unline"> تمام عکس های لیلیه نرگس </h4>
     </div>
-</section>  <!-- End-properties-inside-circle-section -->
+</div>
 
+<!-- All hostel images -->
 <section class="container mt-5">
+        {{--@foreach($file as $photo)--}}
+            {{--@if($photo->image >= 4)--}}
+                {{--<div class="col-md-3" style="border-radius: 0%;">--}}
+                    {{--<a href="{{route('khDetails')}}"><img src="/images/{{ $photo->image }}"--}}
+                               {{--alt="" class="card-img-top pr-0 mt-2 img-thumbnail" width="400" height="230"></a>--}}
+                    {{--<div class="car-body">--}}
+                        {{--<div class="card-footer">--}}
+                            {{--@if($photo->gender == 1)--}}
+                                {{--{{ 'اطاق خالی' }}--}}
+                            {{--@elseif($photo->gender == 0)--}}
+                                {{--{{ 'بستر خالی' }}--}}
+                            {{--@endif <br>--}}
+                            {{--کرایه :‌  {{ $photo->price }}  افغانی--}}
+                            {{--<br>--}}
+                            {{--نام لیلیه :‌ {{ $photo->name }}--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div> <br>--}}
+            {{--@endif--}}
+        {{--@endforeach--}}
 
-    <!-- Empty-rooms-parts -->
     <div class="row justify-content-center">
-        <div class=" col-12 col-md-6  text-center thin-underline-style">
-            <img src="khana%20image/1.png" style="width: 70px; height: 70px">
-            <h6 class="last-border" style="font-size: 14px;color: #1b1e21">اطاق های خالی</h6>
-            <h6 class="last-border mt-2 mb-2" style="font-size: 14px;color: #1b1e21">اطاق های که کاملا خالی میباشد</h6>
-        </div>
-    </div>
-    <div class="row mt-4">
-        <div class="col-12 col-lg-3 col-md-6  p-md-1 mt-2">
-            <div class="card  card-shadow  custom-height-1 " style="border-radius: 0%">
-                <img  src="khana%20image/khana%20(5).jpg" class="card-img-top card-img custom-card-img-height" alt=""
-                      data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4 small-device-hid ">
+            <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
+                <img  src="photo/1.jpg" class="card-img-top card-img custom-card-img-height" alt="">
                 <div class="car-body">
                     <div class="card-footer">
-                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>فروشی</b></p></div>
-                        <div class="custom-prices card-text text-left"> قیمت ۶۷۸۹۰۰</div>
+                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>بانوان</b></p></div>
+                        <div class="custom-prices card-text text-left">کرایه /ما ۵۰۰۰</div>
                         <div class="row mt-3">
-                            <div class="col-4 col-sm-4 col-md-4 mb-2 ">
-                                <span class="fa fa-bed "> ۳</span>
+                            <div class="col-12 col-sm-12 col-md-12 mb-2 ">
+                                <span class="card-text">آدرس : برچی ایستاگا نانوای داخل کوجه</span>
                             </div>
-                            <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                <span class="fa fa-warehouse"> ۳</span>
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                <span class="fa fa-bath"> ۳</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-lg-3 col-md-6  p-md-1 mt-2">
-            <div class="card  card-shadow  custom-height-1 " style="border-radius: 0%">
-                <img  src="khana%20image/khana%20(6).jpg" class="card-img-top card-img custom-card-img-height"
-                      data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <div class="car-body">
-                    <div class="card-footer">
-                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>فروشی</b></p></div>
-                        <div class="custom-prices card-text text-left"> قیمت ۶۷۸۹۰۰</div>
-                        <div class="row mt-3">
-                            <div class="col-4 col-sm-4 col-md-4 mb-2 ">
-                                <span class="fa fa-bed "> ۳</span>
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                <span class="fa fa-warehouse"> ۳</span>
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                <span class="fa fa-bath"> ۳</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-lg-3 col-md-3  p-md-1 mt-2 small-device-hid">
-            <div class="card card-shadow custom-height-1 common-negative-margin-1" style="border-radius: 0%">
-                <img  src="khana%20image/khana03.jpg" class="card-img-top card-img custom-card-img-height"
-                      data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <div class="car-body">
-                    <div class="card-footer">
-                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>فروشی</b></p></div>
-                        <div class="custom-prices card-text text-left"> قیمت ۶۷۸۹۰۰</div>
-                        <div class="row mt-3">
-                            <div class="col-4 col-sm-4 col-md-4 mb-2 ">
-                                <span class="fa fa-bed "> ۳</span>
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                <span class="fa fa-warehouse"> ۳</span>
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                <span class="fa fa-bath"> ۳</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-lg-3 col-md-3  p-md-1 mt-2 small-device-hid">
-            <div class="card  card-shadow  custom-height-1 common-negative-margin-1" style="border-radius: 0%">
-                <img  src="khana%20image/door2.PNG" class="card-img-top card-img custom-card-img-height"
-                      data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <div class="car-body">
-                    <div class="card-footer">
-                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>فروشی</b></p></div>
-                        <div class="custom-prices card-text text-left"> قیمت ۶۷۸۹۰۰</div>
-                        <div class="row mt-3">
-                            <div class="col-4 col-sm-4 col-md-4 mb-2 ">
-                                <span class="fa fa-bed "> ۳</span>
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                <span class="fa fa-warehouse"> ۳</span>
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                <span class="fa fa-bath"> ۳</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- First-show-details-collapse -->
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-8 col-sm-12 col-12 ml-0">
-                        <h5 class="mt-0 mb-2"> : مشخصات اطاق </h5>
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6">برق : 14 افغانی</div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6">گنجایش:‌ 5</div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6">کرایه فی نفر :1200 افغانی</div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6">اندازه اطاق : 4*3</div>
-                        </div>
-                        <h5 class="mt-3 mr-0">: توضیحات</h5>
-                        <h6 class="mt-2 justify-content-center">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ab dolores eaque earum eveniet fuga illo iusto labore minima nam necessitatibus pariatur porro provident quas recusandae repellendus repudiandae,
-                            soluta sunt voluptatibus!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            A accusamus ad aliquam animi at cumque debitis, dicta doloribus ea, eligendi enim impedit,
-                            ipsum nostrum obcaecati odio quidem quis repellendus veniam.
-                        </h6>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-12 mt-sm-3 mt-3">
-                        <img src="img/img1/khan2.jpg" class="mr-3" alt="" style="height: 200px; width: inherit;">
-                    </div>
-                </div>
-            </div>
-        </div> <!-- End-first-show-details-collapse -->
-    </div>
-
-    <!-- First-show-more-collapse -->
-    <div class="col-md-10"></div>
-    <div id="showmore" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="row mt-0">
-            <div class="col-12 col-lg-3 col-md-6  p-md-1 mt-2">
-                <div class="card  card-shadow  custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/khana%20(5).jpg" class="card-img-top card-img custom-card-img-height" alt=""
-                          data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>فروشی</b></p></div>
-                            <div class="custom-prices card-text text-left"> قیمت ۶۷۸۹۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-4 col-sm-4 col-md-4 mb-2 ">
-                                    <span class="fa fa-bed "> ۳</span>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                    <span class="fa fa-warehouse"> ۳</span>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                    <span class="fa fa-bath"> ۳</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-3 col-md-6  p-md-1 mt-2">
-                <div class="card  card-shadow  custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/khana%20(6).jpg" class="card-img-top card-img custom-card-img-height"
-                          data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>فروشی</b></p></div>
-                            <div class="custom-prices card-text text-left"> قیمت ۶۷۸۹۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-4 col-sm-4 col-md-4 mb-2 ">
-                                    <span class="fa fa-bed "> ۳</span>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                    <span class="fa fa-warehouse"> ۳</span>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                    <span class="fa fa-bath"> ۳</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-3 col-md-3  p-md-1 mt-2 small-device-hid ">
-                <div class="card card-shadow custom-height-1 common-negative-margin-1" style="border-radius: 0%">
-                    <img  src="khana%20image/khana03.jpg" class="card-img-top card-img custom-card-img-height"
-                          data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>فروشی</b></p></div>
-                            <div class="custom-prices card-text text-left"> قیمت ۶۷۸۹۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-4 col-sm-4 col-md-4 mb-2 ">
-                                    <span class="fa fa-bed "> ۳</span>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                    <span class="fa fa-warehouse"> ۳</span>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                    <span class="fa fa-bath"> ۳</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-3 col-md-3  p-md-1 mt-2 small-device-hid ">
-                <div class="card  card-shadow  custom-height-1 common-negative-margin-1" style="border-radius: 0%">
-                    <img  src="khana%20image/door2.PNG" class="card-img-top card-img custom-card-img-height"
-                          data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>فروشی</b></p></div>
-                            <div class="custom-prices card-text text-left"> قیمت ۶۷۸۹۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-4 col-sm-4 col-md-4 mb-2 ">
-                                    <span class="fa fa-bed "> ۳</span>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                    <span class="fa fa-warehouse"> ۳</span>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                    <span class="fa fa-bath"> ۳</span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> <!-- End-first-show-more-Collapse -->
-    <div class="col-1 col-md-1 col-sm-1">
-        <button id="this_hid" class="btn btn-link collapsed btn-text" type="button" data-toggle="collapse"
-                data-target="#showmore" aria-expanded="false" aria-controls="collapseTwo">
-            <span>عکس های بیشتر</span><b>عکس های کمتر</b>
-        </button>
-    </div>
-
-    <!-- last-part -->
-    <div class="row justify-content-center">
-        <div class=" col-12 col-md-6  text-center thin-underline-style">
-            <img src="khana%20image/1.png" style="width: 70px; height: 70px">
-            <h6 class="last-border" style="font-size: 14px;color: #1b1e21">بستر های خالی</h6>
-            <h6 class="last-border mt-2 mb-2" style="font-size: 14px;color: #1b1e21">اطاق های که نیاز به نفر دارد</h6>
-        </div>
-    </div>
-    <div class="row justify-content-center mt-4">
-        <div class="col-12 col-lg-3 col-md-6 col-sm-6  p-md-1 mt-2">
-            <div class="card  card-shadow  custom-height-1 " style="border-radius: 0%">
-                <img  src="khana%20image/khana%20(5).jpg" class="card-img-top card-img custom-card-img-height"
-                      data-toggle="collapse" data-target="#showdetail" aria-expanded="false" aria-controls="collapseTwo">
+        <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 ">
+            <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
+                <img  src="photo/cenvir.jpg" class="card-img-top card-img custom-card-img-height" alt="">
                 <div class="car-body">
                     <div class="card-footer">
-                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>فروشی</b></p></div>
-                        <div class="custom-prices card-text text-left"> قیمت ۶۷۸۹۰۰</div>
+                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>تابش</b></p></div>
+                        <div class="custom-prices card-text text-left"> کرایه بر ماه ۸۰۰۰</div>
                         <div class="row mt-3">
-                            <div class="col-4 col-sm-4 col-md-4 mb-2 ">
-                                <span class="fa fa-bed "> ۳</span>
+                            <div class=" col-md-12 mb-2 ">
+                                <span class="card-text">آدرس : نارسیده به جهار راهی دهمزنگ</span>
                             </div>
-                            <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                <span class="fa fa-warehouse"> ۳</span>
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                <span class="fa fa-bath"> ۳</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-lg-3 col-md-3  p-md-1 mt-2 small-device-hid">
-            <div class="card  card-shadow  custom-height-1 " style="border-radius: 0%">
-                <img  src="khana%20image/khana%20(5).jpg" class="card-img-top card-img custom-card-img-height" alt=""
-                      data-toggle="collapse" data-target="#showdetail" aria-expanded="false" aria-controls="collapseTwo">
-                <div class="car-body">
-                    <div class="card-footer">
-                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>فروشی</b></p></div>
-                        <div class="custom-prices card-text text-left"> قیمت ۶۷۸۹۰۰</div>
-                        <div class="row mt-3">
-                            <div class="col-4 col-sm-4 col-md-4 mb-2 ">
-                                <span class="fa fa-bed "> ۳</span>
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                <span class="fa fa-warehouse"> ۳</span>
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                <span class="fa fa-bath"> ۳</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-lg-3 col-md-6 col-sm-6  p-md-1 mt-2">
-            <div class="card  card-shadow  custom-height-1 " style="border-radius: 0%">
-                <img  src="khana%20image/khana%20(5).jpg" class="card-img-top card-img custom-card-img-height" alt=""
-                      data-toggle="collapse" data-target="#showdetail" aria-expanded="false" aria-controls="collapseTwo">
-                <div class="car-body">
-                    <div class="card-footer">
-                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>فروشی</b></p></div>
-                        <div class="custom-prices card-text text-left"> قیمت ۶۷۸۹۰۰</div>
-                        <div class="row mt-3">
-                            <div class="col-4 col-sm-4 col-md-4 mb-2 ">
-                                <span class="fa fa-bed "> ۳</span>
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                <span class="fa fa-warehouse"> ۳</span>
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                <span class="fa fa-bath"> ۳</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-lg-3 col-md-3  p-md-1 mt-2 small-device-hid">
-            <div class="card  card-shadow  custom-height-1 " style="border-radius: 0%">
-                <img  src="khana%20image/khana%20(5).jpg" class="card-img-top card-img custom-card-img-height" alt=""
-                      data-toggle="collapse" data-target="#showdetail" aria-expanded="false" aria-controls="collapseTwo">
-                <div class="car-body">
-                    <div class="card-footer">
-                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>فروشی</b></p></div>
-                        <div class="custom-prices card-text text-left"> قیمت ۶۷۸۹۰۰</div>
-                        <div class="row mt-3">
-                            <div class="col-4 col-sm-4 col-md-4 mb-2 ">
-                                <span class="fa fa-bed "> ۳</span>
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                <span class="fa fa-warehouse"> ۳</span>
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                <span class="fa fa-bath"> ۳</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Second-show-details-collapses -->
-        <div id="showdetail" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-8 col-sm-12 col-12 ml-0">
-                        <h5 class="mt-0 mb-2"> : مشخصات اطاق </h5>
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6">برق : 14 افغانی</div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6">گنجایش:‌ 5</div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6">کرایه فی نفر :1200 افغانی</div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6">اندازه اطاق : 4*3</div>
                         </div>
-                        <h5 class="mt-3 mr-0">: توضیحات</h5>
-                        <h6 class="mt-2 ml-5 justify-content-center">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ab dolores eaque earum eveniet fuga illo iusto labore minima nam necessitatibus pariatur porro provident quas recusandae repellendus repudiandae,
-                            soluta sunt voluptatibus!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            A accusamus ad aliquam animi at cumque debitis, dicta doloribus ea, eligendi enim impedit,
-                            ipsum nostrum obcaecati odio quidem quis repellendus veniam.
-                        </h6>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-12 mt-sm-3 mt-3">
-                        <img src="img/img1/khan2.jpg" class="mr-3" alt="" style="height: 200px; width: inherit;">
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End-second-Collapse -->
-    </div>
 
-    <!-- Second-show-more-collapse -->
-    <div class="col-md-10"></div>  <!-- Empty-div-for-position-of-button -->
-    <div id="showmore2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="row mt-0">
-            <div class="col-12 col-lg-3 col-md-6  p-md-1 mt-2">
-                <div class="card  card-shadow  custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/khana%20(5).jpg" class="card-img-top card-img custom-card-img-height" alt=""
-                          data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>فروشی</b></p></div>
-                            <div class="custom-prices card-text text-left"> قیمت ۶۷۸۹۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-4 col-sm-4 col-md-4 mb-2 ">
-                                    <span class="fa fa-bed "> ۳</span>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                    <span class="fa fa-warehouse"> ۳</span>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                    <span class="fa fa-bath"> ۳</span>
-                                </div>
+        </div>
+        <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 ">
+            <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
+                <img  src="photo/download.jpg" class="card-img-top card-img custom-card-img-height" alt="">
+                <div class="car-body">
+                    <div class="card-footer">
+                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>تابش</b></p></div>
+                        <div class="custom-prices card-text text-left"> کرایه بر ماه ۸۰۰۰</div>
+                        <div class="row mt-3">
+                            <div class=" col-md-12 mb-2 ">
+                                <span class="card-text">آدرس : نارسیده به جهار راهی دهمزنگ</span>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3 col-md-6  p-md-1 mt-2">
-                <div class="card  card-shadow  custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/khana%20(6).jpg" class="card-img-top card-img custom-card-img-height"
-                          data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>فروشی</b></p></div>
-                            <div class="custom-prices card-text text-left"> قیمت ۶۷۸۹۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-4 col-sm-4 col-md-4 mb-2 ">
-                                    <span class="fa fa-bed "> ۳</span>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                    <span class="fa fa-warehouse"> ۳</span>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                    <span class="fa fa-bath"> ۳</span>
-                                </div>
+
+        </div>
+        <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 small-device-hid">
+            <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
+                <img  src="photo/library.jpg" class="card-img-top card-img custom-card-img-height" alt="">
+                <div class="car-body">
+                    <div class="card-footer">
+                        <div class="custom-circle"><p class="custom-circle-text card-text"><b>کامل</b></p></div>
+                        <div class="custom-prices card-text text-left"> کرایه بر ما ۴۵۰۰</div>
+                        <div class="row mt-3">
+                            <div class="col-12 col-sm-12 col-md-12 mb-2 ">
+                                <span class="card-text">  آدرس : کارته جهار پهلوی پارک ابی کابل</span>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3 col-md-3  p-md-1 mt-2 small-device-hid ">
-                <div class="card card-shadow custom-height-1 common-negative-margin-1" style="border-radius: 0%">
-                    <img  src="khana%20image/khana03.jpg" class="card-img-top card-img custom-card-img-height"
-                          data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>فروشی</b></p></div>
-                            <div class="custom-prices card-text text-left"> قیمت ۶۷۸۹۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-4 col-sm-4 col-md-4 mb-2 ">
-                                    <span class="fa fa-bed "> ۳</span>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                    <span class="fa fa-warehouse"> ۳</span>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                    <span class="fa fa-bath"> ۳</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-3 col-md-3  p-md-1 mt-2 small-device-hid ">
-                <div class="card  card-shadow  custom-height-1 common-negative-margin-1" style="border-radius: 0%">
-                    <img  src="khana%20image/door2.PNG" class="card-img-top card-img custom-card-img-height"
-                          data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>فروشی</b></p></div>
-                            <div class="custom-prices card-text text-left"> قیمت ۶۷۸۹۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-4 col-sm-4 col-md-4 mb-2 ">
-                                    <span class="fa fa-bed "> ۳</span>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                    <span class="fa fa-warehouse"> ۳</span>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4 mb-2">
-                                    <span class="fa fa-bath"> ۳</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 
-    <div class="col-1 col-md-1 col-sm-1">
-        <button class="btn btn-link collapsed btn-text" type="button" data-toggle="collapse"
-                data-target="#showmore2" aria-expanded="false" aria-controls="collapseTwo">
-            <span>عکس های بیشتر</span><b>عکس های کمتر</b></button>
-    </div>  <!-- End-show-more-Collapse -->
+</section>
 
-    <!-- Meal-menu-part -->
-    <div class="row">
-        <div class="col-md-12 col-sm-12 col-12 ml-0">
-            <div style="border-bottom: 1px solid #000000;">
-                <img src="khana%20image/download.jpeg" class="round-img round-img ml-3" alt="">
+ {{-- Hostel properties and descriptions--}}
+<section class="container mt-4">
+    <div class="row mb-3">
+        <!-- hostel properties -->
+        <div class="col-md-8 mt-4 list-group bg-light">
+            <p class="text-center mt-4"> امکانات لیلیه </p>
+            <div class="row ml-3 mt-5">
+                <div class="col-md-4">
+                    <ul class="custom-li-padding">
+                        <li class="" style="list-style-type: none"><spna class="fa fa-shower mr-5"></spna> حمام گرم</li>
+                        <li class="" style="list-style-type: none"><span class="mr-5 fa fa-traffic-light"></span> برق 24 ساعته</li>
+                        <li class="" style="list-style-type: none"><span class="mr-5 fa fa-place-of-worship"></span> محیط آرام </li>
+                        <li class="" style="list-style-type: none"><span class="mr-5 fa fa-bread-slice"></span>سه وقت غذا </li>
+                        <li class="" style="list-style-type: none"><span class="mr-5 fa fa-bath"></span> تشناب پاک </li>
+                        <li class="" style="list-style-type: none"><span class="mr-5 fa fa-camera"></span>کمره های امنیتی</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="custom-li-padding">
+                        <li class="" style="list-style-type: none"><spna class="fa fa-shower mr-5"></spna> حمام گرم</li>
+                        <li class="" style="list-style-type: none"><span class="mr-5 fa fa-traffic-light"></span> برق 24 ساعته</li>
+                        <li class="" style="list-style-type: none"><span class="mr-5 fa fa-place-of-worship"></span> محیط آرام </li>
+                        <li class="" style="list-style-type: none"><span class="mr-5 fa fa-bread-slice"></span>سه وقت غذا </li>
+                        <li class="" style="list-style-type: none"><span class="mr-5 fa fa-bath"></span> تشناب پاک </li>
+                        <li class="" style="list-style-type: none"><span class="mr-5 fa fa-camera"></span>کمره های امنیتی</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="custom-li-padding">
+                        <li class="" style="list-style-type: none"><spna class="fa fa-shower mr-5"></spna> حمام گرم</li>
+                        <li class="" style="list-style-type: none"><span class="mr-5 fa fa-traffic-light"></span> برق 24 ساعته</li>
+                        <li class="" style="list-style-type: none"><span class="mr-5 fa fa-place-of-worship"></span> محیط آرام </li>
+                        <li class="" style="list-style-type: none"><span class="mr-5 fa fa-bread-slice"></span>سه وقت غذا </li>
+                        <li class="" style="list-style-type: none"><span class="mr-5 fa fa-bath"></span> تشناب پاک </li>
+                        <li class="" style="list-style-type: none"><span class="mr-5 fa fa-camera"></span>کمره های امنیتی</li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="card-title pt-0" style="margin-top: -4rem; margin-right:6rem;">
-                <span class="ml-5 mt-0"> : مینوی غذایی </span>
-            </div>
-            <div class="card-subtitle" style="margin-top: 0rem; margin-right:6rem;">
-                <span class="mt-3 ml-5" style="color: #1c7430"> غذاهای طول هفته سه وقت </span>
-            </div>
-            <!-- thumbnail images -->
-            <div class="row mt-5 offset-2">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-6 px-2">
-                    <div class="card  card-shadow  custom-height-1 " style="border-radius: 0%">
-                        <img  src="khana%20image/download.jpeg" class="card-img-top img-thumbnail" alt=""
-                              data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <div class="car-body">
-                            <div class="card-footer">
-                                <h5 class="mt-0 pt-0">کفته گوشت</h5>
-                                <h6 class="mt-1">سه وقت</h6>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+        <div class="col-md-4 mt-4" id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           توضیحات لیلیه
+                        </button>
+                    </h5>
                 </div>
 
-                <div class="col-lg-3 col-md-3 col-sm-3 col-6 px-2">
-                    <div class="card  card-shadow  custom-height-1 " style="border-radius: 0%">
-                        <img  src="khana%20image/download.jpeg" class="card-img-top img-thumbnail" alt=""
-                              data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <div class="car-body">
-                            <div class="card-footer">
-                                <h5 class="mt-0 pt-0">کفته گوشت</h5>
-                                <h6 class="mt-1">سه وقت</h6>
-                            </div>
-                        </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                        است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-3 col-6 px-2">
-                    <div class="card  card-shadow  custom-height-1 " style="border-radius: 0%">
-                        <img  src="khana%20image/download.jpeg" class="card-img-top img-thumbnail" alt=""
-                              data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <div class="car-body">
-                            <div class="card-footer">
-                                <h5 class="mt-0 pt-0">کفته گوشت</h5>
-                                <h6 class="mt-1">سه وقت</h6>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            قوانین لیلیه
+                        </button>
+                    </h5>
                 </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                        است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
 
-                <div class="col-lg-3 col-md-3 col-sm-3 col-6 px-2">
-                    <div class="card  card-shadow  custom-height-1 " style="border-radius: 0%">
-                        <img  src="khana%20image/download.jpeg" class="card-img-top img-thumbnail" alt=""
-                              data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <div class="car-body">
-                            <div class="card-footer">
-                                <h5 class="mt-0 pt-0">کفته گوشت</h5>
-                                <h6 class="mt-1">سه وقت</h6>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+{{-- Hostels Food menu tabs section --}}
+<section class="container">
+    <div class="row">
+        <div class="col-md-12 nav-padding mb-3 pr-3 text-center">
+            <ul class="nav nav-pills bg-light" id="pills-tab" role="tablist">
+
+                <li class="nav-item mr-5 text-center">
+                    <a class="nav-link active ml-5 tab-font" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                       role="tab" aria-controls="pills-home" aria-selected="true">صبحانه
+                    </a>
+                </li>
+                <li class="nav-item mr-5 text-center">
+                    <a class="nav-link mr-5 tab-font" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                       role="tab" aria-controls="pills-profile" aria-selected="false"> چاشت
+                    </a>
+                </li>
+                <li class="nav-item mr-5 text-center">
+                    <a class="nav-link tab-font" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                       role="tab" aria-controls="pills-contact" aria-selected="false"> شب
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="tab-content bg-light" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="row ml-3 mt-1 ml-5 align-content-center">
+                        <div class="col-md-12">
+                        <table class="table table-responsive">
+                            <thead>
+                                <tr>
+                                    <th class="pl-5 text-primary"> شنبه </th>
+                                    <th class="pl-5 text-primary"> یک شنبه </th>
+                                    <th class="pl-5 text-primary"> دوشنبه </th>
+                                    <th class="pl-5 text-primary"> سه شنبه </th>
+                                    <th class="pl-5 text-primary"> چهارشنبه </th>
+                                    <th class="pl-5 text-primary">  پنج شنبه </th>
+                                    <th class="pl-5 text-primary"> جمعه </th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <td class="pl-5 border"> شیر </td>
+                                    <td class="pl-5 border"> تخم مرغ </td>
+                                    <td class="pl-5 border"> پنیر </td>
+                                    <td class="pl-5 border"> قیماق </td>
+                                    <td class="pl-5 border"> نان وچای </td>
+                                    <td class="pl-5 border">  شیر </td>
+                                    <td class="pl-5 border"> تخم مرغ </td>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <td class="pl-5 border"> شیر </td>
+                                    <td class="pl-5 border"> تخم مرغ </td>
+                                    <td class="pl-5 border"> پنیر </td>
+                                    <td class="pl-5 border"> قیماق </td>
+                                    <td class="pl-5 border"> نان وچای </td>
+                                    <td class="pl-5 border">  شیر </td>
+                                    <td class="pl-5 border"> تخم مرغ </td>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <td class="pl-5 border"> شیر </td>
+                                    <td class="pl-5 border"> تخم مرغ </td>
+                                    <td class="pl-5 border"> پنیر </td>
+                                    <td class="pl-5 border"> قیماق </td>
+                                    <td class="pl-5 border"> نان وچای </td>
+                                    <td class="pl-5 border">  شیر </td>
+                                    <td class="pl-5 border"> تخم مرغ </td>
+                                </tr>
+                            </thead>
+                        </table>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="row ml-3 mt-1 ml-5 align-content-center">
+                        <table class="table table-responsive">
+                            <thead>
+                                <tr>
+                                    <th class="pl-5 text-primary"> شنبه </th>
+                                    <th class="pl-5 text-primary"> یک شنبه </th>
+                                    <th class="pl-5 text-primary"> دوشنبه </th>
+                                    <th class="pl-5 text-primary"> سه شنبه </th>
+                                    <th class="pl-5 text-primary"> چهارشنبه </th>
+                                    <th class="pl-5 text-primary">  پنج شنبه </th>
+                                    <th class="pl-5 text-primary"> جمعه </th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <td class="pl-5 border"> گوشت </td>
+                                    <td class="pl-5 border"> برنج </td>
+                                    <td class="pl-5 border"> سبزی </td>
+                                    <td class="pl-5 border"> لوبیا </td>
+                                    <td class="pl-5 border"> مکارونی </td>
+                                    <td class="pl-5 border">  قابلی </td>
+                                    <td class="pl-5 border"> آشک </td>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <td class="pl-5 border"> قابلی </td>
+                                    <td class="pl-5 border"> لوبیا </td>
+                                    <td class="pl-5 border"> مکارونی </td>
+                                    <td class="pl-5 border"> سبزی </td>
+                                    <td class="pl-5 border"> بولانی </td>
+                                    <td class="pl-5 border">  برنج با میوه </td>
+                                    <td class="pl-5 border"> کرایی </td>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <td class="pl-5 border"> لوبیا </td>
+                                    <td class="pl-5 border"> کوفته </td>
+                                    <td class="pl-5 border"> سبزی با میوه </td>
+                                    <td class="pl-5 border"> منتو </td>
+                                    <td class="pl-5 border"> قابلی </td>
+                                    <td class="pl-5 border">  مکارونی </td>
+                                    <td class="pl-5 border"> گوشت </td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="row ml-3 mt-1 ml-5 align-content-center">
+                        <table class="table table-responsive">
+                            <thead>
+                                <tr>
+                                    <th class="pl-5 text-primary"> شنبه </th>
+                                    <th class="pl-5 text-primary"> یک شنبه </th>
+                                    <th class="pl-5 text-primary"> دوشنبه </th>
+                                    <th class="pl-5 text-primary"> سه شنبه </th>
+                                    <th class="pl-5 text-primary"> چهارشنبه </th>
+                                    <th class="pl-5 text-primary">  پنج شنبه </th>
+                                    <th class="pl-5 text-primary"> جمعه </th>
+                                </tr>
+                            </thead>
+                            <htead>
+                                <tr>
+                                    <td class="pl-5 border"> گوشت </td>
+                                    <td class="pl-5 border"> برنج </td>
+                                    <td class="pl-5 border"> سبزی </td>
+                                    <td class="pl-5 border"> لوبیا </td>
+                                    <td class="pl-5 border"> مکارونی </td>
+                                    <td class="pl-5 border">  قابلی </td>
+                                    <td class="pl-5 border"> آشک </td>
+                                </tr>
+                            </htead>
+                            <thead>
+                                <tr>
+                                    <td class="pl-5 border"> قابلی </td>
+                                    <td class="pl-5 border"> لوبیا </td>
+                                    <td class="pl-5 border"> مکارونی </td>
+                                    <td class="pl-5 border"> سبزی </td>
+                                    <td class="pl-5 border"> بولانی </td>
+                                    <td class="pl-5 border">  برنج با میوه </td>
+                                    <td class="pl-5 border"> کرایی </td>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <td class="pl-5 border"> لوبیا </td>
+                                    <td class="pl-5 border"> کوفته </td>
+                                    <td class="pl-5 border"> سبزی با میوه </td>
+                                    <td class="pl-5 border"> منتو </td>
+                                    <td class="pl-5 border"> قابلی </td>
+                                    <td class="pl-5 border">  مکارونی </td>
+                                    <td class="pl-5 border"> گوشت </td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 @endsection
 <b></b>
