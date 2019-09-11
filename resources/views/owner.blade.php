@@ -1,13 +1,8 @@
 @extends('layout.partials.adminParial.adminHead')
-
-
 @section('head')
 @endsection
 @section('content')
-
     <body class="container-fluid" dir="rtl">
-
-
     <header class="header-desktop">
         <div class="section__content section__content--p30">
             <div class="container-fluid">
@@ -237,8 +232,19 @@
                             <div class="image img-cir img-120">
                                 <img src="images/icon/Ramazan.jpg" alt="عکس شخص" />
                             </div>
-                            <h4 class="name">رمضان</h4>
-                            <a href="#">یوسفی</a>
+
+                            <h4 class="name">
+
+                                    {{--@foreach($owner as $owner)--}}
+                                        {{--{{$owner->name}}--}}
+                                    {{--@endforeach--}}
+
+                            </h4>
+                            <a href="#">
+                             {{--   @foreach($owner as $owner)
+                                    {{$owner->last_name}}
+                                @endforeach--}}
+                            </a>
                         </div >
 
                         <nav class="navbar-sidebar2">
@@ -1092,137 +1098,187 @@
                 <div class="tab-pane" id="messages" role="tabpanel">.3..</div>
                 <!--hostel and profiel configeration tab-->
                 <div class="tab-pane" id="settings" role="tabpanel">
-                    <div class="col-md-12">
-                        <div class="emp-profile mr-5 ml-5">
-                        <form method="post" action="owner">
-                            {{csrf_field()}}
-                            <div class="row justify-content-center">
-                                <div class="col-md-4 pl-5">
-                                    {{--<div class="profile-img  mt-1 mb-2 ">--}}
-                                        {{--<img src="images/icon/Ramazan.jpg" alt="" style="height: 200px" />--}}
-                                        {{--<div class="file btn btn-lg btn-primary">--}}
-                                            {{--Change Photo--}}
-                                            {{--<input type="file" name="file"/>--}}
-                                        {{--</div>--}}
-                                    {{--</div>--}}
 
+
+                    <div class="emp-profile mr-5 ml-5">
+                        <div class="col-md-12">
+                            <p class=" card-title  text-center font-size13 txt-linee  mt-5">مشخصات ادمین</p>
+
+                            <form method="post" action="#">
+                                {{csrf_field()}}
+
+                                <div class="row justify-content-center">
+                                    <div class="col-md-4 pl-5">
+                                        @include('layout.partials.errors')
+                                      {{--  <div class="profile-img  mt-1 mb-2 ">
+                                        <img src="images/icon/Ramazan.jpg" alt="" style="height: 200px" />
+                                        <div class="file btn btn-lg btn-primary">
+                                        Change Photo
+                                        <input type="file" name="file"/>
+                                        </div>
+                                        </div>--}}
+
+                                    </div>
+                                    <div class="col-md-4 pr-1">
+                                        {{--   <form action="owner"></form>--}}
+
+                                        <input type="text" class="form-control mt-1 " name="name" placeholder="نام"
+                                               value="">
+                                        <input type="text" class="form-control mt-1 " name="last_name"
+                                               placeholder="تخلص" value="">
+                                        <input type="text" class="form-control mt-1 " name="phone_number"
+                                               placeholder="شماره تماس" value="">
+                                    </div>
+                                    <div class="col-md-4 pl-1 pr-5">
+                                        <input type="text" class="form-control mt-1 " name="email"
+                                               placeholder="ایمیل ادرس" value="">
+                                        <input type="text" class="form-control mt-1 " name="password"
+                                               placeholder="رمز عبور" value="">
+                                        <input type="text" class="form-control mt-1 " name="confirm_password"
+                                               placeholder="تاید رمز عبور" value="">
+
+                                    </div>
                                 </div>
-                                <div class="col-md-4 pr-1">
-                                 {{--   <form action="owner"></form>--}}
-
-                                        <input type="text" class="form-control mt-1 " placeholder="نام" value="" >
-                                        <input type="text" class="form-control mt-1 " placeholder="تخلص" value="" >
-                                        <input type="text" class="form-control mt-1 " placeholder="شماره تماس" value="" >
-                                        <input type="text" class="form-control mt-1 " placeholder="ایمیل ادرس" value="" >
-                                        <input type="text" class="form-control mt-1 " placeholder=" ولایت" value="" >
-
-                                </div>
-                                <div class="col-md-4 pl-1 pr-5">
-
-                                        <input type="text" class="form-control mt-1 " placeholder="نام کاربری" value="" >
-                                        <input type="text" class="form-control mt-1 " placeholder="رمز عبور" value="" >
-                                        <input type="text" class="form-control mt-1 " placeholder="تاید رمز عبور" value="" >
-                                        <input type="text" class="form-control mt-1 " placeholder="انترنت" value="" >
-                                        <input type="text" class="form-control mt-1 " placeholder="غذای عالی" value="" >
-
-                                </div>
-                            </div>
-                            <button class="btn btn-primary" type="submit" style="float: left">ذخیره</button>
-                        </form>
+                                <button class="btn btn-primary" type="submit"  style="float: left">ذخیره</button>
+                            </form>
+                        </div>
                     </div>
 
-                     <div class=" emp-profile mr-5 ml-5">
-                        <form method="post">
-                            <div class="col-md-12">
-                                <div class="row mr-0 ml-0 ">
-                                    <div class="col-md-4 pl-3 mb-3 ">
-                                        <p class=" card-title  text-center font-size13 txt-linee  mt-5">مشخاصت خوابگاه</p>
-                                        <form action="#" class="form-group">
-                                            <input type="text" class="form-control mt-1" placeholder="نام" value="" required="">
-                                            <input type="text" class="form-control mt-1" placeholder="ادرس" value="" required="">
-                                            <input type="text" class="form-control mt-1" placeholder="شماره تماس" value="" required="">
-                                            <input type="text" class="form-control mt-1" placeholder="ایمل ادرس" value="" required="">
-                                            <input type="text" class="form-control mt-1" placeholder="نوع" value="" required="">
-                                        </form>
-                                    </div>
-                                    <div class="col-md-8 pr-1 ">
-                                        <p class=" card-title  text-center font-size13 txt-linee  mt-5">امکانات و خدامات</p>
-                                        <div class="row">
-                                            <div class="col-md-6 pr-1">
-                                                <form action="#" class="form-group">
-                                                    <input type="text" class="form-control mt-1 " placeholder="حمام" value="" required="">
-                                                    <input type="text" class="form-control mt-1 " placeholder="مرکز گرمی" value="" required="">
-                                                    <input type="text" class="form-control mt-1 " placeholder="اشپز خانه" value="" required="">
-                                                    <input type="text" class="form-control mt-1 " placeholder="خدمات کار" value="" required="">
-                                                    <input type="text" class="form-control mt-1 " placeholder=" برق بیست جهار ساته" value="" required="">
-                                                </form>
-                                            </div>
-                                            <div class="col-md-6 pl-1">
-                                                <form action="#" class="form-group">
-                                                    <input type="text" class="form-control mt-1 " placeholder="حولی" value="" required="">
-                                                    <input type="text" class="form-control mt-1 " placeholder="کتاب خانه" value="" required="">
-                                                    <input type="text" class="form-control mt-1 " placeholder="ماشین لباس شوی" value="" required="">
-                                                    <input type="text" class="form-control mt-1 " placeholder="انترنت" value="" required="">
-                                                    <input type="text" class="form-control mt-1 " placeholder="غذای عالی" value="" required="">
-                                                </form>
-                                            </div>
+                    <div class=" emp-profile mr-5 ml-5">
+
+                        <div class="col-md-12">
+                            <div class="row mr-0 ml-0 ">
+                                <div class="col-md-4 pl-3 mb-3 ">
+                                    <p class=" card-title  text-center font-size13 txt-linee  mt-5">مشخاصت خوابگاه</p>
+
+                                    <form action="post" class="form-group">
+                                        <input type="text" class="form-control mt-1" placeholder="نام" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1" placeholder="ادرس" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1" placeholder="شماره تماس" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1" placeholder="ایمل ادرس" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1" placeholder="نوع" value=""
+                                               required="">
+                                    </form>
+                                </div>
+                                <div class="col-md-8 pr-1 ">
+                                    <p class=" card-title  text-center font-size13 txt-linee  mt-5">امکانات و خدامات</p>
+
+                                    <div class="row">
+                                        <div class="col-md-6 pr-1">
+                                            <form action="#" class="form-group">
+                                                <input type="text" class="form-control mt-1 " placeholder="حمام"
+                                                       value="" required="">
+                                                <input type="text" class="form-control mt-1 " placeholder="مرکز گرمی"
+                                                       value="" required="">
+                                                <input type="text" class="form-control mt-1 " placeholder="اشپز خانه"
+                                                       value="" required="">
+                                                <input type="text" class="form-control mt-1 " placeholder="خدمات کار"
+                                                       value="" required="">
+                                                <input type="text" class="form-control mt-1 "
+                                                       placeholder=" برق بیست جهار ساته" value="" required="">
+                                            </form>
+                                        </div>
+                                        <div class="col-md-6 pl-1">
+                                            <form action="#" class="form-group">
+                                                <input type="text" class="form-control mt-1 " placeholder="حولی"
+                                                       value="" required="">
+                                                <input type="text" class="form-control mt-1 " placeholder="کتاب خانه"
+                                                       value="" required="">
+                                                <input type="text" class="form-control mt-1 "
+                                                       placeholder="ماشین لباس شوی" value="" required="">
+                                                <input type="text" class="form-control mt-1 " placeholder="انترنت"
+                                                       value="" required="">
+                                                <input type="text" class="form-control mt-1 " placeholder="غذای عالی"
+                                                       value="" required="">
+                                            </form>
                                         </div>
                                     </div>
-
                                 </div>
-                            </div>
-                            <div class="col-md-12">
-
-                                <p class=" card-title  text-center font-size13 txt-linee mb-2 mt-2">توضیحات</p>
-                                <div class="form-group ml-3">
-                                    <textarea class="form-control" id="#" rows="6" placeholder="توضیحات درباره خوابگاه شما"></textarea>
-                                </div>
-                                <div class="btn btn-primary" style="float: left">ذخیره</div>
 
                             </div>
-                        </form>
+                        </div>
+                        <div class="col-md-12">
+
+                            <p class=" card-title  text-center font-size13 txt-linee mb-2 mt-2">توضیحات</p>
+
+                            <div class="form-group ml-3">
+                                <textarea class="form-control" id="#" rows="6"
+                                          placeholder="توضیحات درباره خوابگاه شما"></textarea>
+                            </div>
+                            <div class="btn btn-primary" style="float: left">ذخیره</div>
+
+                        </div>
+
 
                     </div>
 
                     <div class=" emp-profile mr-5 ml-5">
                         <form action="">
                             <p class=" card-title  text-center font-size13 txt-linee  mt-5">مینوی غذایی</p>
+
                             <div class="row justify-content-center">
                                 <div class="col-md-4">
                                     <p class=" card-title  text-center font-size13 txt-linee  mt-5">صبح</p>
+
                                     <form action="#" class="form-group">
-                                        <input type="text" class="form-control mt-1 " placeholder="شنبه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="یک شبنه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="دو شنبه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="سه شنبه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder=" چهار شبنه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder=" پنح شبنه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder=" جمعه" value="" required="">
+                                        <input type="text" class="form-control mt-1 " placeholder="شنبه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder="یک شبنه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder="دو شنبه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder="سه شنبه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder=" چهار شبنه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder=" پنح شبنه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder=" جمعه" value=""
+                                               required="">
                                     </form>
                                 </div>
                                 <div class="col-md-4">
                                     <p class=" card-title  text-center font-size13 txt-linee  mt-5">چاشت</p>
+
                                     <form action="#" class="form-group">
-                                        <input type="text" class="form-control mt-1 " placeholder="شنبه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="یک شبنه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="دو شنبه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="سه شنبه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder=" چهار شبنه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder=" پنح شبنه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder=" جمعه" value="" required="">
+                                        <input type="text" class="form-control mt-1 " placeholder="شنبه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder="یک شبنه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder="دو شنبه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder="سه شنبه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder=" چهار شبنه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder=" پنح شبنه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder=" جمعه" value=""
+                                               required="">
                                     </form>
                                 </div>
                                 <div class="col-md-4">
                                     <p class=" card-title  text-center font-size13 txt-linee  mt-5">شب</p>
 
                                     <form action="#" class="form-group">
-                                        <input type="text" class="form-control mt-1 " placeholder="شنبه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="یک شبنه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="دو شنبه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder="سه شنبه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder=" چهار شبنه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder=" پنح شبنه" value="" required="">
-                                        <input type="text" class="form-control mt-1 " placeholder=" جمعه" value="" required="">
+                                        <input type="text" class="form-control mt-1 " placeholder="شنبه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder="یک شبنه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder="دو شنبه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder="سه شنبه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder=" چهار شبنه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder=" پنح شبنه" value=""
+                                               required="">
+                                        <input type="text" class="form-control mt-1 " placeholder=" جمعه" value=""
+                                               required="">
 
                                     </form>
                                 </div>
@@ -1233,10 +1289,12 @@
 
                     <div class=" emp-profile mr-5 ml-5">
                         <div class="col-sm-12 col-md-12 mt-lg-2 pl-3 pr-0">
-                            <p class=" card-title  text-center font-size13 txt-linee mb-2 mt-2">عکس های غذا را انیجا بکشید</p>
+                            <p class=" card-title  text-center font-size13 txt-linee mb-2 mt-2">عکس های غذا را انیجا
+                                بکشید</p>
+
                             <form action="/file-upload" class="dropzone dz-clickable" id="my-dropzone">
 
-                                <div class="dz-message d-flex flex-column" >
+                                <div class="dz-message d-flex flex-column">
                                     عکس درا در انیجا بکشید
                                 </div>
                             </form>

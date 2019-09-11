@@ -17,6 +17,9 @@ class CreateHostelsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->unsignedInteger('owner_id');
+            $table->string('email');
+            $table->string('phone');
+            $table->boolean('type');
             $table->softDeletes();
             $table->timestamps();
         });

@@ -2,29 +2,26 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
+use App\Http\Requests\ownerRequest;
 use App\Owner;
 use Illuminate\Http\Request;
 
 class OwnerController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
         //passing the  adminPanels page info to the view
-        $owner = Owner::all();
+      //  $owner = Owner::all();
+     //   $owner = DB::table('owners')->find(1);
+        $owner = DB::select('select * from owners WHERE id = "1" ');
 
         return view('owner',compact('owner'));
+
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
         //create new adminUser
@@ -33,68 +30,39 @@ class OwnerController extends Controller
 
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+
+    public function store(ownerRequest $ownerRequest)
     {
-        //
-
-        $owner = new Owner($request);
-
+      //  Owner::create(request()->all());
+        $owner = new Owner($ownerRequest);
         $owner->name = request('name');
         $owner->last_name = request('last_name');
         $owner->phone= request('phone');
         $owner->email= request('email');
-
+        $owner->password= request('password');
+        $owner->confirm_password= request('confirm_password');
         $owner->save($owner);
-
-        return redirect('/Owner');
+        return redirect('/Owner')->with('success',true);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Owner  $owner
-     * @return \Illuminate\Http\Response
-     */
+
     public function show(Owner $owner)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Owner  $owner
-     * @return \Illuminate\Http\Response
-     */
     public function edit(Owner $owner)
     {
         //
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Owner  $owner
-     * @return \Illuminate\Http\Response
-     */
+
     public function update(Request $request, Owner $owner)
     {
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Owner  $owner
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy(Owner $owner)
     {
         //

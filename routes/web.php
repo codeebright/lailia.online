@@ -64,6 +64,14 @@ Route::get('my-users', 'HomeController@myUsers');
 
 Route::group(['prefix'=>'owner'],function(){
     Route::get('/index','OwnerController@index')->name('owner.index');
-    Route::get('owner/create','OwnerController@create')->name('owner.create');
-    Route::post('owner/create','OwnerController@store')->name('owner.store');
+    Route::get('/create','OwnerController@create')->name('owner.create');
+    Route::post('/create','OwnerController@store')->name('owner.store');
 });
+//
+//Route::group(['prefix'=>'hostel'],function(){
+//    Route::get('/index','OwnerController@index')->name('hostel.index');
+//    Route::get('/create','OwnerController@create')->name('hostel.create');
+//    Route::post('/create','OwnerController@store')->name('hostel.store');
+//});
+
+Route::resource('/hostel','HostelController');
