@@ -14,11 +14,30 @@
                <i class="fa fa-home mt-4 text-center" style="font-size:45px; "></i>
 
                 {{--<h5 class="mt-3 text-center"> لیلیه نرگس  </h5>--}}
-                <div class="dis">
+      <!-- <div class="dis">
                     <p class="text-danger mb-1"><i class="fa fa-address-book">  آدرس :‌ تانک تیل دولتی  </i></p>
                     <p class="text-danger mb-1"><i class="fa fa-mail-bulk">  تانک تیل دولتی  </i> : ایمیل آدرس  </p>
                     <p class="text-danger mb-1"><i class="fa fa-phone">  شماره تماس   </i> :‌ 0730313101 </p>
-                </div>
+                </div> -->
+                @foreach($users as $user)
+                    <div class="dis">
+                        <p class="text-primary mb-3"> <span class="fa fa-phone">
+                            شماره تماس  : {{ $user->phone_number }}
+                            </span>
+                        </p>
+                        <p class="text-primary mb-3"><span class="fa fa-">
+                                آدرس فیسبوک ما  : {{ $user->fb }}    
+                            </span>
+                        </p>
+
+                        <p class="text-primary mb-4"> <span class="fa fa-address-book">
+                            ایمیل آدرس : {{ $user->email }}
+                            </span>
+                        </p>
+                    </div>
+                @endforeach
+
+
             </div>
 
         </div>
@@ -206,6 +225,7 @@
         </div>
     </div>
 </section>
+<<<<<<< HEAD
 
 {{-- Hostels Food menu tabs section --}}
 <section class="container">
@@ -336,6 +356,139 @@
                         </table>
                     </div>
                 </div>
+
+
+
+{{-- Hostels Food menu tabs section --}}
+<section class="container">
+    <div class="row">
+        <div class="col-md-12 nav-padding mb-3 pr-3 text-center">
+            <ul class="nav nav-pills bg-light" id="pills-tab" role="tablist">
+
+                <li class="nav-item mr-5 text-center">
+                    <a class="nav-link active ml-5 tab-font" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                       role="tab" aria-controls="pills-home" aria-selected="true">صبحانه
+                    </a>
+                </li>
+                <li class="nav-item mr-5 text-center">
+                    <a class="nav-link mr-5 tab-font" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                       role="tab" aria-controls="pills-profile" aria-selected="false"> چاشت
+                    </a>
+                </li>
+                <li class="nav-item mr-5 text-center">
+                    <a class="nav-link tab-font" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                       role="tab" aria-controls="pills-contact" aria-selected="false"> شب
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="tab-content bg-light" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="row ml-3 mt-1 ml-5 align-content-center">
+                        <div class="col-md-12">
+                        <table class="table table-responsive">
+                            <thead>
+                                <tr>
+                                    <th class="pl-5 text-primary"> شنبه </th>
+                                    <th class="pl-5 text-primary"> یک شنبه </th>
+                                    <th class="pl-5 text-primary"> دوشنبه </th>
+                                    <th class="pl-5 text-primary"> سه شنبه </th>
+                                    <th class="pl-5 text-primary"> چهارشنبه </th>
+                                    <th class="pl-5 text-primary">  پنج شنبه </th>
+                                    <th class="pl-5 text-primary"> جمعه </th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <td class="pl-5 border"> شیر </td>
+                                    <td class="pl-5 border"> تخم مرغ </td>
+                                    <td class="pl-5 border"> پنیر </td>
+                                    <td class="pl-5 border"> قیماق </td>
+                                    <td class="pl-5 border"> نان وچای </td>
+                                    <td class="pl-5 border">  شیر </td>
+                                    <td class="pl-5 border"> تخم مرغ </td>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <td class="pl-5 border"> شیر </td>
+                                    <td class="pl-5 border"> تخم مرغ </td>
+                                    <td class="pl-5 border"> پنیر </td>
+                                    <td class="pl-5 border"> قیماق </td>
+                                    <td class="pl-5 border"> نان وچای </td>
+                                    <td class="pl-5 border">  شیر </td>
+                                    <td class="pl-5 border"> تخم مرغ </td>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <td class="pl-5 border"> شیر </td>
+                                    <td class="pl-5 border"> تخم مرغ </td>
+                                    <td class="pl-5 border"> پنیر </td>
+                                    <td class="pl-5 border"> قیماق </td>
+                                    <td class="pl-5 border"> نان وچای </td>
+                                    <td class="pl-5 border">  شیر </td>
+                                    <td class="pl-5 border"> تخم مرغ </td>
+                                </tr>
+                            </thead>
+                        </table>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="row ml-3 mt-1 ml-5 align-content-center">
+                        <table class="table table-responsive">
+                            <thead>
+                                <tr>
+                                    <th class="pl-5 text-primary"> شنبه </th>
+                                    <th class="pl-5 text-primary"> یک شنبه </th>
+                                    <th class="pl-5 text-primary"> دوشنبه </th>
+                                    <th class="pl-5 text-primary"> سه شنبه </th>
+                                    <th class="pl-5 text-primary"> چهارشنبه </th>
+                                    <th class="pl-5 text-primary">  پنج شنبه </th>
+                                    <th class="pl-5 text-primary"> جمعه </th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <td class="pl-5 border"> گوشت </td>
+                                    <td class="pl-5 border"> برنج </td>
+                                    <td class="pl-5 border"> سبزی </td>
+                                    <td class="pl-5 border"> لوبیا </td>
+                                    <td class="pl-5 border"> مکارونی </td>
+                                    <td class="pl-5 border">  قابلی </td>
+                                    <td class="pl-5 border"> آشک </td>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <td class="pl-5 border"> قابلی </td>
+                                    <td class="pl-5 border"> لوبیا </td>
+                                    <td class="pl-5 border"> مکارونی </td>
+                                    <td class="pl-5 border"> سبزی </td>
+                                    <td class="pl-5 border"> بولانی </td>
+                                    <td class="pl-5 border">  برنج با میوه </td>
+                                    <td class="pl-5 border"> کرایی </td>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <td class="pl-5 border"> لوبیا </td>
+                                    <td class="pl-5 border"> کوفته </td>
+                                    <td class="pl-5 border"> سبزی با میوه </td>
+                                    <td class="pl-5 border"> منتو </td>
+                                    <td class="pl-5 border"> قابلی </td>
+                                    <td class="pl-5 border">  مکارونی </td>
+                                    <td class="pl-5 border"> گوشت </td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+
 
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                     <div class="row ml-3 mt-1 ml-5 align-content-center">
