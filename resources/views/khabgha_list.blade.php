@@ -21,307 +21,43 @@
                     </select>
                 </div>
             </div>
-
         </section>
-
-
     </section>
 
     <section class="container custom-margin ">
         <h5 class="text-center" style="text-shadow:  1px 1px 2px black; color: #1b1e21">مجموعه ما با ۲۰۰۰ خوابگا در سطح کشور</h5>
         <div class="justify-content-center thin-underline-1"></div>
         <div class="row justify-content-center">
-            <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4 small-device-hid ">
-                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/18.jpg" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>بانوان</b></p></div>
-                            <div class="custom-prices card-text text-left">کرایه /ما ۵۰۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-12 col-sm-12 col-md-12 mb-2 ">
-                                    <span class="card-text">آدرس : برچی ایستاگا نانوای داخل کوجه</span>
-                                </div>
+          @foreach($hostels as $hostel)
+            @foreach($hostel->hostelDetails->attachments as $photo)
+              <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4 small-device-hid ">
+                    <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
+                      <a href="{{route('khabgah_detailes.goToDetails',$hostel->id)}}"> <img  src="/images/{{ $photo->file_name }}"
+                        class="card-img-top card-img custom-card-img-height" alt=""></a>
+                        <div class="car-body">
+                            <div class="card-footer">
+                                <div class="custom-circle"><p class="custom-circle-text card-text"><b>
+                                  @if($hostel->type == 1)
+                                  {{ 'ذکور'}}
+                                  @else {{ 'اناث' }}
+                                  @endif
+                                 </b></p></div>
+                                <div class="custom-prices card-text text-left"> کرایه فی ماه : {{$hostel->hostelDetails->remark }}  </div>
+                                <div class="row mt-3">
+                                    <div class="col-12 col-sm-12 col-md-12 mb-2 ">
+                                        <span class="card-text">آدرس :  {{$hostel->addresses->state }}  {{$hostel->addresses->rood}}
+                                            {{$hostel->addresses->station }}  {{$hostel->addresses->alley}}
+                                          </span>
+                                    </div>
 
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 ">
-                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/bilding.jpg" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>تابش</b></p></div>
-                            <div class="custom-prices card-text text-left"> کرایه بر ماه ۸۰۰۰</div>
-                            <div class="row mt-3">
-                                <div class=" col-md-12 mb-2 ">
-                                    <span class="card-text">آدرس : نارسیده به جهار راهی دهمزنگ</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 ">
-                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/bilding.jpg" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>تابش</b></p></div>
-                            <div class="custom-prices card-text text-left"> کرایه بر ماه ۸۰۰۰</div>
-                            <div class="row mt-3">
-                                <div class=" col-md-12 mb-2 ">
-                                    <span class="card-text">آدرس : نارسیده به جهار راهی دهمزنگ</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 small-device-hid">
-                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/bilding%20(2).png" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>کامل</b></p></div>
-                            <div class="custom-prices card-text text-left"> کرایه بر ما ۴۵۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-12 col-sm-12 col-md-12 mb-2 ">
-                                    <span class="card-text">  آدرس : کارته جهار پهلوی پارک ابی کابل</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4 small-device-hid ">
-                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/18.jpg" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>بانوان</b></p></div>
-                            <div class="custom-prices card-text text-left">کرایه /ما ۵۰۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-12 col-sm-12 col-md-12 mb-2 ">
-                                    <span class="card-text">آدرس : برچی ایستاگا نانوای داخل کوجه</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 ">
-                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/bilding.jpg" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>تابش</b></p></div>
-                            <div class="custom-prices card-text text-left"> کرایه بر ماه ۸۰۰۰</div>
-                            <div class="row mt-3">
-                                <div class=" col-md-12 mb-2 ">
-                                    <span class="card-text">آدرس : نارسیده به جهار راهی دهمزنگ</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 ">
-                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/bilding.jpg" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>تابش</b></p></div>
-                            <div class="custom-prices card-text text-left"> کرایه بر ماه ۸۰۰۰</div>
-                            <div class="row mt-3">
-                                <div class=" col-md-12 mb-2 ">
-                                    <span class="card-text">آدرس : نارسیده به جهار راهی دهمزنگ</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 small-device-hid">
-                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/bilding%20(2).png" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>کامل</b></p></div>
-                            <div class="custom-prices card-text text-left"> کرایه بر ما ۴۵۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-12 col-sm-12 col-md-12 mb-2 ">
-                                    <span class="card-text">  آدرس : کارته جهار پهلوی پارک ابی کابل</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4 small-device-hid ">
-                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/18.jpg" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>بانوان</b></p></div>
-                            <div class="custom-prices card-text text-left">کرایه /ما ۵۰۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-12 col-sm-12 col-md-12 mb-2 ">
-                                    <span class="card-text">آدرس : برچی ایستاگا نانوای داخل کوجه</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 ">
-                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/bilding.jpg" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>تابش</b></p></div>
-                            <div class="custom-prices card-text text-left"> کرایه بر ماه ۸۰۰۰</div>
-                            <div class="row mt-3">
-                                <div class=" col-md-12 mb-2 ">
-                                    <span class="card-text">آدرس : نارسیده به جهار راهی دهمزنگ</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 ">
-                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/bilding.jpg" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>تابش</b></p></div>
-                            <div class="custom-prices card-text text-left"> کرایه بر ماه ۸۰۰۰</div>
-                            <div class="row mt-3">
-                                <div class=" col-md-12 mb-2 ">
-                                    <span class="card-text">آدرس : نارسیده به جهار راهی دهمزنگ</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 small-device-hid">
-                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/bilding%20(2).png" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>کامل</b></p></div>
-                            <div class="custom-prices card-text text-left"> کرایه بر ما ۴۵۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-12 col-sm-12 col-md-12 mb-2 ">
-                                    <span class="card-text">  آدرس : کارته جهار پهلوی پارک ابی کابل</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4 small-device-hid ">
-                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/18.jpg" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>بانوان</b></p></div>
-                            <div class="custom-prices card-text text-left">کرایه /ما ۵۰۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-12 col-sm-12 col-md-12 mb-2 ">
-                                    <span class="card-text">آدرس : برچی ایستاگا نانوای داخل کوجه</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 ">
-                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/bilding.jpg" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>تابش</b></p></div>
-                            <div class="custom-prices card-text text-left"> کرایه بر ماه ۸۰۰۰</div>
-                            <div class="row mt-3">
-                                <div class=" col-md-12 mb-2 ">
-                                    <span class="card-text">آدرس : نارسیده به جهار راهی دهمزنگ</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 ">
-                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/bilding.jpg" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>تابش</b></p></div>
-                            <div class="custom-prices card-text text-left"> کرایه بر ماه ۸۰۰۰</div>
-                            <div class="row mt-3">
-                                <div class=" col-md-12 mb-2 ">
-                                    <span class="card-text">آدرس : نارسیده به جهار راهی دهمزنگ</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class=" col-11 col-sm-6 col-md-6  col-lg-3 px-1 mt-4 small-device-hid">
-                <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="khana%20image/bilding%20(2).png" class="card-img-top card-img custom-card-img-height" alt="">
-                    <div class="car-body">
-                        <div class="card-footer">
-                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>کامل</b></p></div>
-                            <div class="custom-prices card-text text-left"> کرایه بر ما ۴۵۰۰</div>
-                            <div class="row mt-3">
-                                <div class="col-12 col-sm-12 col-md-12 mb-2 ">
-                                    <span class="card-text">  آدرس : کارته جهار پهلوی پارک ابی کابل</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+                  </div>
+                @endforeach
+            @endforeach
+          </div>
     </section>
 
 @endsection

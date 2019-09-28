@@ -15,10 +15,12 @@ class CreateHostelDetailsTable extends Migration
     {
         Schema::create('hostel_details', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedInteger('hostel_id'); 
             $table->string('phone_number',12);
             $table->string('email',12);
             $table->string('website',12);
             $table->string('fb');
+            $table->integer('file-id');
             $table->string('remark');
             $table->softDeletes();
             $table->timestamps();

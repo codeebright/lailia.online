@@ -1,20 +1,23 @@
 <?php
 
+
 namespace App\Http\Controllers;
+use App\Attachment;
+use App\HostelDetails;
+use App\Hostel;
+use App\Food;
+use App\FoodMenu;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 
 class HostelDetailsController extends Controller
 {
-    public function index()
+    public function index($hostel_id)
     {
-    	$users = DB::table('hostel_details')->get();
-    	
-        return view('khabgah_details', ['users' => $users]);
-
-    	// DB::table('hostel_details')->orderBy('id')->chunk(20, function($users){
-    	// 	return view ('khabgah_details',['users' => $users]);
-    	// });
+        $food_menus = FoodMenu::where('food_category_id',1)->where('hostel_id',$hostel_id)->get();
+        $hostel = Hostel::find($hostel_id);
+        return view('khabgah_details', compact(['hostel','food_menus']));
     }
+
 }

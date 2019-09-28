@@ -12,6 +12,12 @@
 |
 */
 //foto route
+Route::get('/form',function(){
+  return view('form');
+});
+Route::post('/form', 'AttachmentController@save');
+Route::get('/home','HomeController@index');
+
 
 // Do login Route
 Route::post('login', 'OwnerController@login')->name('post_login');
