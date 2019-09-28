@@ -8,6 +8,20 @@ use Illuminate\Support\Facades\input;
 
 class AttachmentController extends Controller
 {
+
+
+    // Save image
+   public function save(Request $request){
+       $new_file = new Attachment;
+       if(Input::hasFile('image')){
+         $file = Input::file('image');
+         $file->move(public_path('images').'/',$file->getClientOriginalName());
+         $new_file->file_name = $file->getClientOriginalName();
+         $new_file->save();
+         return back();
+       }
+   }
+
     public function index()
     {
       //

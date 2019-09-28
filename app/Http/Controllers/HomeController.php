@@ -13,7 +13,14 @@ class HomeController extends Controller
     {
     }
 
-    public function show()
+    public function index()
+    {
+
+      $hostels = Hostel::all();
+      return view('home',compact('hostels'));
+    }
+
+    public function myHome()
     {
         $hostels = Hostel::all();
         return view('home',compact('hostels'));
