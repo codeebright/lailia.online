@@ -13,6 +13,12 @@ class HomeController extends Controller
     {
     }
 
+    public function index()
+    {
+
+      $files = Hostel::all();
+      return view('home',compact('files'));
+    }
 
     public function myHome()
     {

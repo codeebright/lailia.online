@@ -11,19 +11,27 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//foto route
 
 // Do login Route
+Route::post('login', 'OwnerController@login')->name('post_login');
+
+Route::get('home', 'OwnerController@index')->name('home');
+Route::post('login-user', 'OwnerController@create')->name('registration.create');
+Route::post('register', 'OwnerController@store')->name('registration.store');
+
+
 
 // Route::resource('user', 'OwnerController');
 //
 // Route::get('home', function(){
 //   return view('home');
 // });
-Route::post('login')
-Route::resource('home', 'OwnerController');
+// Route::post('login')
+// Route::resource('home', 'OwnerController');
 // Route::post('registration', 'OwnerController')->name('')
-Route::post('registration', 'OwnerController')->name('registration.create');
+// Route::post('registration', 'OwnerController')->name('registration.create');
+
 // Route::get('login/create','OwnerController@create')->name('post_login');
 // Route::post('login','OwnerController@login')->name('post_login');
 //Route::get('/', function () {

@@ -70,39 +70,42 @@
             });
         });
 
-  // Ajax Function
-function makeRequest(url,params,div_id)
-{
-  $.ajax({
-    url:url,
-    type:'post',
-    data:params,
-    success: function(data){
+        // Ajax Function
+        function makeRequest(url,params,div_id)
+        {
+          $.ajax({
+            url:url,
+            type:'post',
+            data:params,
+            success: function(data){
 
-    },
-    error :function( jqXhr,data ) {
+            },
+            error :function( jqXhr,data ) {
 
-        if( jqXhr.status === 401 ) //redirect if not authenticated user.
-            $( location ).prop( 'pathname', 'auth/login' );
-        if( jqXhr.status === 422 ) {
-        //process validation errors here.
-        var errors = jqXhr.responseJSON; //this will get the errors response data.
-        //show them somewhere in the markup
-        //e.g
-        errorsHtml = '<div class="alert alert-danger"><ul>';
-
-        $.each( errors, function( key, value ) {
-            errorsHtml += '<li>' + value[0] + '</li>'; //showing only the first error.
-        });
-        console.log()
-        errorsHtml += '</ul></di>';
-        $( '#'+div_id).html( errorsHtml ); //appending to a <div id="form-errors"></div> inside form
-        } else {
-            /// do some thing else
+                if( jqXhr.status === 401 ) //redirect if not authenticated user.
+                    $( location ).prop( 'pathname', 'auth/login' );
+                if( jqXhr.status === 422 ) {
+                //process validation errors here.
+                var errors = jqXhr.responseJSON.errors; //this will get the errors response data.
+                //show them somewhere in the markup
+                errorsHtml = '<div class="alert alert-danger">';
+                var i = 0;
+                $.each( errors, function( key, value ) {
+                    errorsHtml +=  value[0] ; //showing only the first error.
+                    if(i==0)
+                    {
+                      return false;
+                    }
+                });
+                errorsHtml += '</di>';
+                $( '#'+div_id).html( errorsHtml ); //appending to a <div id="form-errors"></div> inside form
+                } else {
+                    /// do some thing else
+                }
+            }
+          })
         }
-    }
-  })
-}
+
 
 // Login Function
 function login(url,form_id,div_id)
