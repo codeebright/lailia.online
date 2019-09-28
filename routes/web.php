@@ -24,12 +24,11 @@ Route::get('/form',function(){
   return view('form.form');
 });
 
+// Login User Route 
+Route::get('login/user','OwnerController@login')->name('registration.create');
+
 Route::any('/search','HomeController@homeSearch')->name('homeseach');
 
-
-//Route::get('/kh_page', function(){
-//  return view();
-//});
 
 Route::get('/khabgah_list','HostelController@index'); //khabgah_list page route
 Route::post('/form','AttachmentController@store');  //store image route
