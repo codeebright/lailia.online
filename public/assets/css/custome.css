@@ -1,0 +1,60 @@
+span.error{
+    color: red !important;
+}
+
+div.edit,div.delete{
+   cursor: pointer !important;
+}
+.delete{
+    color:#dc5050 !important;
+}
+.thead-custome {
+    background:#f4f3f8 !important;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #585975;
+}
+.v-select > .dropdown-toggle {
+    height: 42px !important;
+}
+.m-menu__item > .router-link-exact-active > span
+{
+   color: #2737c1 !important;
+}
+.router-link-exact-active > .m-menu__link-bullet--dot>span {
+    background-color: #2737c1 !important;
+}
+
+/* Float left Search Box of Data Table  */
+.dataTables_filter
+{
+  float: left;
+}
+#description {
+  display: none;
+}
+.head{
+  font-weight: normal;
+  font-size: 17px;
+  color: #4e4d4d;
+}
+.t-color
+{
+  color: black !important;
+}
+.dropdown-toggle::after {
+  border-top: 0px !important;
+}
+.item_details_div
+{
+  background: #f5f5f5;
+}
+.table-fees9{
+  width: 100%;
+  border: 1px solid black;
+}
+.table-fees9 th,td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid;
+}
