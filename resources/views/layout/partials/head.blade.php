@@ -124,4 +124,51 @@
         }
     }
 
+
+
+    /* main-page-style */
+     /* Hamid added
+     Must Be Corrected */
+
+    .custom-modal{
+        width: 415px;
+        margin: auto;
+    }
+    .modal-input{
+        margin: -6px 0 -6px 0;
+    }
+    #second, #third, #fourth{
+        display: none;
+    }
+    .page-center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) !important;
+    }
+    .ham{
+        position: absolute;
+        bottom: 4px;
+        right: auto;
+
+    }
+
+
+
+    #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        color: #f3f3f3;
+        background-color: transparent;
+        border-color: transparent transparent #f3f3f3;
+        border-bottom: 4px solid !important;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #tabs .nav-tabs .nav-link {
+        border: 1px solid transparent;
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+        color: #eee;
+        font-size: 20px;
+    }
+
 </style>

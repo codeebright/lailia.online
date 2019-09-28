@@ -15,6 +15,7 @@ class OwnerController extends Controller
     public function index()
     {
         //
+        return view('home');
     }
 
     /**
@@ -22,9 +23,28 @@ class OwnerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
         //
+        $this->validate($request, [
+            'phone' => 'required|max:10',
+            'password' => 'required|min:8'
+        ]);
+
+        if (Auth::attempt(['phone' => $request['phone'], 'password' => $request['password']])){
+            return redirect()->route('adminUser');
+        }
+        return redirect()->back();
+    }
+
+    // Login function
+    public function login(LoginRequest $request)
+    {
+        $phone_no = $request->phone;
+        $password = $request->password;
+
+        return $phone_no;
+
     }
 
     /**
@@ -36,6 +56,37 @@ class OwnerController extends Controller
     public function store(Request $request)
     {
         //
+        $this->validate($request, [
+            'name' => 'required|max:120',
+            'phone' => 'required|max:10',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|min:8',
+            'password_confirm' => 'required|same:password'
+        ],[
+            'name.required' => 'نام خود را وارید نکردید',
+            'password.required' => 'رمز عبور خود را وارید نکردید',
+            'password.min' => 'رمز عبور حدالقل 8 کرکتر باشد',
+            'password_confirm.required' => 'تاید رمز عبور خود را وارید نکردید',
+            'password_confirm.same' => 'رمز عبور تان مطابقت ندارد',
+        ]);
+        //Pushed
+
+        $name = $request['name'];
+        $phone = $request['phone'];
+        $email = $request['email'];
+        $password = bcrypt($request['password']);
+        $password_confirm = bcrypt($request['password_confirm']);
+
+        $user = new User();
+        $user->name = $name;
+        $user->phone = $phone;
+        $user->email = $email;
+        $user->password = $password;
+        $user->password_confirm = $password;
+
+        $user->save();
+
+        return redirect()->route('adminUser');
     }
 
     /**
