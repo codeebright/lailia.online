@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\hostels;
+use App\Hostel;
 use Illuminate\Http\Request;
 
 class HostelController extends Controller
@@ -14,7 +14,8 @@ class HostelController extends Controller
      */
     public function index()
     {
-        //
+       $hostels = Hostel::all();
+       return view('khabgha_list',['hostels' => $hostels]);
     }
 
     /**

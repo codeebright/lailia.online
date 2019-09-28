@@ -15,11 +15,12 @@ class CreateAddressesTable extends Migration
     {
         Schema::create('addresses', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedInteger('hostel_id');
             $table->string('state');
             $table->string('rood');
             $table->string('alley');
             $table->string('station');
+            $table->integer('hostel_id')->unsigned();
+
             $table->timestamps();
         });
     }
@@ -32,5 +33,8 @@ class CreateAddressesTable extends Migration
     public function down()
     {
         Schema::dropIfExists('addresses');
+        $table->foreign('hostel_id')
+    ->references('id')->on('hostels')
+    ->onDelete('cascade');
     }
 }

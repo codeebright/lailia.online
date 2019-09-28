@@ -87,6 +87,7 @@
         </div>
     </nav>
 </section>
+@if(isset($details))
 <section class="container mt-5">
     <div class="row justify-content-center ">
         <div class=" col-12 col-md-12 col-lg-4 mb-2">
@@ -185,11 +186,13 @@
         <div class=" col-12 col-md-12 col-lg-8">
 
             <div class="row">
+              @foreach($details as $hostel)
+                @foreach($hostel->addreeses->hostelDetails->attachments as $photo)
                 <div class="col-md-6 col-lg-6 px-lg-1 pr-md-1  ">
                     <a href="#seemore" id="hamid">
                         <div class="card card-shadow custom-height-1 common-negative-margin-1"
                              style="border-radius: 0%">
-                            <img src="khana%20image/door2.PNG" class="card-img-top card-img custom-card-img-height"
+                            <img src="/images/{{ $photo->file_name}}" class="card-img-top card-img custom-card-img-height"
                                  alt="">
                             <div class="car-body">
                                 <div class="card-footer">
@@ -212,6 +215,8 @@
                         </div>
                     </a>
                 </div>
+                @endforeach
+                @endforeach
                 <div class="col-md-6 col-lg-6 px-lg-1 pl-md-1  ">
                     <a href="khabgahDetail.html">
                         <div class="card card-shadow custom-height-1 common-negative-margin-1"
@@ -299,6 +304,7 @@
         </div>
     </div>
 </section>
+@endif
 <!-- End-first-part -->
 <!--see more-->
 <section id="seemore" class="container mt-5 ">
