@@ -15,12 +15,11 @@ class CreateAddressesTable extends Migration
     {
         Schema::create('addresses', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedInteger('hostel_id');
-            $table->string('province');
             $table->string('state');
-            $table->string('street');
+            $table->string('rood');
             $table->string('alley');
-            $table->string('station')->nullable();
+            $table->string('station');
+            $table->integer('hostel_id')->unsigned();
             $table->timestamps();
         });
     }

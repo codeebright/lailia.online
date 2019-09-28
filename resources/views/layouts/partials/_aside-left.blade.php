@@ -12,7 +12,7 @@
                         </a>
                     </li>
                     <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1">
-                        <a href="" class="m-menu__link ">
+                        <a href="{{route('room.create')}}" class="m-menu__link ">
                             <i class="m-menu__link-icon flaticon-paper-plane"></i>
                             <span class="m-menu__link-text">تنظیمات اتاق</span>
                         </a>

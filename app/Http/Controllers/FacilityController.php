@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\facilities;
+
+use App\Hostel;
 use Illuminate\Http\Request;
 
 class FacilityController extends Controller
@@ -14,7 +15,6 @@ class FacilityController extends Controller
      */
     public function index()
     {
-        //
     }
 
     /**

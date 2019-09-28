@@ -3,14 +3,12 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
+
 class Food extends Model
 {
-    //
-     use SoftDeletes;
-    //belongs to one
+    // belongsTo foodMenu
     public function foodMenus()
     {
-        return $this->belongsTo('App\FoodMenu');
+        return $this->hasMany(FoodMenu::class,'food_id','id');
     }
 }

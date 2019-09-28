@@ -7,5 +7,4 @@ use Illuminate\Http\Request;
 class AddressController extends Controller
 {
     //
-    pu
 }

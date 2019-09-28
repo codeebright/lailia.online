@@ -1,100 +1,305 @@
-@extends('layouts.master')
+@extends('layouts.master2')
+@section('title','صفحه اصلی')
+@section('content2')
 
-    {{--<div class="m-content">
-    <div class="m-portlet ">
-        <div class="m-portlet__body  m-portlet__body--no-padding">
-            <div class="row m-row--no-padding m-row--col-separator-xl">
-                <div class="col-md-4 col-lg-4 col-xl-4">
 
-                    <!--begin::Total Profit-->
-                    <div class="m-widget24">
-                        <div class="m-widget24__item">
-                            <h4 class="m-widget24__title">
-                                Total Frofit
-                            </h4><br>
-												<span class="m-widget24__desc">
-													All Customs Value
-												</span>
-												<span class="m-widget24__stats m--font-brand">
-													$18M
-												</span>
-                            <div class="m--space-10"></div>
-                            <div class="progress m-progress--sm">
-                                <div class="progress-bar m--bg-brand" role="progressbar" style="width: 78%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-												<span class="m-widget24__change">
-													Change
-												</span>
-												<span class="m-widget24__number">
-													78%
-												</span>
-                        </div>
+
+    <div class="m-content">
+        <div class="m-alert m-alert--icon m-alert--air m-alert--square alert alert-dismissible m--margin-bottom-30" role="alert">
+            <div class="m-alert__icon">
+                <i class="flaticon-exclamation m--font-brand"></i>
+            </div>
+            <div class="m-alert__text">لیست از تمامی اتاق ها اتاق های پر خالی   ( محتوای هر لیست را ورایش کرده میتوانید)</div>
+        </div>
+        <div class="m-portlet m-portlet--mobile">
+            <div class="m-portlet__head">
+                <div class="m-portlet__head-caption">
+                    <div class="m-portlet__head-title">
+                        <h3 class="m-portlet__head-text">
+                            لیست از اتاق ها
+                        </h3>
                     </div>
-
-                    <!--end::Total Profit-->
                 </div>
-                <div class="col-md-4 col-lg-4 col-xl-4">
+                <div class="m-portlet__head-tools">
+                    <ul class="m-portlet__nav">
+                        <li class="m-portlet__nav-item">
+                            <a href="#" class="btn btn-primary m-btn m-btn--pill m-btn--custom m-btn--icon m-btn--air">
+												<span>
+													<i class="la la-plus"></i>
+													<span>علاوه کردن اتاق جدید</span>
+												</span>
+                            </a>
+                        </li>
+                        <li class="m-portlet__nav-item"></li>
 
-                    <!--begin::New Feedbacks-->
-                    <div class="m-widget24">
-                        <div class="m-widget24__item">
-                            <h4 class="m-widget24__title">
-                                New Feedbacks
-                            </h4><br>
-												<span class="m-widget24__desc">
-													Customer Review
-												</span>
-												<span class="m-widget24__stats m--font-info">
-													1349
-												</span>
-                            <div class="m--space-10"></div>
-                            <div class="progress m-progress--sm">
-                                <div class="progress-bar m--bg-info" role="progressbar" style="width: 84%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-												<span class="m-widget24__change">
-													Change
-												</span>
-												<span class="m-widget24__number">
-													84%
-												</span>
-                        </div>
-                    </div>
-
-                    <!--end::New Feedbacks-->
+                    </ul>
                 </div>
-                <div class="col-md-4 col-lg-4 col-xl-4">
+            </div>
+            <div class="m-portlet__body">
 
-                    <!--begin::New Orders-->
-                    <div class="m-widget24">
-                        <div class="m-widget24__item">
-                            <h4 class="m-widget24__title">
-                                New Orders
-                            </h4><br>
-												<span class="m-widget24__desc">
-													Fresh Order Amount
-												</span>
-												<span class="m-widget24__stats m--font-danger">
-													567
-												</span>
-                            <div class="m--space-10"></div>
-                            <div class="progress m-progress--sm">
-                                <div class="progress-bar m--bg-danger" role="progressbar" style="width: 69%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-												<span class="m-widget24__change">
-													Change
-												</span>
-												<span class="m-widget24__number">
-													69%
-												</span>
-                        </div>
-                    </div>
+                <!--begin: Datatable -->
+                <table class="table table-striped- table-bordered table-hover table-checkable" id="m_table_1">
+                    <thead>
+                    <tr>
+                        <th>نمبر اتاق</th>
+                        <th>مساحت</th>
+                        <th>گنجایش</th>
+                        <th>تعدا بستر های خالی</th>
+                        <th>حالت</th>
+                        <th>نوع</th>
+                        <th>عملیات</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۲ بیستر خالی ۴ نفر ضرورت</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
 
-                    <!--end::New Orders-->
-                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>۵ متر</td>
+                        <td>۳ نفر</td>
+                        <td>۳ بستر</td>
+                        <td>خالی</td>
+                        <td>با خدامات نان</td>
+                        <td nowrap>
+
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
             </div>
         </div>
+
+        <!-- END EXAMPLE TABLE PORTLET-->
     </div>
-    </div>--}}
 
-
+@endsection

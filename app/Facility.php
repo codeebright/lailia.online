@@ -1,18 +1,12 @@
 <?php
 
 namespace App;
-
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Facility extends Model
-{
-    //User Soft Delete
-    use SoftDeletes;
-
-   //belongs to hostel
+class Facility extends Model{
+    // facilities belongsTo hostel
     public function hostels()
     {
-        return $this->belongsTo('App\Hostel');
+        return $this->belongsTo(Hostel::class);
     }
 }

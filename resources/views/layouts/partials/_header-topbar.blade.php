@@ -8,18 +8,18 @@
 
 
                 <!--[html-partial:include:{"file":"partials\/_topbar-notifications.html"}]/-->
+                @include('layouts.partials._topbar-notifications')
 
 
-
-                <!--[html-partial:include:{"file":"partials\/_topbar-quick-actions.html"}]/-->
-
+                        <!--[html-partial:include:{"file":"partials\/_topbar-quick-actions.html"}]/-->
 
 
-                <!--[html-partial:include:{"file":"partials\/_topbar-user-profile.html"}]/-->
+                        <!--[html-partial:include:{"file":"partials\/_topbar-user-profile.html"}]/-->
+                @include('layouts.partials._topbar-user-profile')
 
-                <li id="m_quick_sidebar_toggle" class="m-nav__item m-topbar__quick-sidebar">
-                    <a href="#" class="m-nav__link m-dropdown__toggle"> <span class="m-nav__link-icon"><i class="flaticon-grid-menu"></i></span> </a>
-                </li>
+                {{--<li id="m_quick_sidebar_toggle" class="m-nav__item m-topbar__quick-sidebar">--}}
+                    {{--<a href="#" class="m-nav__link m-dropdown__toggle"> <span class="m-nav__link-icon"><i class="flaticon-grid-menu"></i></span> </a>--}}
+                {{--</li>--}}
             </ul>
         </div>
     </div>

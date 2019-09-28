@@ -3,36 +3,17 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
+
 class FoodMenu extends Model
 {
-    //
-    use SoftDeletes;
-
-    //has many foodCategory
-
-    public function foodCategory()
+    // has foods
+    public function foods()
     {
-        return $this->hasMany('App\FoodCategory');
+        return $this->belongsTo(Food::class,'food_id','id');
     }
 
-    //belongs to hostel
-    public function hostels()
+    public function foodCategories()
     {
-        return $this->belongsTo('App\Hostel');
+        return $this->hasMany(FoodCategory::class);
     }
-
-    //has many food
-    public function food()
-    {
-        return $this->hasMany('App\Food');
-    }
-
-    //has many static table
-    public function staticTables()
-    {
-        return $this->hasMany('App\StaticTable');
-    }
-
-
 }

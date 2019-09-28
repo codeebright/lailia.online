@@ -2,10 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Address;
 use App\Hostel;
-use App\HostelDetails;
-use App\Facility;
 use Illuminate\Http\Request;
 
 class HostelController extends Controller
@@ -21,19 +18,25 @@ class HostelController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new Hostel CMS.
      *
      * @return \Illuminate\Http\Response
      */
     public function create()
     {
-        //
         return view('cms.hostel.hostel_config');
     }
 
-
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
     public function store(Request $request)
     {
+        //
+
         $hostel = new Hostel;
         $hostel->name = $request->name;
         $hostel->owner_id = 1; //Aut::user()->id;
@@ -60,22 +63,23 @@ class HostelController extends Controller
         $address->save();
 
 
-      /*  if(count($request->facilities)>0)
-        {
-            $facility = new Facility();
-            $facility_input = $request->facilities;
-            $details        = $request->descriptions;
-            for($i=0; $i<count($request->facilities); $i++)
-            {
-                $facility->name = $facility_input[$i];
-                $facility->details = $details[$i];
-                $facility->hostel_id = $hostel->id;
-                $facility->save();
-            }
-        }*/
+        /*  if(count($request->facilities)>0)
+          {
+              $facility = new Facility();
+              $facility_input = $request->facilities;
+              $details        = $request->descriptions;
+              for($i=0; $i<count($request->facilities); $i++)
+              {
+                  $facility->name = $facility_input[$i];
+                  $facility->details = $details[$i];
+                  $facility->hostel_id = $hostel->id;
+                  $facility->save();
+              }
+          }*/
 
 
         return back()->with('success','Data is stored successfully');
+
 
     }
 
@@ -123,4 +127,15 @@ class HostelController extends Controller
     {
         //
     }
+
+    /*
+     * List Hostel front
+     * */
+
+    public function listHostel()
+    {
+        $hostels = Hostel::all();
+        return view('front/khabgha_list',['hostels' => $hostels]);
+    }
+
 }

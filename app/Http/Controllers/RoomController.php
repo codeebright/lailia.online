@@ -14,7 +14,7 @@ class RoomController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -24,7 +24,8 @@ class RoomController extends Controller
      */
     public function create()
     {
-        //
+        //      // show the room config page
+        return view('cms.hostel.room_config');
     }
 
     /**

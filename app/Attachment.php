@@ -4,33 +4,19 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-use Illuminate\Database\Eloquent\SoftDeletes;
-
 class Attachment extends Model
 {
-    //Use Soft Deletes
-    use SoftDeletes;
+    protected $primarykey = 'file_id';
+    protected $fillable = ['file_size'];
 
-    //Belongs to One Hostel
-    public function hostels()
+
+    public function hosteDetails()
     {
-        return $this->belongsTo('App\Hostel');
+      return $this->belongsTo(HostelDetails::class);
     }
 
-    //Belongs to One Rooms
-    public function Rooms()
+    public function homes()
     {
-        return $this->belongsTo('App\Room');
+      return $this->belongsTo(Home::class);
     }
-
-
-    //Belongs to One Owners
-    public function Owners()
-    {
-        return $this->belongsTo('App\Owner');
-    }
-
-
-
-
 }

@@ -15,12 +15,11 @@ class CreateOwnersTable extends Migration
     {
         Schema::create('owners', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('last_name');
-            $table->string('email');
-            $table->string('phone_number');
+            $table->string('name',64);
+            $table->string('email',12);
+            $table->string('phone_number',12);
             $table->string('password');
-            $table->string('confirm_password');
+            $table->string('password_confirm');
             $table->softDeletes();
             $table->timestamps();
         });
