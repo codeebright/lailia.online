@@ -24,11 +24,10 @@ class AttachmentController extends Controller
 
     public function index()
     {
-      //
-      // $file_details = HostelDetails::find();
-      // $files = Attachment::where('detail_id',$file_details->id);
-      // return view('front/khabgha_list')->were('files',$files);
-      // // return view('front/khabgha_list',compact('files'));
+
+      $file_details = HostelDetails::find();
+      $files = Attachment::where('detail_id',$file_details->id);
+      return view('front/khabgha_list',compact('files'));
     }
 
     public function store(Request $request)

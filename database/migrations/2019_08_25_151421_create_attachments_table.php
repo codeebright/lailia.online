@@ -14,12 +14,10 @@ class CreateAttachmentsTable extends Migration
     public function up()
     {
         Schema::create('attachments', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('url');
-            $table->string('type',12);
-            $table->unsignedInteger('record_id');
-            $table->string('section',24);
-            $table->unsignedInteger('user_id');
+            $table->bigIncrements('file_id');
+            $table->string('file_size');
+            $table->string('file_name');
+            $table->integer('detail_id')->default(1);
             $table->softDeletes();
             $table->timestamps();
         });
