@@ -47,6 +47,7 @@
 		<script src="{{asset('assets/demo/demo11/custom/crud/forms/widgets/form-repeater.js')}}" type="text/javascript"></script>
 		<script src="{{asset('assets/demo/demo11/custom/crud/forms/widgets/autosize.js')}}" type="text/javascript"></script>
 		<script src="{{asset('assets/demo/demo11/custom/crud/forms/widgets/select2.js')}}" type="text/javascript"></script>
+		<script src="{{asset('assets/demo/demo11/custom/components/base/sweetaler2.js')}}" type="text/javascript"></script>
 		<script src="{{asset('assets/demo/demo11/custom/crud/forms/widgets/bootstrap-select.js')}}" type="text/javascript"></script>
 		<script>
 		$(window).on('load', function() {
