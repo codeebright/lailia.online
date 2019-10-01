@@ -3,17 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e3e11abf-9ca9-40f0-84cd-e439eee8262f" name="Default Changelist" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets-/demo/demo11/custom/crud/metronic-datatable/base/data-ajax.js" afterPath="$PROJECT_DIR$/public/assets-/demo/demo11/custom/crud/metronic-datatable/base/data-ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/demo/demo11/custom/crud/forms/widgets/form-repeater.js" afterPath="$PROJECT_DIR$/public/assets/demo/demo11/custom/crud/forms/widgets/form-repeater.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/demo/demo11/custom/crud/forms/widgets/select2.js" afterPath="$PROJECT_DIR$/public/assets/demo/demo11/custom/crud/forms/widgets/select2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets-/demo/demo11/custom/components/base/sweetalert2.js" afterPath="$PROJECT_DIR$/public/assets-/demo/demo11/custom/components/base/sweetalert2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/demo/demo11/custom/components/base/sweetalert2.js" afterPath="$PROJECT_DIR$/public/assets/demo/demo11/custom/components/base/sweetalert2.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/cms/hostel/food_menu.blade.php" afterPath="$PROJECT_DIR$/resources/views/cms/hostel/food_menu.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/cms/hostel/test.blade.php" afterPath="$PROJECT_DIR$/resources/views/cms/hostel/test.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layout_front/partials/header.blade.php" afterPath="$PROJECT_DIR$/resources/views/layout_front/partials/header.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/master2.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/master2.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/cms/hostel/hostel_config.blade.php" afterPath="$PROJECT_DIR$/resources/views/cms/hostel/hostel_config.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/cms/hostel/hostel_index.blade.php" afterPath="$PROJECT_DIR$/resources/views/cms/hostel/hostel_index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/partials/_topbar-notifications.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/_topbar-notifications.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/partials/_topbar-user-profile.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/_topbar-user-profile.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,9 +36,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-              <folding>
-                <element signature="e#8#390#0#PHP" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,64 +44,44 @@
       <file leaf-file-name="hostel_index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/cms/hostel/hostel_index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="130" column="24" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="24" />
-              <folding />
+            <state vertical-scroll-proportion="-14.5">
+              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="36" selection-end-column="18" />
+              <folding>
+                <element signature="e#570#1511#0#HTML" expanded="false" />
+                <element signature="e#908#1492#0#HTML" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
+      <file leaf-file-name="room_config.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/cms/hostel/room_config.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.214286">
+              <caret line="6" column="39" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="39" />
+              <folding>
+                <element signature="e#7855#7935#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hostel_config.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/cms/hostel/hostel_config.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="8" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/demo/demo11/custom/crud/forms/widgets/select2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="71" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/cms/hostel/test.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0714285">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="222" selection-end-column="10" />
-              <folding>
-                <element signature="e#155#3565#0#HTML" expanded="false" />
-                <element signature="e#487#507#0#HTML" expanded="true" />
-                <element signature="e#956#976#0#HTML" expanded="true" />
-                <element signature="e#1422#1442#0#HTML" expanded="true" />
-                <element signature="e#1891#1911#0#HTML" expanded="true" />
-                <element signature="e#2362#2382#0#HTML" expanded="true" />
-                <element signature="e#2832#2852#0#HTML" expanded="true" />
-                <element signature="e#3298#3318#0#HTML" expanded="true" />
-                <element signature="e#3570#6752#0#HTML" expanded="false" />
-                <element signature="e#3816#3836#0#HTML" expanded="true" />
-                <element signature="e#4253#4273#0#HTML" expanded="true" />
-                <element signature="e#4690#4710#0#HTML" expanded="true" />
-                <element signature="e#5127#5147#0#HTML" expanded="true" />
-                <element signature="e#5564#5584#0#HTML" expanded="true" />
-                <element signature="e#6001#6021#0#HTML" expanded="true" />
-                <element signature="e#6438#6458#0#HTML" expanded="true" />
-                <element signature="e#6757#9931#0#HTML" expanded="false" />
-                <element signature="e#7002#7022#0#HTML" expanded="true" />
-                <element signature="e#7438#7458#0#HTML" expanded="true" />
-                <element signature="e#7874#7894#0#HTML" expanded="true" />
-                <element signature="e#8310#8330#0#HTML" expanded="true" />
-                <element signature="e#8746#8766#0#HTML" expanded="true" />
-                <element signature="e#9182#9202#0#HTML" expanded="true" />
-                <element signature="e#9618#9638#0#HTML" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.4213075">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,51 +89,8 @@
       <file leaf-file-name="food_menu.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/cms/hostel/food_menu.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9107144">
-              <caret line="241" column="30" selection-start-line="241" selection-start-column="30" selection-end-line="241" selection-end-column="30" />
-              <folding>
-                <element signature="e#909#929#0#HTML" expanded="true" />
-                <element signature="e#1444#1464#0#HTML" expanded="true" />
-                <element signature="e#1976#1996#0#HTML" expanded="true" />
-                <element signature="e#2511#2531#0#HTML" expanded="true" />
-                <element signature="e#3048#3068#0#HTML" expanded="true" />
-                <element signature="e#3584#3604#0#HTML" expanded="true" />
-                <element signature="e#4116#4136#0#HTML" expanded="true" />
-                <element signature="e#4704#4724#0#HTML" expanded="true" />
-                <element signature="e#5207#5227#0#HTML" expanded="true" />
-                <element signature="e#5710#5730#0#HTML" expanded="true" />
-                <element signature="e#6213#6233#0#HTML" expanded="true" />
-                <element signature="e#6716#6736#0#HTML" expanded="true" />
-                <element signature="e#7219#7239#0#HTML" expanded="true" />
-                <element signature="e#7722#7742#0#HTML" expanded="true" />
-                <element signature="e#8363#8383#0#HTML" expanded="true" />
-                <element signature="e#8865#8885#0#HTML" expanded="true" />
-                <element signature="e#9367#9387#0#HTML" expanded="true" />
-                <element signature="e#9869#9889#0#HTML" expanded="true" />
-                <element signature="e#10371#10391#0#HTML" expanded="true" />
-                <element signature="e#10873#10893#0#HTML" expanded="true" />
-                <element signature="e#11375#11395#0#HTML" expanded="true" />
-                <element signature="e#12257#12337#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hostel_config.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/cms/hostel/hostel_config.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.8159807">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="master2.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/master2.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
+              <caret line="243" column="211" selection-start-line="243" selection-start-column="211" selection-end-line="243" selection-end-column="211" />
               <folding />
             </state>
           </provider>
@@ -181,9 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_150042_create_photos_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_151421_create_attachments_table.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_25_152425_create_hostel_details_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_25_153133_create_rooms_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_25_155631_create_addresses_table.php" />
@@ -218,8 +145,6 @@
         <option value="$PROJECT_DIR$/resources/views/owner.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/OwnerController.php" />
         <option value="$PROJECT_DIR$/public/assets/demo/demo11/base/style.bundle.rtl.css" />
-        <option value="$PROJECT_DIR$/public/assets/demo/demo11/custom/components/base/sweetalert2.js" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/partials/_topbar-notifications.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/partials/_topbar-user-profile.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layout_front/partials/header.blade.php" />
@@ -227,11 +152,16 @@
         <option value="$PROJECT_DIR$/public/assets/js/column_rendering.js" />
         <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/master2.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/cms/hostel/hostel_index.blade.php" />
         <option value="$PROJECT_DIR$/public/assets/demo/demo11/custom/crud/forms/widgets/form-repeater.js" />
         <option value="$PROJECT_DIR$/public/assets/demo/demo11/custom/crud/forms/widgets/select2.js" />
         <option value="$PROJECT_DIR$/resources/views/cms/hostel/test.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/partials/_topbar-notifications.blade.php" />
+        <option value="$PROJECT_DIR$/public/assets/demo/demo11/custom/components/base/sweetalert2.js" />
+        <option value="$PROJECT_DIR$/public/assets-/demo/demo11/custom/components/base/sweetalert2.js" />
+        <option value="$PROJECT_DIR$/resources/views/cms/hostel/hostel_index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/cms/hostel/hostel_config.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/cms/hostel/food_menu.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/cms/hostel/room_config.blade.php" />
       </list>
     </option>
   </component>
@@ -389,36 +319,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches">
-        <subPane />
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Default Changelist">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -487,6 +387,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hostel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hostel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hostel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hostel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -511,6 +459,36 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Default Changelist">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -522,7 +500,7 @@
     <property name="last_opened_file_path" value="N:/themeforest-4021469-metronic-responsive-admin-dashboard-template/themeforest-4021469-metronic-responsive-admin-dashboard-template/metronic_v5.5.5/theme/default/dist/default" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="sel&#9;null&#9;null&#10;nowrap&#9;null&#9;null&#10;hostelCon&#9;null&#9;null&#10;data&#9;FILE&#9;file://C:/xampp/htdocs/Khabgah/config/database.php" />
+    <property name="SearchEverywhereHistoryKey" value="SweetAlert2Demo&#9;null&#9;null&#10;sw&#9;FILE&#9;file://C:/xampp/htdocs/hostel/public/assets/demo/demo11/custom/components/base/sweetalert2.js&#10;sel&#9;null&#9;null&#10;nowrap&#9;null&#9;null&#10;hostelCon&#9;null&#9;null&#10;data&#9;FILE&#9;file://C:/xampp/htdocs/Khabgah/config/database.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -609,26 +587,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,20 +628,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/StaticTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Owner.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -849,20 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/demo/demo11/custom/components/base/sweetalert2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/_topbar-notifications.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36948296">
-          <caret line="53" column="178" selection-start-line="53" selection-start-column="178" selection-end-line="53" selection-end-column="178" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OwnerController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5617433">
@@ -906,14 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master2.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/column_rendering.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -925,24 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-          <folding>
-            <element signature="e#8#390#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/cms/hostel/hostel_index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="130" column="24" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -976,74 +900,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/cms/hostel/test.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/assets/demo/demo11/custom/components/base/sweetalert2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0714285">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="222" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="152" column="14" selection-start-line="152" selection-start-column="14" selection-end-line="152" selection-end-column="14" />
           <folding>
-            <element signature="e#155#3565#0#HTML" expanded="false" />
-            <element signature="e#487#507#0#HTML" expanded="true" />
-            <element signature="e#956#976#0#HTML" expanded="true" />
-            <element signature="e#1422#1442#0#HTML" expanded="true" />
-            <element signature="e#1891#1911#0#HTML" expanded="true" />
-            <element signature="e#2362#2382#0#HTML" expanded="true" />
-            <element signature="e#2832#2852#0#HTML" expanded="true" />
-            <element signature="e#3298#3318#0#HTML" expanded="true" />
-            <element signature="e#3570#6752#0#HTML" expanded="false" />
-            <element signature="e#3816#3836#0#HTML" expanded="true" />
-            <element signature="e#4253#4273#0#HTML" expanded="true" />
-            <element signature="e#4690#4710#0#HTML" expanded="true" />
-            <element signature="e#5127#5147#0#HTML" expanded="true" />
-            <element signature="e#5564#5584#0#HTML" expanded="true" />
-            <element signature="e#6001#6021#0#HTML" expanded="true" />
-            <element signature="e#6438#6458#0#HTML" expanded="true" />
-            <element signature="e#6757#9931#0#HTML" expanded="false" />
-            <element signature="e#7002#7022#0#HTML" expanded="true" />
-            <element signature="e#7438#7458#0#HTML" expanded="true" />
-            <element signature="e#7874#7894#0#HTML" expanded="true" />
-            <element signature="e#8310#8330#0#HTML" expanded="true" />
-            <element signature="e#8746#8766#0#HTML" expanded="true" />
-            <element signature="e#9182#9202#0#HTML" expanded="true" />
-            <element signature="e#9618#9638#0#HTML" expanded="true" />
+            <element signature="e#2981#3298#0" expanded="false" />
+            <element signature="e#3591#3908#0" expanded="false" />
+            <element signature="e#4201#4518#0" expanded="false" />
+            <element signature="e#4811#5128#0" expanded="false" />
+            <element signature="e#5421#5738#0" expanded="false" />
+            <element signature="e#6127#6444#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets-/demo/demo11/custom/components/base/sweetalert2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="95" column="3" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/_topbar-notifications.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29782084">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master2.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4733656">
+          <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/cms/hostel/food_menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9107144">
-          <caret line="241" column="30" selection-start-line="241" selection-start-column="30" selection-end-line="241" selection-end-column="30" />
-          <folding>
-            <element signature="e#909#929#0#HTML" expanded="true" />
-            <element signature="e#1444#1464#0#HTML" expanded="true" />
-            <element signature="e#1976#1996#0#HTML" expanded="true" />
-            <element signature="e#2511#2531#0#HTML" expanded="true" />
-            <element signature="e#3048#3068#0#HTML" expanded="true" />
-            <element signature="e#3584#3604#0#HTML" expanded="true" />
-            <element signature="e#4116#4136#0#HTML" expanded="true" />
-            <element signature="e#4704#4724#0#HTML" expanded="true" />
-            <element signature="e#5207#5227#0#HTML" expanded="true" />
-            <element signature="e#5710#5730#0#HTML" expanded="true" />
-            <element signature="e#6213#6233#0#HTML" expanded="true" />
-            <element signature="e#6716#6736#0#HTML" expanded="true" />
-            <element signature="e#7219#7239#0#HTML" expanded="true" />
-            <element signature="e#7722#7742#0#HTML" expanded="true" />
-            <element signature="e#8363#8383#0#HTML" expanded="true" />
-            <element signature="e#8865#8885#0#HTML" expanded="true" />
-            <element signature="e#9367#9387#0#HTML" expanded="true" />
-            <element signature="e#9869#9889#0#HTML" expanded="true" />
-            <element signature="e#10371#10391#0#HTML" expanded="true" />
-            <element signature="e#10873#10893#0#HTML" expanded="true" />
-            <element signature="e#11375#11395#0#HTML" expanded="true" />
-            <element signature="e#12257#12337#0#HTML" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="243" column="211" selection-start-line="243" selection-start-column="211" selection-end-line="243" selection-end-column="211" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/cms/hostel/hostel_config.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8159807">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/cms/hostel/room_config.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.214286">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="39" />
+          <folding>
+            <element signature="e#7855#7935#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/cms/hostel/hostel_index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.5">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="36" selection-end-column="18" />
+          <folding>
+            <element signature="e#570#1511#0#HTML" expanded="false" />
+            <element signature="e#908#1492#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/cms/hostel/test.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4213075">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
           <folding />
         </state>
       </provider>

@@ -70,7 +70,74 @@ var SweetAlert2Demo = {
             }).then(function (e) {
                 e.value ? swal("اذافه شد", "موفقانه به اعضای اتاق اذافه شد.", "success") : "cancel" === e.dismiss && swal("به تعویق افتاد", "درخواست به تعویق افتاد:)", "error")
             })
-        }), $("#m_sweetalert_demo_10").click(function (e) {
+
+        }), $("#m_sweetalert_demo_9_1").click(function (e) {
+            swal({
+                title: "درخواست اتاق نمبر ۵",
+                text: "مخواهید به کرا بدهید",
+                type: "question",
+                showCancelButton: !0,
+                confirmButtonText: "اذافه به اعضای اتاق",
+                cancelButtonText: "نه تشکر",
+                reverseButtons: !0
+            }).then(function (e) {
+                e.value ? swal("اذافه شد", "موفقانه به اعضای اتاق اذافه شد.", "success") : "cancel" === e.dismiss && swal("به تعویق افتاد", "درخواست به تعویق افتاد:)", "error")
+            })
+
+        }), $("#m_sweetalert_demo_9_2").click(function (e) {
+            swal({
+                title: "درخواست اتاق نمبر ۵",
+                text: "مخواهید به کرا بدهید",
+                type: "question",
+                showCancelButton: !0,
+                confirmButtonText: "اذافه به اعضای اتاق",
+                cancelButtonText: "نه تشکر",
+                reverseButtons: !0
+            }).then(function (e) {
+                e.value ? swal("اذافه شد", "موفقانه به اعضای اتاق اذافه شد.", "success") : "cancel" === e.dismiss && swal("به تعویق افتاد", "درخواست به تعویق افتاد:)", "error")
+            })
+
+        }), $("#m_sweetalert_demo_9_3").click(function (e) {
+            swal({
+                title: "درخواست اتاق نمبر ۵",
+                text: "مخواهید به کرا بدهید",
+                type: "question",
+                showCancelButton: !0,
+                confirmButtonText: "اذافه به اعضای اتاق",
+                cancelButtonText: "نه تشکر",
+                reverseButtons: !0
+            }).then(function (e) {
+                e.value ? swal("اذافه شد", "موفقانه به اعضای اتاق اذافه شد.", "success") : "cancel" === e.dismiss && swal("به تعویق افتاد", "درخواست به تعویق افتاد:)", "error")
+            })
+
+        }), $("#m_sweetalert_demo_9_4").click(function (e) {
+            swal({
+                title: "درخواست اتاق نمبر ۵",
+                text: "مخواهید به کرا بدهید",
+                type: "question",
+                showCancelButton: !0,
+                confirmButtonText: "اذافه به اعضای اتاق",
+                cancelButtonText: "نه تشکر",
+                reverseButtons: !0
+            }).then(function (e) {
+                e.value ? swal("اذافه شد", "موفقانه به اعضای اتاق اذافه شد.", "success") : "cancel" === e.dismiss && swal("به تعویق افتاد", "درخواست به تعویق افتاد:)", "error")
+            })
+
+        }), $("#m_sweetalert_demo_9, #m_sweetalert_demo_9_1 ,#m_sweetalert_demo_9_2  #m_sweetalert_demo_9_3 , #m_sweetalert_demo_9_4 ").click(function (e) {
+            swal({
+                title: "درخواست اتاق نمبر ۵",
+                text: "مخواهید به کرا بدهید",
+                type: "question",
+                showCancelButton: !0,
+                confirmButtonText: "اذافه به اعضای اتاق",
+                cancelButtonText: "نه تشکر",
+                reverseButtons: !0
+            }).then(function (e) {
+                e.value ? swal("اذافه شد", "موفقانه به اعضای اتاق اذافه شد.", "success") : "cancel" === e.dismiss && swal("به تعویق افتاد", "درخواست به تعویق افتاد:)", "error")
+            })
+
+        }),
+            $("#m_sweetalert_demo_10").click(function (e) {
             swal({
                 title: "Sweet!",
                 text: "Modal with a custom image.",
