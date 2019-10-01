@@ -55,7 +55,7 @@ Route::get('/form',function(){
   return view('front/form');
 });
 Route::post('/form', 'AttachmentController@save');
-Route::get('/','HomeController@index')->name('front.home'); 
+Route::get('/','HomeController@index')->name('front.home');
 Route::get('/home','HomeController@index');
 
 
@@ -73,7 +73,7 @@ Route::post('register', 'OwnerController@store')->name('registration.store');
 
 // khabgah_detailes/khabgah_pages route
 
-Route::get('hostels/list','HostelController@listHostel')->name('hostels.list'); 
+Route::get('hostels/list','HostelController@listHostel')->name('hostels.list');
 Route::get('/khabgah_details/{hostel_id}','HostelDetailsController@index')->name('khabgah_detailes.goToDetails');
 
 
