@@ -1,6 +1,6 @@
     <section class="container-fluid header p-0">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brandd ml-5" href="#"><span class="logo fa fa-home"></span></a>
+            <a class="navbar-brandd ml-5" href="{{route('front.home')}}"><span class="logo fa fa-home"></span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -9,11 +9,11 @@
             <div class="collapse navbar-collapse custom-ml mr-5" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link hvr-underline-from-center" href="#">خانه<span
+                    <a class="nav-link hvr-underline-from-center" href="{{route('front.home')}}">خانه<span
                                     class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-center" href="{{route('hostel.list')}}">خابگاه</a>
+                        <a class="nav-link hvr-underline-from-center" href="{{route('hostels.list')}}">خابگاه</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">

@@ -4,7 +4,7 @@
 <meta name="author" content="">
 <title>Album example for Bootstrap</title>
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="{{asset('bootstraprtl/css/bootstrap.css')}}">
+<link rel="stylesheet" href="{{asset('bootstraprtl/css/bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{asset('bootstraprtl/css/hover.css')}}">
 <link rel="stylesheet" href="{{asset('bootstraprtl/css/fonts.css')}}">
 <!-- Custom styles for this template -->
