@@ -98,7 +98,9 @@
 		<script src="{{asset('assets/demo/demo11/custom/crud/forms/widgets/bootstrap-select.js')}}" type="text/javascript"></script>
 		<script src="{{asset('assets/demo/demo11/custom/crud/datatables/advanced/column-rendering.js')}}" type="text/javascript"></script>
 		<script src="{{asset('assets/demo/demo11/custom/components/base/sweetalert2.js')}}" type="text/javascript"></script>
-		<script>
+		<script src="{{asset('assets/demo/js/column_rendering.js')}}" type="text/javascript"></script>
+
+	<script>
 		$(window).on('load', function() {
 			$('body').removeClass('m-page--loading');
 		});

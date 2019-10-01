@@ -1,92 +1,225 @@
-@extends('layouts.master2')
+@extends('layouts.master')
 @section('title','صفحه اصلی')
-@section('content2')
-    <button href="" id="m_sweetalert_demo_9">click</button>
-        <!-- END: Subheader -->
-{{--<div class="m-portlet">
-    <div class="m-portlet__head">
-        <div class="m-portlet__head-caption">
-            <div class="m-portlet__head-title">
-                <h3 class="m-portlet__head-text">
-                    SweetAlert Examples
-                </h3>
-            </div>
+@section('content')
+    <form action="" class="m-form m-form--fit m-form--label-align-right">
+    <div class="form-group m-form__group row">
+        <label class="col-form-label col-lg-2 col-sm-12 mt-2">صبح هنگام</label>
+        <div class="form-group1 m-form__group pr-1 ">
+            <label for="exampleInputEmail1 " class="mb-2 pl-2">شنبه</label>
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">صبح</option>
+                <option value="1">تخم با جای</option>
+                <option value="2">پنیر</option>
+                <option value="3">شیر</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <label for="exampleInputEmail1 " class="mb-2 pl-2">یک شبنه</label>
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected=""></option>
+                <option value="1">تخم با جای</option>
+                <option value="2">پنیر</option>
+                <option value="3">شیر</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <label for="exampleInputEmail1 " class="mb-2 pl-2">دو شبنه</label>
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">صبح</option>
+                <option value="1">تخم با جای</option>
+                <option value="2">پنیر</option>
+                <option value="3">شیر</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <label for="exampleInputEmail1 " class="mb-2 pl-2">سه شنبه</label>
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">صبح</option>
+                <option value="1">تخم با جای</option>
+                <option value="2">پنیر</option>
+                <option value="3">شیر</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <label for="exampleInputEmail1 " class="mb-2 pl-2">چهار شنبه</label>
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">صبح</option>
+                <option value="1">تخم با جای</option>
+                <option value="2">پنیر</option>
+                <option value="3">شیر</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <label for="exampleInputEmail1 " class="mb-2 pl-2">پنج شنبه</label>
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">صبح</option>
+                <option value="1">تخم با جای</option>
+                <option value="2">پنیر</option>
+                <option value="3">شیر</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <label for="exampleInputEmail1 " class="mb-2 pl-2">جمعه</label>
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">صبح</option>
+                <option value="1">تخم با جای</option>
+                <option value="2">پنیر</option>
+                <option value="3">شیر</option>
+            </select>
         </div>
     </div>
-    <div class="m-portlet__body">
-        <table class="table table-bordered">
-            <tr>
-                <td style="width: 40%; vertical-align: middle;">Basic alert</td>
-                <td>
-                    <button type="button" class="btn btn-info m-btn m-btn--custom" id="m_sweetalert_demo_1"> Show me</button>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 40%; vertical-align: middle;">Alert title and text</td>
-                <td>
-                    <button type="button" class="btn btn-focus m-btn m-btn--custom" id="m_sweetalert_demo_2"> Show me</button>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 40%; vertical-align: middle;">Enable <code>warning</code>, <code>error</code>, <code>success</code>, <code>info</code> and <code>question</code> state icons</td>
-                <td>
-                    <button type="button" class="btn btn-warning m-btn m-btn--custom" id="m_sweetalert_demo_3_1"> Warning</button>
-                    <button type="button" class="btn btn-danger m-btn m-btn--custom" id="m_sweetalert_demo_3_2"> Error</button>
-                    <button type="button" class="btn btn-success m-btn m-btn--custom" id="m_sweetalert_demo_3_3"> Success</button>
-                    <button type="button" class="btn btn-info m-btn m-btn--custom" id="m_sweetalert_demo_3_4"> Info</button>
-                    <button type="button" class="btn btn-metal m-btn m-btn--custom" id="m_sweetalert_demo_3_5"> Question</button>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 40%; vertical-align: middle;">Change confirm button text and class</td>
-                <td>
-                    <button type="button" class="btn btn-success m-btn m-btn--custom" id="m_sweetalert_demo_4"> Show me</button>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 40%; vertical-align: middle;">Custom button with icon</td>
-                <td>
-                    <button type="button" class="btn btn-danger m-btn m-btn--custom" id="m_sweetalert_demo_5"> Show me</button>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 40%; vertical-align: middle;">A custom positioned dialog with timer to auto close</td>
-                <td>
-                    <button type="button" class="btn btn-success m-btn m-btn--custom" id="m_sweetalert_demo_6"> Show me</button>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 40%; vertical-align: middle;">jQuery HTML with custom animate.css animation </td>
-                <td>
-                    <button type="button" class="btn btn-focus m-btn m-btn--custom" id="m_sweetalert_demo_7"> Show me</button>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 40%; vertical-align: middle;">A warning message, with a function attached to the confirm button</td>
-                <td>
-                    <button type="button" class="btn btn-info m-btn m-btn--custom" id="m_sweetalert_demo_8"> Show me</button>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 40%; vertical-align: middle;">By passing a parameter, you can execute something else for cancel</td>
-                <td>
-                    <button type="button" class="btn btn-danger m-btn m-btn--custom" id="m_sweetalert_demo_9"> Show me</button>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 40%; vertical-align: middle;">A message with a custom image and CSS animation disabled</td>
-                <td>
-                    <button type="button" class="btn btn-warning m-btn m-btn--custom" id="m_sweetalert_demo_10"> Show me</button>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 40%; vertical-align: middle;">A message with auto close timer</td>
-                <td>
-                    <button type="button" class="btn btn-metal m-btn m-btn--custom" id="m_sweetalert_demo_11"> Show me</button>
-                </td>
-            </tr>
-        </table>
+    <div class="form-group m-form__group row">
+        <label class="col-form-label col-lg-2 col-sm-12">چاشت</label>
+        <div class="form-group1 m-form__group pr-1 ">
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">چاشت</option>
+                <option value="1">قابلی</option>
+                <option value="2">کباب</option>
+                <option value="3">شورمه</option>
+                <option value="3">قورمه</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">چاشت</option>
+                <option value="1">قابلی</option>
+                <option value="2">کباب</option>
+                <option value="3">شورمه</option>
+                <option value="3">قورمه</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">چاشت</option>
+                <option value="1">قابلی</option>
+                <option value="2">کباب</option>
+                <option value="3">شورمه</option>
+                <option value="3">قورمه</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">چاشت</option>
+                <option value="1">قابلی</option>
+                <option value="2">کباب</option>
+                <option value="3">شورمه</option>
+                <option value="3">قورمه</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">چاشت</option>
+                <option value="1">قابلی</option>
+                <option value="2">کباب</option>
+                <option value="3">شورمه</option>
+                <option value="3">قورمه</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">چاشت</option>
+                <option value="1">قابلی</option>
+                <option value="2">کباب</option>
+                <option value="3">شورمه</option>
+                <option value="3">قورمه</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">چاشت</option>
+                <option value="1">قابلی</option>
+                <option value="2">کباب</option>
+                <option value="3">شورمه</option>
+                <option value="3">قورمه</option>
+            </select>
+        </div>
     </div>
-</div>--}}
-
+    <div class="form-group m-form__group row">
+        <label class="col-form-label col-lg-2 col-sm-12">شام</label>
+        <div class="form-group1 m-form__group pr-1 ">
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">شام</option>
+                <option value="1">قابلی</option>
+                <option value="2">کباب</option>
+                <option value="3">شورمه</option>
+                <option value="3">قورمه</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">شام</option>
+                <option value="1">قابلی</option>
+                <option value="2">کباب</option>
+                <option value="3">شورمه</option>
+                <option value="3">قورمه</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">شام</option>
+                <option value="1">قابلی</option>
+                <option value="2">کباب</option>
+                <option value="3">شورمه</option>
+                <option value="3">قورمه</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">شام</option>
+                <option value="1">قابلی</option>
+                <option value="2">کباب</option>
+                <option value="3">شورمه</option>
+                <option value="3">قورمه</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">شام</option>
+                <option value="1">قابلی</option>
+                <option value="2">کباب</option>
+                <option value="3">شورمه</option>
+                <option value="3">قورمه</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">شام</option>
+                <option value="1">قابلی</option>
+                <option value="2">کباب</option>
+                <option value="3">شورمه</option>
+                <option value="3">قورمه</option>
+            </select>
+        </div>
+        <div class="form-group1 m-form__group pr-1 ">
+            <div></div>
+            <select class="custom-select form-control" style="width: 100px">
+                <option selected="">شام</option>
+                <option value="1">قابلی</option>
+                <option value="2">کباب</option>
+                <option value="3">شورمه</option>
+                <option value="3">قورمه</option>
+            </select>
+        </div>
+    </div>
+    </form>
 @endsection

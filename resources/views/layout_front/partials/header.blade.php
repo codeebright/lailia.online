@@ -121,9 +121,9 @@
                                                     <div class="col-md-8 offset-md-2">
                                                         <div class="row d-flex justify-content-center mt-4">
                                                             <div class="col-md-6 d-flex justify-content-center">
-                                                                <button type="button" onclick="login('{{ route('hostel.index') }}','login_form','error_div')"
+                                                                <button type="button"  onclick="login('{{ route('hostel.index') }}','login_form','error_div')"
                                                                         class="btn btn-lg btn-outline-dark">{{ __('ورود') }}
-                                                                    <span class="fa fa-angle-left ml-5"></span></button>
+                                                                    <span  class="fa fa-angle-left ml-5"></span></button>
                                                             </div>
                                                         </div>
 

@@ -55,7 +55,7 @@ Route::get('/form',function(){
   return view('front/form');
 });
 Route::post('/form', 'AttachmentController@save');
-Route::get('/home','HomeController@index');
+Route::get('/home','HomeController@index')->name('home.index');
 
 // Login User Route
 Route::get('login/user','OwnerController@login')->name('registration.create');
