@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Owner;
 use Illuminate\Http\Request;
-use App\Http\Requests\LoginRequest; 
+use App\Http\Requests\LoginRequest;
 
 class OwnerController extends Controller
 {
@@ -15,9 +15,7 @@ class OwnerController extends Controller
      */
     public function index()
     {
-        //  //passing the  adminPanels page info to the view
-        //  $owner = Owner::all();
-        //   $owner = DB::table('owners')->find(1);
+      
         $owner = DB::select('select * from owners WHERE id = "1" ');
         return view('owner',compact('owner'));
 

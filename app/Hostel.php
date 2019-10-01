@@ -12,6 +12,12 @@ class Hostel extends Model
       return $this->hasOne(HostelDetails::Class);
     }
 
+    //has many rooms
+    public function rooms()
+    {
+        return $this->hasMany(Room::class);
+    }
+
     // hostel has one address
     public function addresses()
     {

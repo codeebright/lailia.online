@@ -47,7 +47,7 @@
           @foreach($hostel->hostelDetails->attachments as $photo)
             <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4 small-device-hid ">
                 <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                    <img  src="/images/{{ $photo->file_name }}" class="card-img-top card-img custom-card-img-height" alt="">
+                    <img  src="/assets-/app/media/img/blog/hostels-img/{{ $photo->file_name }}" class="card-img-top card-img custom-card-img-height" alt="">
                     <div class="car-body">
                         <div class="card-footer">
                             <div class="custom-circle"><p class="custom-circle-text card-text"><b>

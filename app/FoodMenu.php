@@ -16,4 +16,10 @@ class FoodMenu extends Model
     {
         return $this->hasMany(FoodCategory::class);
     }
+
+    // has static table
+    public function staticTables()
+    {
+        return $this->hasOne(StaticTable::class);
+    }
 }

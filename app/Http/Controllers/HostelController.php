@@ -35,7 +35,6 @@ class HostelController extends Controller
      */
     public function store(Request $request)
     {
-        //
 
         $hostel = new Hostel;
         $hostel->name = $request->name;
@@ -43,7 +42,6 @@ class HostelController extends Controller
         $hostel->type = $request->type;
 
         $hostel->save();
-
 
         $hostel_details = new HostelDetails();
         $hostel_details->hostel_id = $hostel->id;
@@ -62,34 +60,17 @@ class HostelController extends Controller
         $address->station = $request->station;
         $address->save();
 
-
-        /*  if(count($request->facilities)>0)
-          {
-              $facility = new Facility();
-              $facility_input = $request->facilities;
-              $details        = $request->descriptions;
-              for($i=0; $i<count($request->facilities); $i++)
-              {
-                  $facility->name = $facility_input[$i];
-                  $facility->details = $details[$i];
-                  $facility->hostel_id = $hostel->id;
-                  $facility->save();
-              }
-          }*/
-
-
         return back()->with('success','Data is stored successfully');
 
 
     }
-
     /**
      * Display the specified resource.
      *
      * @param  \App\hostels  $hostels
      * @return \Illuminate\Http\Response
      */
-    public function show(hostels $hostels)
+    public function show()
     {
         //
     }
@@ -100,7 +81,7 @@ class HostelController extends Controller
      * @param  \App\hostels  $hostels
      * @return \Illuminate\Http\Response
      */
-    public function edit(hostels $hostels)
+    public function edit()
     {
         //
     }
@@ -112,7 +93,7 @@ class HostelController extends Controller
      * @param  \App\hostels  $hostels
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, hostels $hostels)
+    public function update(Request $request)
     {
         //
     }
@@ -123,7 +104,7 @@ class HostelController extends Controller
      * @param  \App\hostels  $hostels
      * @return \Illuminate\Http\Response
      */
-    public function destroy(hostels $hostels)
+    public function destroy()
     {
         //
     }

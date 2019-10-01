@@ -15,7 +15,7 @@ class AttachmentController extends Controller
        $new_file = new Attachment;
        if(Input::hasFile('image')){
          $file = Input::file('image');
-         $file->move(public_path('images').'/',$file->getClientOriginalName());
+         $file->move(public_path('/assets-/app/media/img/blog/hostels-img').'/',$file->getClientOriginalName());
          $new_file->file_name = $file->getClientOriginalName();
          $new_file->save();
          return back();
@@ -24,11 +24,10 @@ class AttachmentController extends Controller
 
     public function index()
     {
-      //
-      // $file_details = HostelDetails::find();
-      // $files = Attachment::where('detail_id',$file_details->id);
-      // return view('front/khabgha_list')->were('files',$files);
-      // // return view('front/khabgha_list',compact('files'));
+
+      $file_details = HostelDetails::find();
+      $files = Attachment::where('detail_id',$file_details->id);
+      return view('front/khabgha_list',compact('files'));
     }
 
     public function store(Request $request)

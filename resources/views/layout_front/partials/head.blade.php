@@ -4,7 +4,7 @@
 <meta name="author" content="">
 <title>Album example for Bootstrap</title>
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="{{asset('bootstraprtl/css/bootstrap.css')}}">
+<link rel="stylesheet" href="{{asset('bootstraprtl/css/bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{asset('bootstraprtl/css/hover.css')}}">
 <link rel="stylesheet" href="{{asset('bootstraprtl/css/fonts.css')}}">
 <!-- Custom styles for this template -->
@@ -30,7 +30,7 @@
     .small-right-card {
         position: absolute;
         right: 4rem;
-        top: 24rem;
+        top: 8rem;
         margin: 20px;
         width: 270px;
         height: 330px;
@@ -38,6 +38,9 @@
         background-color: white;
         box-shadow: 1px 1px 46px 5px #000000;
         opacity: 0.7;
+    }
+    .small-right-card:hover{
+        opacity: 0.9;
     }
     div.dis{
         position: absolute;
@@ -56,7 +59,7 @@
     /*end*/
 
     .hostel{
-        background-image: url("/photo/modern.jpg");
+        background-image: url("/assets-/app/media/img/bg/dbg-img/modern.jpg");
         box-sizing: border-box;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -78,12 +81,11 @@
         .small-right-card {
             position: absolute;
             right: 2rem;
-            top: 24rem;
+            top: 8rem;
             margin: 20px;
             width: 270px;
             height: 330px;
             padding: 16px;
-            background-color: blue;
             box-shadow: 1px 1px 46px 5px #000000;
             opacity: 0.7;
         }
@@ -93,12 +95,11 @@
         .small-right-card {
             position: absolute;
             right: 8rem;
-            top: 15rem;
+            top: 8rem;
             margin: 20px;
             width: 270px;
             height: 330px;
             padding: 16px;
-            background-color: green;
             box-shadow: 1px 1px 46px 5px #000000;
             opacity: 0.7;
         }
@@ -109,12 +110,11 @@
         .small-right-card {
             position: absolute;
             right: 6rem;
-            top: 18rem;
+            top: 8rem;
             margin: 20px;
             width: 270px;
             height: 330px;
             padding: 16px;
-            background-color: red;
             box-shadow: 1px 1px 46px 5px #000000;
             opacity: 0.7;
         }

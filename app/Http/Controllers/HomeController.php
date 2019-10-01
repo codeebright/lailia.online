@@ -27,15 +27,16 @@ class HomeController extends Controller
     }
 
 
-// home search function by address
-public function homeSearch()
-{
-  $q = Input::get('q');
-  $type = Hostel::where('name','LIKE','%{$q}%')->get();
-  dd($type);
-  if(!empty($type)){
-    return view('front/myHome')->withDetails($address)->withQuery($q);
-  }
-      else return back()->withMessage('آدرس مورد نظر پیدا نشد ');
-}
+    // home search function by address
+    public function homeSearch()
+    {
+      $q = Input::get('q');
+      $type = Hostel::where('name','LIKE','%{$q}%')->get();
+      dd($type);
+      if(!empty($type))
+      {
+        return view('front/myHome')->withDetails($address)->withQuery($q);
+      }
+          else return back()->withMessage('آدرس مورد نظر پیدا نشد ');
+    }
 }
