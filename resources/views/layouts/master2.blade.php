@@ -53,7 +53,7 @@
 			<div class="m-grid__item m-grid__item--fluid m-wrapper">
 				@include('layouts.partials._subheader-default')
 						<!--[html-partial:include:{"file":"partials\/_subheader-default.html"}]/-->
-@yield('content2')
+                  @yield('content2')
 			</div>
 		</div>
 		<!-- end:: Body -->
@@ -97,7 +97,10 @@
 		<script src="{{asset('assets/demo/demo11/custom/crud/forms/widgets/select2.js')}}" type="text/javascript"></script>
 		<script src="{{asset('assets/demo/demo11/custom/crud/forms/widgets/bootstrap-select.js')}}" type="text/javascript"></script>
 		<script src="{{asset('assets/demo/demo11/custom/crud/datatables/advanced/column-rendering.js')}}" type="text/javascript"></script>
-		<script>
+		<script src="{{asset('assets/demo/demo11/custom/components/base/sweetalert2.js')}}" type="text/javascript"></script>
+		<script src="{{asset('assets/demo/js/column_rendering.js')}}" type="text/javascript"></script>
+
+	<script>
 		$(window).on('load', function() {
 			$('body').removeClass('m-page--loading');
 		});
