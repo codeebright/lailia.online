@@ -53,7 +53,7 @@
 			<div class="m-grid__item m-grid__item--fluid m-wrapper">
 				@include('layouts.partials._subheader-default')
 						<!--[html-partial:include:{"file":"partials\/_subheader-default.html"}]/-->
-@yield('content2')
+                  @yield('content2')
 			</div>
 		</div>
 		<!-- end:: Body -->

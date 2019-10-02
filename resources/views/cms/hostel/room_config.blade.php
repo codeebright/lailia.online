@@ -112,10 +112,7 @@
                                     </div>
                                     <div class="col-md-2">
                                         <div data-repeater-delete="" class="btn-sm btn btn-danger m-btn m-btn--icon m-btn--pill">
-																<span>
-																	<i class="la la-trash-o"></i>
-																	<span> حذف</span>
-																</span>
+
                                         </div>
                                     </div>
                                 </div>
@@ -126,10 +123,7 @@
                             <div class="col-lg-4">
                                 <div class="col ml-3">
                                     <div data-repeater-create="" class="btn btn btn-primary m-btn m-btn--icon ">
-																<span>
-																	<i class="la la-plus"></i>
-																	<span>علاوه</span>
-																</span>
+
                                     </div>
                                 </div>
                             </div>
