@@ -62,7 +62,16 @@ Route::post('login', 'OwnerController@login')->name('post_login');
 Route::post('register', 'OwnerController@store')->name('registration.store');
 
 // khabgah_detailes/khabgah_pages route
+<<<<<<< HEAD
 Route::get('/hostel/list','hostelController@listHostel')->name('hostel.list');
+=======
+<<<<<<< HEAD
+Route::get('/hostel/list','HostelController@listHostel')->name('hostel.list');
+=======
+
+Route::get('hostels/list','HostelController@listHostel')->name('hostels.list');
+>>>>>>> 293dd21f43e26570766c48d68833e22126ee89b5
+>>>>>>> af2eb0416033feccbe21b4c3fd14d1746aa4a2a1
 Route::get('/khabgah_details/{hostel_id}','HostelDetailsController@index')->name('khabgah_detailes.goToDetails');
 
 // Room Filtering

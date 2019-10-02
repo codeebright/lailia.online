@@ -75,7 +75,7 @@
 
                 <div class="card card-shadow c-radius">
                     <div id="aks">
-                        <img id="image1" src="photo/download.jpg" alt="" style="width: 100%; height: 280px;">
+                        <img id="image1" src="photo/modern.jpg" alt="" style="width: 100%; height: 280px;">
                         <img id="image2" src="photo/benze.jpg" alt="" style="width: 100%; height: 280px;">
                         <img id="image3" src="photo/food.jpg" alt="" style="width: 100%; height: 280px;">
                         <img id="image4" src="photo/afg.png" alt="" style="width: 100%; height: 280px;">
@@ -128,7 +128,7 @@
                             </div>
                         </div>
                         <div class="d-flex justify-content-center mt-5">
-                          
+
                             <button class="btn btn-outline-dark pl-3 pr-3 pt-2 pb-2">اتاق را پسندیدم</button>
                         </div>
                     </div>  <!-- End-card-body-->
@@ -273,7 +273,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-5 thumb">
-                                    <img src="food-5.jpg" class="img-thumbnail rounded-circle" alt="Cinque Terre"
+                                    <img src="photo/food-5.jpg" class="img-thumbnail rounded-circle" alt="Cinque Terre"
                                          style="height: 85px; width: 85px;">
                                 </div>
                                 <div class="col-md-7 menu-content">
@@ -289,7 +289,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-5 thumb">
-                                    <img src="food-5.jpg" class="img-thumbnail rounded-circle" alt="Cinque Terre"
+                                    <img src="photo/food-5.jpg" class="img-thumbnail rounded-circle" alt="Cinque Terre"
                                          style="height: 85px; width: 85px;">
                                 </div>
                                 <div class="col-md-7 menu-content">
@@ -305,7 +305,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-5 thumb">
-                                    <img src="food-5.jpg" class="img-thumbnail rounded-circle" alt="Cinque Terre"
+                                    <img src="photo/food-5.jpg" class="img-thumbnail rounded-circle" alt="Cinque Terre"
                                          style="height: 85px; width: 85px;">
                                 </div>
                                 <div class="col-md-7 menu-content">
