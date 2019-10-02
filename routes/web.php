@@ -48,7 +48,9 @@ Route::get('/form',function(){
   return view('front/form');
 });
 Route::post('/form', 'AttachmentController@save');
+Route::get('/','HomeController@index')->name('front.home');
 Route::get('/home','HomeController@index');
+
 
 // Login User Route
 Route::get('login/user','OwnerController@login')->name('registration.create');
@@ -60,7 +62,12 @@ Route::post('login', 'OwnerController@login')->name('post_login');
 Route::post('register', 'OwnerController@store')->name('registration.store');
 
 // khabgah_detailes/khabgah_pages route
+<<<<<<< HEAD
 Route::get('/hostel/list','HostelController@listHostel')->name('hostel.list');
+=======
+
+Route::get('hostels/list','HostelController@listHostel')->name('hostels.list');
+>>>>>>> 293dd21f43e26570766c48d68833e22126ee89b5
 Route::get('/khabgah_details/{hostel_id}','HostelDetailsController@index')->name('khabgah_detailes.goToDetails');
 
 // Room Filtering

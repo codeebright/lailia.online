@@ -1,6 +1,10 @@
     <section class="container-fluid header p-0">
         <nav class="navbar navbar-expand-lg navbar-light">
+<<<<<<< HEAD
             <a class="navbar-brandd ml-5" href="#"><span class="logo fa fa-home"></span></a>
+=======
+            <a class="navbar-brandd ml-5" href="{{route('front.home')}}"><span class="logo fa fa-home"></span></a>
+>>>>>>> 293dd21f43e26570766c48d68833e22126ee89b5
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -9,11 +13,19 @@
             <div class="collapse navbar-collapse custom-ml mr-5" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
+<<<<<<< HEAD
                         <a class="nav-link hvr-underline-from-center" href="#">خانه<span
                                     class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link hvr-underline-from-center" href="{{route('hostel.list')}}">خابگاه</a>
+=======
+                    <a class="nav-link hvr-underline-from-center" href="{{route('front.home')}}">خانه<span
+                                    class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hvr-underline-from-center" href="{{route('hostels.list')}}">خابگاه</a>
+>>>>>>> 293dd21f43e26570766c48d68833e22126ee89b5
                     </li>
                 </ul>
                 <ul class="navbar-nav">
@@ -121,9 +133,15 @@
                                                     <div class="col-md-8 offset-md-2">
                                                         <div class="row d-flex justify-content-center mt-4">
                                                             <div class="col-md-6 d-flex justify-content-center">
+<<<<<<< HEAD
                                                                 <button type="button" onclick="login('{{ route('hostel.index') }}','login_form','error_div')"
                                                                         class="btn btn-lg btn-outline-dark">{{ __('ورود') }}
                                                                     <span class="fa fa-angle-left ml-5"></span></button>
+=======
+                                                                <button type="button"  onclick="login('{{ route('hostel.index') }}','login_form','error_div')"
+                                                                        class="btn btn-lg btn-outline-dark">{{ __('ورود') }}
+                                                                    <span  class="fa fa-angle-left ml-5"></span></button>
+>>>>>>> 293dd21f43e26570766c48d68833e22126ee89b5
                                                             </div>
                                                         </div>
 
