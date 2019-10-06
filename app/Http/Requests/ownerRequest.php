@@ -30,6 +30,10 @@ class ownerRequest extends FormRequest
             'phone_number' => 'required',
             'email' => 'required|email',
             'password' => 'required|min:6|max:12',
+            'descrption' => 'required|number|max:12',
+            'phone' => 'required|number|max:12',
+            'type' => 'required',
+
         ];
     }
     

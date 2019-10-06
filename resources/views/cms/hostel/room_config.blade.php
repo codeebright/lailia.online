@@ -37,31 +37,31 @@
                         </div>
                         <div class="col-lg-4 m-form__group-sub">
                             <label class="form-control-label">مساحت:</label>
-                            <input class="form-control m-input" name="" placeholder="مساحت تقریبی اتاق را وارید کنید">
+                            <input class="form-control m-input" name="area" placeholder="مساحت تقریبی اتاق را وارید کنید">
                             </input>
                         </div>
 
                         <div class="col-lg-4 m-form__group-sub">
                             <label class="form-control-label"> گنجایش کلی:</label>
-                            <input type="text" class="form-control m-input" name="email" placeholder="اتاق چند نفر گنجایش دارد" value="">
+                            <input type="text" class="form-control m-input" name="capacity" placeholder="اتاق چند نفر گنجایش دارد" value="">
                         </div>
 
                     </div>
                     <div class="form-group m-form__group row">
                         <div class="col-lg-4 m-form__group-sub">
                             <label class="form-control-label">کنجایش فعلی:</label>
-                            <input class="form-control m-input" name="room_number" placeholder="فعلا چند نفر ضرورت دارد">
+                            <input class="form-control m-input" name="need" placeholder="فعلا چند نفر ضرورت دارد">
                             </input>
                         </div>
                         <div class="col-lg-4 m-form__group-sub">
                             <label class="form-control-label">کرای  اتاق:</label>
-                            <input class="form-control m-input" name="" placeholder="اگر اتاق کرای هست کرای فی ماه را وارید کیند">
+                            <input class="form-control m-input" name="room_rent" placeholder="اگر اتاق کرای هست کرای فی ماه را وارید کیند">
                             </input>
                         </div>
 
                         <div class="col-lg-4 m-form__group-sub">
                             <label class="form-control-label"> کرای فی نفر:</label>
-                            <input type="text" class="form-control m-input" name="email" placeholder="کرای فی نفر در هر ماه را وارید کنید" value="">
+                            <input type="text" class="form-control m-input" name="rent_per_person" placeholder="کرای فی نفر در هر ماه را وارید کنید" value="">
                         </div>
 
                     </div>
@@ -70,69 +70,40 @@
                     <div class="m-form__heading mt-3">
                         <h3 class="m-form__heading-title"> <i data-toggle="m-tooltip" data-width="auto" class="m-form__heading-help-icon flaticon-info" title="" data-original-title="امکانات اتاق را مشخص کنید."></i> امکانات اتاق </h3>
                     </div>
-                    <div id="m_repeater_1">
-                        <div class="form-group  m-form__group row" id="m_repeater_1">
-                            <div data-repeater-list="" class="col-lg-12">
-                                <div data-repeater-item="" class="form-group m-form__group row align-items-center">
-                                    <div class="col-lg-5">
-
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-																			<span class="input-group-text">
-																				<i class="la la-envelope"></i>
-																			</span>
-                                            </div>
-                                            <select class="form-control m-input form-control-danger" id="exampleSelect1" name="">
-                                                <option>حمام</option>
-                                                <option>انترنت</option>
-                                                <option>حولی</option>
-                                                <option>کتابخانه</option>
-                                                <option>محیط سبز</option>
-                                                <option>پرسونل</option>
-                                                <option>خدمتکار</option>
-                                            </select>
-                                        </div>
-
-                                    </div>
-
-
-                                    <div class="col-lg-5">
-
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-																			<span class="input-group-text">
-																				<i class="la la-envelope"></i>
-																			</span>
-                                            </div>
-                                            <input class="form-control m-input form-control-danger" id="exampleSelect1">
-
-                                            </input>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div data-repeater-delete="" class="btn-sm btn btn-danger m-btn m-btn--icon m-btn--pill">
-																<span>
-																	<i class="la la-trash-o"></i>
-																	<span> حذف</span>
-																</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="m-form__group form-group row">
-
-                            <div class="col-lg-4">
-                                <div class="col ml-3">
-                                    <div data-repeater-create="" class="btn btn btn-primary m-btn m-btn--icon ">
-																<span>
-																	<i class="la la-plus"></i>
-																	<span>علاوه</span>
-																</span>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-md-12">
+                        <div class="m-checkbox-inline">
+                            <label class="m-checkbox">
+                                <input type="checkbox" name="facility[]" value="1"> حمام
+                                <span></span>
+                            </label>
+                            <label class="m-checkbox">
+                                <input type="checkbox" name="facility[]" value="2"> انترنت
+                                <span></span>
+                            </label>
+                            <label class="m-checkbox">
+                                <input type="checkbox" name="facility[]" value="3"> کتابخانه
+                                <span></span>
+                            </label>
+                            <label class="m-checkbox">
+                                <input type="checkbox" name="facility[]" value="4"> پگه
+                                <span></span>
+                            </label>
+                            <label class="m-checkbox">
+                                <input type="checkbox" name="facility[]" value="5"> مرکز گرمی
+                                <span></span>
+                            </label>
+                            <label class="m-checkbox">
+                                <input type="checkbox" name="facility[]" value="6"> چپرکت
+                                <span></span>
+                            </label>
+                            <label class="m-checkbox">
+                                <input type="checkbox" name="facility[]" value="7"> الماری
+                                <span></span>
+                            </label>
+                            <label class="m-checkbox">
+                                <input type="checkbox" name="facility[]" value="8"> میزو چوکی
+                                <span></span>
+                            </label>
                         </div>
                     </div>
                 </div>
