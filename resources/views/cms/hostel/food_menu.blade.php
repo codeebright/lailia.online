@@ -241,7 +241,7 @@
         </div>
         <div class="form-group row">
             <div class="col-lg-12 col-md-12 col-sm-12">
-                <textarea class="form-control" type="text" id="m_autosize_2" name="descrption" rows="3" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 72px;">مقرارت لیله را راعیت نماید </textarea>
+                <textarea class="form-control" type="text" id="m_autosize_2" name="descrption" rows="3" placeholder="قوانین مربوط به غذا را وارید کیند (نان لیلیه اختیاری بوده و دصورت داشتن مهمان باید پرداخت گردد)" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 72px;"></textarea>
             </div>
         </div>
         <div class="m-portlet__foot m-portlet__foot--fit">

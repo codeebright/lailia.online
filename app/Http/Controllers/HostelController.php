@@ -3,8 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Hostel;
+use App\HostelDetails;
+use App\Address;
+use App\Facility;
 use Illuminate\Http\Request;
-
+use App\Http\Requests\HostelRequest;
+use App\Http\Requests\ownerRequest;
+use Illuminate\Support\Facades\Validator;
 class HostelController extends Controller
 {
     /**
@@ -24,7 +29,7 @@ class HostelController extends Controller
      */
     public function create()
     {
-        return view('cms.hostel.hostel_config');
+        return view('cms.hostel.hostel_create');
     }
 
     /**
@@ -33,49 +38,57 @@ class HostelController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(HostelRequest $request)
     {
         //
+       //  $validator = Validator::make($request->all(), [
+       //     'name' => 'required|max:255',
+       //     'type' => 'required',
+       //     'phone' => 'required|number|max:12',
+       //     'email' => 'required|email|max:225',
+       //     'descrption' => 'required|number|max:12',
+       // ]);
+       //
+       // if ($validator->fails()) {
+       //     return redirect()->back()
+       //                 ->withErrors($validator)
+       //                 ->withInput();
+       // }
+
 
         $hostel = new Hostel;
         $hostel->name = $request->name;
         $hostel->owner_id = 1; //Aut::user()->id;
         $hostel->type = $request->type;
-
+        $hostel->phone = $request->phone;
+        $hostel->email = $request->email;
+        $hostel->descrption = $request->descrption;
         $hostel->save();
-
-
-        $hostel_details = new HostelDetails();
-        $hostel_details->hostel_id = $hostel->id;
-        $hostel_details->phone = $request->phone;
-        $hostel_details->email = $request->email;
-        $hostel_details->descrption = $request->descrption;
-
-        $hostel_details->save();
 
         $address = new Address();
         $address ->hostel_id = $hostel->id;
         $address->province = $request->province;
         $address->state = $request->state;
-        $address->street = $request->street;
+        $address->rood = $request->rood;
         $address->alley = $request->alley;
         $address->station = $request->station;
+        $address->home_number = $request->home_number;
         $address->save();
 
 
-        /*  if(count($request->facilities)>0)
-          {
-              $facility = new Facility();
-              $facility_input = $request->facilities;
-              $details        = $request->descriptions;
-              for($i=0; $i<count($request->facilities); $i++)
-              {
-                  $facility->name = $facility_input[$i];
-                  $facility->details = $details[$i];
-                  $facility->hostel_id = $hostel->id;
-                  $facility->save();
-              }
-          }*/
+//         if(count($request->facilities)>0)
+//           {
+//               $facility = new Facility();
+//               $facility_name = $request->facility_name;
+//               $descriptions  = $request->descriptions;
+//               for($i=0; $i<count($request->facilities); $i++)
+//               {
+//                   $facility->facility_name = $facility_name[$i];
+//                   $facility->descriptions = $descriptions[$i];
+//                   $facility->hostel_id = $hostel->id;
+//                   $facility->save($i);
+//               }
+//           }
 
 
         return back()->with('success','Data is stored successfully');

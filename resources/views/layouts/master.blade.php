@@ -22,7 +22,7 @@
 		<link href="{{asset('assets/demo/demo11/base/style.bundle.rtl.css')}}" rel="stylesheet" type="text/css" />
 		<link href="{{asset('assets/vendors/custom/fullcalendar/fullcalendar.bundle.rtl.css')}}" rel="stylesheet" type="text/css" />
 		<link rel="shortcut icon" href="{{asset('assets/demo/demo11/media/img/logo/favicon.ico')}}" />
-
+		<link href="{{asset('assets/vendors/custom/datatables/datatables.bundle.css')}}" rel="stylesheet" type="text/css" />
 		<style>
 			@font-face {
 				font-family: 'persian_font';
@@ -42,14 +42,17 @@
 		<script src="{{asset('assets/vendors/base/vendors.bundle.js')}}" type="text/javascript"></script>
 		<script src="{{asset('assets/demo/demo11/base/scripts.bundle.js')}}" type="text/javascript"></script>
 		<script src="{{asset('assets/vendors/custom/fullcalendar/fullcalendar.bundle.js')}}" type="text/javascript"></script>
-		<script src="{{asset('assets/app/js/dashboard.js')}}" type="text/javascript"></script>
+		@stack('data-table-script')
+		{{--<script src="{{asset('assets/app/js/dashboard.js')}}" type="text/javascript"></script>--}}
 		<script src="{{asset('js/custome.js')}}" type="text/javascript"></script>
 		<script src="{{asset('assets/demo/demo11/custom/crud/forms/widgets/form-repeater.js')}}" type="text/javascript"></script>
 		<script src="{{asset('assets/demo/demo11/custom/crud/forms/widgets/autosize.js')}}" type="text/javascript"></script>
-		<script src="{{asset('assets/demo/demo11/custom/crud/forms/widgets/select2.js')}}" type="text/javascript"></script>
-		<script src="{{asset('assets/demo/demo11/custom/components/base/sweetaler2.js')}}" type="text/javascript"></script>
-		<script src="{{asset('assets/demo/demo11/custom/crud/forms/widgets/bootstrap-select.js')}}" type="text/javascript"></script>
-		<script src="{{asset('assets/demo/js/column_rendering.js')}}" type="text/javascript"></script>
+		<script src="{{asset('assets/demo/demo11/custom/components/base/SweetAlert2.js')}}" type="text/javascript"></script>
+		<!-- <script src="{{asset('assets/demo/demo11/custom/crud/forms/widgets/bootstrap-select.js')}}" type="text/javascript"></script> -->
+		<script src="{{asset('assets/vendors/custom/datatables/datatables.bundle.js')}}" type="text/javascript"></script>
+
+		<script src="{{asset('assets/demo/demo11/custom/crud/datatables/basic/paginations.js')}}" type="text/javascript"></script>
+
 		<script>
 		$(window).on('load', function() {
 			$('body').removeClass('m-page--loading');

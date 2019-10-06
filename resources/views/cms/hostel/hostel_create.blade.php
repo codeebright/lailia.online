@@ -4,7 +4,7 @@
 @section('content')
     <div class="row justify-content-center">
         <div class="col-md-12">
-
+@include('layouts.partials.errors');
             <div class="m-portlet__head-caption">
                 <div class="m-portlet__head-title">
 												<span class="m-portlet__head-icon m--hide">
@@ -17,6 +17,7 @@
                 </div>
             </div>
 
+
             <!--begin::Form-->
             <form class="m-form m-form--fit m-form--label-align-right" method="post" action="{{route('hostel.store')}}">
                 {{csrf_field()}}
@@ -26,64 +27,28 @@
                             معلومات را بصورت دقیق خانه پوری نماید.
                         </div>
                     </div>
-             {{--       <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group m-form__group">
-                                <label>نام خوابگاه</label>
-                                <div class="m-input-icon m-input-icon--left">
-                                    <input type="text" class="form-control m-input" name="name" placeholder="نام خوابگاه">
-                                    <span class="m-input-icon__icon m-input-icon__icon--left"><span><i class="la la-map-marker"></i></span></span>
-                                </div>
-                            </div>
-                            <div class="form-group m-form__group">
-                                <label>شماره تماس</label>
-                                <div class="m-input-icon m-input-icon--left">
-                                    <input type="text" class="form-control m-input" name="phone" placeholder="شماره تماس">
-                                    <span class="m-input-icon__icon m-input-icon__icon--left"><span><i class="la la-map-marker"></i></span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group m-form__group">
-                                <label>ایمل آدرس</label>
-                                <div class="m-input-icon m-input-icon--left">
-                                    <input type="text" class="form-control m-input" name="email" placeholder="ایمیل ادرس">
-                                    <span class="m-input-icon__icon m-input-icon__icon--left"><span><i class="la la-map-marker"></i></span></span>
-                                </div>
-                            </div>
-                            <div class="form-group m-form__group">
-                                <label class="form-control-label">نوعیت:</label>
-                                <select class="form-control m-input" name="type">
-                                    <option value="">یگ گزینه را انتخاب نماید.</option>
-                                    <option value="1">پسرانه</option>
-                                    <option value="2">دخترانه</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="com-md-4"></div>
-                    </div>--}}
                     <div class="m-form__heading mt-3">
                         <h3 class="m-form__heading-title"> <i data-toggle="m-tooltip" data-width="auto" class="m-form__heading-help-icon flaticon-info" title="" data-original-title="مشخصات خوابگه را بصورت دقیق خانه پوری نماید"></i>  مشخصات</h3>
                     </div>
                     <div class="form-group m-form__group row">
                         <div class="col-lg-4 m-form__group-sub">
                             <label class="form-control-label">نام خوابگاه :</label>
-                            <input class="form-control m-input" name="name" placeholder="نام خوابگاه را وارید کیند">
+                            <input class="form-control m-input" name="name" placeholder="نام خوابگاه را وارید کیند" value="{{old('name')}}">
                             </input>
                         </div>
                         <div class="col-lg-4 m-form__group-sub">
                             <label class="form-control-label">شمار تماس:</label>
-                            <input class="form-control m-input" name="phone" placeholder="شماره تماس خوبگاه را وارید کنید">
+                            <input class="form-control m-input" name="phone" placeholder="شماره تماس خوبگاه را وارید کنید"  value="{{old('phone')}}">
                             </input>
                         </div>
 
                         <div class="col-lg-4 m-form__group-sub">
                             <label class="form-control-label"> ایمیل ادرس:</label>
-                            <input type="text" class="form-control m-input" name="email" placeholder="ایمیل ادرس خوبگاه را وارید کنید" value="">
+                            <input type="text" class="form-control m-input" name="email" placeholder="ایمیل ادرس خوبگاه را وارید کنید"  value="{{old('email')}}">
                         </div>
                         <div class="form-group m-form__group col-md-4">
                             <label class="form-control-label">نوعیت:</label>
-                            <select class="form-control m-input" name="type">
+                            <select class="form-control m-input" name="type" id="type" >
                                 <option value="">یگ گزینه را انتخاب نماید.</option>
                                 <option value="1">پسرانه</option>
                                 <option value="2">دخترانه</option>
@@ -100,37 +65,80 @@
                         <div class="col-lg-4 m-form__group-sub">
                             <label class="form-control-label">ولایت :</label>
                             <select class="form-control m-input" name="province">
-                                <option value="01">01</option>
+                                <option value="01">هرات</option>
+                                <option value="01">قندهار</option>
+                                <option value="01">مزار</option>
+                                <option value="01">کابل</option>
                             </select>
                         </div>
                         <div class="col-lg-4 m-form__group-sub">
                             <label class="form-control-label"> ناحیه   :</label>
                             <select class="form-control m-input" name="state">
-                                <option value="">یگ گزینه را انتخاب نماید.</option>
-                                <option value="2018">2018</option>
-                                <option value="2019">2019</option>
-                                <option value="2020">2020</option>
-                                <option value="2021">2021</option>
-                                <option value="2022">2022</option>
-                                <option value="2023">2023</option>
-                                <option value="2024">2024</option>
+                                <option value="">لیله شما مربوط کدام  ناحیه میگردد</option>
+                                <option value="2018">اول</option>
+                                <option value="2019">دوم</option>
+                                <option value="2020">سوم</option>
+                                <option value="2021">چهارم</option>
+                                <option value="2022">سیزده</option>
+                                <option value="2023">یازده</option>
+                                <option value="2024">پنج</option>
                             </select>
                         </div>
 
                         <div class="col-lg-4 m-form__group-sub">
                             <label class="form-control-label">* سرک:</label>
-                            <input type="text" class="form-control m-input" name="street" placeholder="" value="">
+                            <select class="form-control m-input" name="rood">
+                                <option value="">لیلیه شما در کدام سرک موقعیت دارد</option>
+                                <option value="2018">شهید مزاری</option>
+                                <option value="2019">دارلامان</option>
+                                <option value="2020">سرک کارته چهار</option>
+                                <option value="2021">سرک پهنتون</option>
+                                <option value="2022">سرک خیر خانه</option>
+                                <option value="2023">سرک پولی تخنیک</option>
+                                <option value="2024">سرک کمپنی</option>
+                            </select>
                         </div>
 
                     </div>
                     <div class="form-group m-form__group row">
                         <div class="col-lg-4 m-form__group-sub">
                             <label class="form-control-label">* ایستگا:</label>
-                            <input type="text" class="form-control m-input" name="alley" placeholder="" value="">
+                            <select class="form-control m-input" name="station">
+                                <option value="">لیلیه شما مربوط کدام ایستگاهیگردد</option>
+                                <option value="2018">شفاخانه</option>
+                                <option value="2019">گولای</option>
+                                <option value="2020">سر پل</option>
+                                <option value="2021">نقاش</option>
+                                <option value="2022">نانوایی</option>
+                                <option value="2023">پل خشک</option>
+                                <option value="2024">مهتاب قلعه</option>
+                            </select>
                         </div>
                         <div class="col-lg-4 m-form__group-sub">
                             <label class="form-control-label">* کوچه:</label>
-                            <input type="text" class="form-control m-input" name="sstation" placeholder="" value="">
+                            <select class="form-control m-input" name="alley">
+                                <option value="">لیله در چندمین کوچه از استگاه موقعیت دارد</option>
+                                <option value="2018">اولین</option>
+                                <option value="2019">دومین</option>
+                                <option value="2020">روبرو</option>
+                                <option value="2021">سومین</option>
+                                <option value="2022">چهارومین</option>
+                                <option value="2023">پنحمین</option>
+                                <option value="2024">کنار سرک</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 m-form__group-sub">
+                            <label class="form-control-label">* نمبر اپارتمان:</label>
+                            <select class="form-control m-input" name="home_number">
+                                <option value="">چندمین خانه از کوچه</option>
+                                <option value="2018">نمبر ۱</option>
+                                <option value="2019">نمبر ۲</option>
+                                <option value="2020">نمبر ۳</option>
+                                <option value="2021">نمبر ۴</option>
+                                <option value="2022">نمبر ۵</option>
+                                <option value="2023">نمبر ۶</option>
+                                <option value="2024"> نمبر ۷</option>
+                            </select>
                         </div>
                     </div>
                     <div class="m-separator m-separator--dashed m-separator--lg"></div>
@@ -145,11 +153,9 @@
 
                                         <div class="input-group">
                                             <div class="input-group-prepend">
-																			<span class="input-group-text">
-																				<i class="la la-envelope"></i>
-																			</span>
+
                                             </div>
-                                            <select class="form-control m-input form-control-danger" id="exampleSelect1" name="">
+                                            <select class="form-control m-input form-control-danger" id="exampleSelect1" name="facility_name">
                                                 <option>حمام</option>
                                                 <option>انترنت</option>
                                                 <option>حولی</option>
@@ -167,11 +173,9 @@
 
                                         <div class="input-group">
                                             <div class="input-group-prepend">
-																			<span class="input-group-text">
-																				<i class="la la-envelope"></i>
-																			</span>
+
                                             </div>
-                                            <input class="form-control m-input form-control-danger" id="exampleSelect1">
+                                            <input class="form-control m-input form-control-danger" id="exampleSelect1" name="descrption">
 
                                             </input>
                                         </div>
@@ -210,7 +214,7 @@
 
                 <div class="form-group m-form__group row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
-                        <textarea class="form-control" type="text" id="m_autosize_2" name="descrption" rows="3" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 72px;">مقرارت لیله را راعیت نماید </textarea>
+                        <textarea class="form-control" placeholder="قوانین ومقرارت لیله را وارید کنید (از اشخاص مبتلا به مواد مخدر معذوریم)" type="text" id="m_autosize_2" name="descrption" rows="3" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 72px;"></textarea>
                     </div>
                 </div>
 

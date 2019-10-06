@@ -34,7 +34,7 @@
                             <a href="?page=profile" class="m-nav__link"> <i class="m-nav__link-icon flaticon-lifebuoy"></i> <span class="m-nav__link-text">همایت</span> </a>
                         </li>
                         <li class="m-nav__separator m-nav__separator--fit"> </li>
-                        <li class="m-nav__item"> <a href="{{route('home.index')}}" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">خروج</a> </li>
+                        <li class="m-nav__item"> <a href="" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">خروج</a> </li>
                     </ul>
                 </div>
             </div>

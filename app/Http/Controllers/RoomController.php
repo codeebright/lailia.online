@@ -36,7 +36,19 @@ class RoomController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // store the room details
+        $room = new Room;
+        $room->room_number = $request->name;
+        $room->owner_id = 1; //Aut::user()->id;
+        $room->area = $request->area;
+        $room->capacity = $request->capacity;
+        $room->rent_price = $request->rent_price;
+        $room->need = $request->need;
+        $room->room_rent = $request->room_rent;
+        $room->rent_per_person = $request->rent_per_person;
+        dd($request);
+        $room->save();
+
     }
 
     /**
