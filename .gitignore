@@ -2,6 +2,17 @@
 /public/hot
 /public/storage
 /vendor/*
+/public/assets
+/public/assets-
+/public/bootstraprtl
+/public/css
+/public/fonts
+/public/images
+/public/img
+/public/js
+/public/Owl
+/public/photo
+/public/.htaccess
 /node_modules/*
 /storage/*.key
 /vendor
