@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
 @include('layouts.partials.errors');
-            <div class="m-portlet__head-caption">
+            <!-- <div class="m-portlet__head-caption">
                 <div class="m-portlet__head-title">
 												<span class="m-portlet__head-icon m--hide">
 													<i class="la la-gear"></i>
@@ -15,7 +15,7 @@
                         مشخصات خوابگاه
                     </h3>
                 </div>
-            </div>
+            </div> -->
 
 
             <!--begin::Form-->
@@ -145,7 +145,7 @@
                     <div class="m-form__heading mt-3">
                         <h3 class="m-form__heading-title"> <i data-toggle="m-tooltip" data-width="auto" class="m-form__heading-help-icon flaticon-info" title="" data-original-title="آدرس خوابگا را دقیق وارید نماید تا محصلین به راحتی خوابگا را پیدا نماید."></i> امکانات وتجهیزات خوابگاه</h3>
                     </div>
-                    <div id="m_repeater_1">
+                    <!-- <div id="m_repeater_1">
                         <div class="form-group  m-form__group row" id="m_repeater_1">
                             <div data-repeater-list="" class="col-lg-12">
                                 <div data-repeater-item="" class="form-group m-form__group row align-items-center">
@@ -155,7 +155,7 @@
                                             <div class="input-group-prepend">
 
                                             </div>
-                                            <select class="form-control m-input form-control-danger" id="exampleSelect1" name="facility_name">
+                                            <select class="form-control m-input form-control-danger" id="exampleSelect1" name="facility_name[]">
                                                 <option>حمام</option>
                                                 <option>انترنت</option>
                                                 <option>حولی</option>
@@ -205,7 +205,21 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                    <div class="form-group m-form__group row">
+                                    <label class=" col-lg-12 col-sm-12 " style="" >امکانات ترا انتخاب کیند</label>
+                                    <div class="col-md-12 col-sm-12">
+                                      <select class="form-control m-select2" id="m_select2_3" name="facility_name[]" multiple="multiple">
+                                        <optgroup label="Eastern Time Zone">
+                                          <option value="CT">Connecticut</option>
+                                          <option value="DE">Delaware</option>
+                                          <option value="FL">Florida</option>
+                                          <option value="GA">Georgia</option>
+
+                                        </optgroup>
+                                      </select>
+                                    </div>
+                                  </div>
                 </div>
                 <div class="m-separator m-separator--dashed m-separator--lg"></div>
                 <div class="m-form__heading mt-3">

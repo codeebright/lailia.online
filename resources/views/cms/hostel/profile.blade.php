@@ -1,6 +1,6 @@
-@extends('layouts.master2')
+@extends('layouts.master')
 @section('title','صفحه اصلی')
-@section('content2')
+@section('content')
 
 
     <div class="m-content">

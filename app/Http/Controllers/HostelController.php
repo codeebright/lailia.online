@@ -9,7 +9,6 @@ use App\Facility;
 use Illuminate\Http\Request;
 use App\Http\Requests\HostelRequest;
 use App\Http\Requests\ownerRequest;
-use Illuminate\Support\Facades\Validator;
 class HostelController extends Controller
 {
     /**
@@ -38,23 +37,8 @@ class HostelController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(HostelRequest $request)
+    public function store(Request $request)
     {
-        //
-       //  $validator = Validator::make($request->all(), [
-       //     'name' => 'required|max:255',
-       //     'type' => 'required',
-       //     'phone' => 'required|number|max:12',
-       //     'email' => 'required|email|max:225',
-       //     'descrption' => 'required|number|max:12',
-       // ]);
-       //
-       // if ($validator->fails()) {
-       //     return redirect()->back()
-       //                 ->withErrors($validator)
-       //                 ->withInput();
-       // }
-
 
         $hostel = new Hostel;
         $hostel->name = $request->name;
@@ -75,20 +59,15 @@ class HostelController extends Controller
         $address->home_number = $request->home_number;
         $address->save();
 
+        foreach ($request->facility_name as  $name) {
+               // code...
+               $facility = new Facility;
+               $facility->hostel_id = $hostel->id;
+               $facility->facility_name = $name;
+               $facility->save();
+             }
 
-//         if(count($request->facilities)>0)
-//           {
-//               $facility = new Facility();
-//               $facility_name = $request->facility_name;
-//               $descriptions  = $request->descriptions;
-//               for($i=0; $i<count($request->facilities); $i++)
-//               {
-//                   $facility->facility_name = $facility_name[$i];
-//                   $facility->descriptions = $descriptions[$i];
-//                   $facility->hostel_id = $hostel->id;
-//                   $facility->save($i);
-//               }
-//           }
+
 
 
         return back()->with('success','Data is stored successfully');
@@ -96,12 +75,13 @@ class HostelController extends Controller
 
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\hostels  $hostels
-     * @return \Illuminate\Http\Response
-     */
+        /**
+         * Show the form for editing the specified resource.
+         *
+         * @param  \App\hostels  $hostels
+         * @return \Illuminate\Http\Response
+         */
+
     public function show(hostels $hostels)
     {
         //
