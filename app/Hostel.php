@@ -4,12 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @method static paginate($int)
+ */
 class Hostel extends Model
 {
-    // has one details
-    public function hostelDetails()
+    // hasMany Attachments
+    public function attachments()
     {
-      return $this->hasOne(HostelDetails::Class);
+        return $this->hasMany(Attachment::Class);
     }
 
     //has many rooms
@@ -21,7 +24,7 @@ class Hostel extends Model
     // hostel has one address
     public function addresses()
     {
-      return $this->hasOne(Address::class);
+        return $this->hasOne(Address::class);
     }
 
     // hostel has facilities
@@ -30,9 +33,15 @@ class Hostel extends Model
         return $this->hasMany(Facility::class);
     }
 
-    // hostel has food_menu
-    public function foodMenus()
+    // hasMany weekDays
+    public function foods()
     {
-        return $this->hasOne(FoodMenu::class);
+        return $this->hasMany(Food::class);
+    }
+
+    //hostel has food_menu
+    public function foodCategories()
+    {
+        return $this->hasMany(FoodCategory::class);
     }
 }

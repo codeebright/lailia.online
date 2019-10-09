@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateStaticTablesTable extends Migration
+class CreateFoodMenusTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,13 @@ class CreateStaticTablesTable extends Migration
      */
     public function up()
     {
-        Schema::create('static_tables', function (Blueprint $table) {
+        Schema::create('food_menus', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('type',24)->comment('wd => week days, lang => language');
+            $table->integer('food_id');
+            $table->integer('hostel_id');
+            $table->integer('food_category_id');
+            $table->integer('week_days_id');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
@@ -28,6 +31,6 @@ class CreateStaticTablesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('static_tables');
+        Schema::dropIfExists('food_menus');
     }
 }

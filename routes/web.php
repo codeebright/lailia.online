@@ -70,10 +70,10 @@ Route::post('login', 'OwnerController@login')->name('post_login');
 Route::post('register', 'OwnerController@store')->name('registration.store');
 
 // khabgah_detailes/khabgah_pages route
-
-Route::get('/hostel/list','HostelController@listHostel')->name('hostel.list');
+Route::get('/hostel_list','HostelController@listHostel')->name('hostel.list');
 Route::get('/khabgah_details/{hostel_id}','HostelDetailsController@index')->name('khabgah_detailes.goToDetails');
 
+Route::get('/pagination','HostelController@paginate');
 
 // Route::resource('user', 'OwnerController');
 //

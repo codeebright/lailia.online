@@ -2,171 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3e11abf-9ca9-40f0-84cd-e439eee8262f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/WeekDay.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pagination.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Attachment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Attachment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Food.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Food.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/FoodCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/FoodCategory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/FoodMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/FoodMenu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Hostel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Hostel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AttachmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AttachmentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/HostelDetails.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HostelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HostelController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HostelDetailsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HostelDetailsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Room.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Room.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/StaticTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/StaticTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/bg/bg-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/bg/bg-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/bg/bg-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/bg/bg-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/bg/bg-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/bg/bg-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/bg/bg-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/bg/bg-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/blog/blog1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/blog/blog2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/blog/blog3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/blog/blog4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/blog/blog5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/client-logos/logo1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/client-logos/logo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/client-logos/logo3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/client-logos/logo4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/client-logos/logo5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/envato/screen1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/envato/screen2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/error/bg1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/error/bg2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/error/bg3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/error/bg4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/error/bg5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/error/bg6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/css.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/csv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/doc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/html.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/javascript.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/jpg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/mp4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/pdf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/xml.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/files/zip.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/001-austria.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/002-belgium.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/003-switzerland.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/004-indonesia.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/005-portugal.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/006-turkey.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/007-malasya.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/008-saudi-arabia.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/009-australia.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/010-india.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/011-brazil.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/012-uk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/013-russia.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/014-japan.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/015-china.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/016-spain.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/017-germany.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/018-south-korea.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/019-france.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/flags/020-flag.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/icons/exchange.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/icons/logout.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/icons/question.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/icons/warning.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/logos/logo-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/logos/logo-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/logos/logo-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/logos/logo-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/logos/logo_client_color.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/logos/logo_client_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/logos/logo_invoice_dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/logos/logo_invoice_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/misc/notification_bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/misc/quick_actions_bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/misc/user_profile_bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/products/product9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/100_9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/300_9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/user1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/user2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/user3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/user4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/app/media/img/users/user5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/demo/demo11/base/style.bundle.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/demo/demo11/base/style.bundle.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstraprtl/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstraprtl/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstraprtl/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstraprtl/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstraprtl/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstraprtl/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstraprtl/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstraprtl/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstraprtl/css/material-design-iconic-font.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstraprtl/css/teststyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstraprtl/css/teststyle2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstraprtl/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstraprtl/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1064.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Grand-Felda-House-Wembley-London-Social-Space-Unilodgers.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photo/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photo/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photo/Kajal-Aggarwal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photo/afg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photo/benze.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photo/cenvir.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photo/download.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photo/food.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photo/library.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photo/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photo/meal.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photo/meat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photo/modern.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photo/rice.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photo/vegitable.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photo/wifi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/StaticTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_25_145205_create_hostels_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_25_145205_create_hostels_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_25_151421_create_attachments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_25_151421_create_attachments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_25_152425_create_hostel_details_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_25_155631_create_addresses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_25_155631_create_addresses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_foods_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_foods_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_25_160241_create_food_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_food_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_25_160653_create_static_tables_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_week_days_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_25_160856_create_food_menus_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_food_menus_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/khabgah_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/khabgah_details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/khabgah_details.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/khabgha_list.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/partials/footer-scripts.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/partials/header.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout_front/partials/footer-scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout_front/partials/footer-scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout_front/partials/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout_front/partials/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout_front/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout_front/partials/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/partials/_topbar-notifications.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/_topbar-notifications.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/partials/_topbar-user-profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/_topbar-user-profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/khabgha_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/khabgah_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -175,7 +33,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="DONT_SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -187,19 +45,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HostelDetailsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1600">
-              <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="24" />
+            <state relative-caret-position="300">
+              <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+              <folding>
+                <element signature="e#40#55#0#PHP" expanded="true" />
+                <element signature="e#195#3958#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/front/home.blade.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1225">
-              <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="71" />
+            <state relative-caret-position="382">
+              <caret line="72" column="23" lean-forward="true" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/front/khabgah_list.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="56" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -207,43 +78,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/front/khabgah_details.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="54" column="16" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="57" />
-              <folding>
-                <element signature="n#section#0;n#!!top" />
-                <element signature="n#section#2;n#!!top" />
-                <element signature="n#section#3;n#!!top" />
-              </folding>
+            <state relative-caret-position="332">
+              <caret line="68" column="29" lean-forward="true" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HostelDetailsController.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HostelController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="307">
+              <caret line="72" column="4" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="76" selection-end-column="5" />
               <folding>
                 <element signature="e#40#59#0#PHP" expanded="true" />
+                <element signature="e#314#1249#0#PHP" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/FoodMenu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="20" column="32" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/StaticTable.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -254,6 +103,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="blade" />
       </list>
     </option>
   </component>
@@ -261,9 +111,15 @@
     <findStrings>
       <find>listhost</find>
       <find>.nav</find>
+      <find>mor</find>
+      <find>lun</find>
+      <find>2</find>
     </findStrings>
     <replaceStrings>
       <replace>li</replace>
+      <replace>lun</replace>
+      <replace>nig</replace>
+      <replace>3</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -272,29 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_145930_create_facilities_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/FacilitiesController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/PhotosController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_150042_create_photos_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_151421_create_attachments_table.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_152425_create_hostel_details_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_153133_create_rooms_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_155631_create_addresses_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_foods_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_160241_create_food_categories_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_160420_create_week_days_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_160653_create_static_tables_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_160856_create_food_menus_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_161252_create_customers_table.php" />
-        <option value="$PROJECT_DIR$/app/Address.php" />
-        <option value="$PROJECT_DIR$/app/Attachment.php" />
-        <option value="$PROJECT_DIR$/app/Food.php" />
-        <option value="$PROJECT_DIR$/app/FoodCategory.php" />
-        <option value="$PROJECT_DIR$/app/HostelDetails.php" />
-        <option value="$PROJECT_DIR$/app/Owner.php" />
-        <option value="$PROJECT_DIR$/app/Facility.php" />
-        <option value="$PROJECT_DIR$/app/Customer.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_25_181542_create_requst_hostel_rooms_table.php" />
         <option value="$PROJECT_DIR$/resources/views/adminUser.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
@@ -304,25 +137,48 @@
         <option value="$PROJECT_DIR$/resources/views/test.html" />
         <option value="$PROJECT_DIR$/public/bootstraprtl/css/teststyle.css" />
         <option value="$PROJECT_DIR$/resources/views/owner.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/OwnerController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/partials/_topbar-notifications.blade.php" />
         <option value="$PROJECT_DIR$/public/assets/demo/demo11/base/style.bundle.rtl.css" />
         <option value="$PROJECT_DIR$/resources/views/layout_front/mainlayout.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/khabgah_details.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HostelController.php" />
         <option value="$PROJECT_DIR$/resources/views/khabgha_list.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AttachmentController.php" />
         <option value="$PROJECT_DIR$/resources/views/front/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Room.php" />
-        <option value="$PROJECT_DIR$/app/Hostel.php" />
         <option value="$PROJECT_DIR$/public/bootstraprtl/css/custom.css" />
-        <option value="$PROJECT_DIR$/app/FoodMenu.php" />
         <option value="$PROJECT_DIR$/app/StaticTable.php" />
         <option value="$PROJECT_DIR$/resources/views/layout_front/partials/footer-scripts.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layout_front/partials/head.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/front/khabgah_details.blade.php" />
+        <option value="$PROJECT_DIR$/app/FoodTime.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_10_02_101155_create_week_days_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_155631_create_addresses_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_10_02_101105_create_food_times_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_foods_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_10_02_114115_create_food_catagories_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_10_02_114133_create_food_menus_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_10_02_114542_create_week_days_table.php" />
+        <option value="$PROJECT_DIR$/app/FoodCatagory.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_10_02_163959_create_food_categories_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_food_categories_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_food_menus_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_week_days_table.php" />
+        <option value="$PROJECT_DIR$/app/Food.php" />
+        <option value="$PROJECT_DIR$/app/FoodCategory.php" />
+        <option value="$PROJECT_DIR$/app/WeekDay.php" />
+        <option value="$PROJECT_DIR$/app/FoodMenu.php" />
+        <option value="$PROJECT_DIR$/app/Attachment.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_151421_create_attachments_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_145205_create_hostels_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/pagination..blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/front/khabgha_list.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HostelDetailsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/front/khabgah_details.blade.php" />
+        <option value="$PROJECT_DIR$/app/Hostel.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/pagination.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HostelController.php" />
+        <option value="$PROJECT_DIR$/resources/views/front/khabgah_list.blade.php" />
       </list>
     </option>
   </component>
@@ -420,39 +276,38 @@
     <option name="width" value="1386" />
     <option name="height" value="788" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>CSS</id>
-          </State>
-          <State>
-            <id>Invalid elementsCSS</id>
-          </State>
-          <State>
-            <id>PHP</id>
-          </State>
-          <State>
-            <id>Type compatibilityPHP</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>PhpParamsInspection</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="hostel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hostel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hostel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hostel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hostel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hostel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -474,11 +329,11 @@
       <recent name="C:\xampp\htdocs\Khabgah\public\bootstraprtl\js" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\hostel\app" />
+      <recent name="C:\xampp\htdocs\hostel\database\migrations" />
       <recent name="C:\xampp\htdocs\Khabgah\public" />
       <recent name="C:\xampp\htdocs\Khabgah\public\bootstraprtl\css" />
       <recent name="C:\xampp\htdocs\Khabgah\public\bootstraprtl\js" />
-      <recent name="C:\xampp\htdocs\Khabgah\public\bootstraprtl" />
-      <recent name="C:\xampp\htdocs\Khabgah\public\vendor" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -527,16 +382,34 @@
       <workItem from="1569895205856" duration="1476000" />
       <workItem from="1569905995290" duration="53000" />
       <workItem from="1569920355244" duration="3856000" />
+      <workItem from="1570010608033" duration="4830000" />
+      <workItem from="1570019392502" duration="2185000" />
+      <workItem from="1570027185989" duration="5192000" />
+      <workItem from="1570081165749" duration="5142000" />
+      <workItem from="1570091611216" duration="1578000" />
+      <workItem from="1570186835883" duration="5584000" />
+      <workItem from="1570243187736" duration="2915000" />
+      <workItem from="1570249001425" duration="59000" />
+      <workItem from="1570273377755" duration="4914000" />
+      <workItem from="1570338627850" duration="4113000" />
+      <workItem from="1570353251420" duration="6948000" />
+      <workItem from="1570364596829" duration="2111000" />
+      <workItem from="1570412020387" duration="1779000" />
+      <workItem from="1570427097770" duration="2435000" />
+      <workItem from="1570438955565" duration="3519000" />
+      <workItem from="1570466562577" duration="597000" />
+      <workItem from="1570514573533" duration="1218000" />
+      <workItem from="1570529271110" duration="3536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26853000" />
+    <option name="totallyTimeSpent" value="85508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1386" height="788" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17873304" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19155355" />
       <window_info id="Structure" order="1" weight="0.24962293" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -548,37 +421,16 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.84732825" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32977098" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17873304" />
-      <window_info id="Structure" order="1" weight="0.24962293" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32671756" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -592,207 +444,17 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Owner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/FoodCategory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Food.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Facility.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Address.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Attachment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Customer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/RequstHostelRoom.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_25_181542_create_requst_hostel_rooms_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_25_152811_create_owners_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/Grand-Felda-House-Wembley-London-Social-Space-Unilodgers.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/blog/blog5.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/blog/blog4.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/blog/blog2.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/blog/blog1.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/misc/notification_bg.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/misc/user_profile_bg.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/assets/app/media/img/misc/quick_actions_bg.jpg" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OwnerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <marker date="1569683880128" expanded="true" signature="310:433" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/cms/hostel/profile.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/_topbar-notifications.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/demo/demo11/base/style.bundle.rtl.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504500">
-          <caret line="20180" column="28" selection-start-line="20180" selection-start-column="28" selection-end-line="20180" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/custome/js/custome.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/_topbar-user-profile.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/khabgah_details.blade.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/front/adminUser.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/front/default.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/front/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout_front/mainlayout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/khabgha_list.blade.php" />
     <entry file="file://$PROJECT_DIR$/public/img/1064.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout_front/partials/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="184" selection-start-line="184" selection-end-line="184" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets-/app/media/img/blog/blog1.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AttachmentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HostelController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/front/khabgha_list.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/HostelDetails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Room.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Hostel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -813,20 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout_front/partials/head.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1600">
-          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/front/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1225">
@@ -834,39 +482,223 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/StaticTable.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_25_160856_create_food_menus_table.php" />
+    <entry file="file://$PROJECT_DIR$/app/FoodTime.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_02_101155_create_week_days_table.php" />
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_25_155631_create_addresses_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_02_101105_create_food_times_table.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_foods_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StaticTableController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FoodCatagory.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_02_114115_create_food_catagories_table.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_02_114133_create_food_menus_table.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_02_114542_create_week_days_table.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_02_163959_create_food_categories_table.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_02_164016_create_food_menus_table.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_02_164031_create_week_days_table.php" />
+    <entry file="file://$PROJECT_DIR$/app/Address.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Facility.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_week_days_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_food_menus_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FoodCategory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/WeekDay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/FoodMenu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="32" />
+        <state relative-caret-position="425">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/StaticTable.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FoodMenuController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        <state relative-caret-position="375">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/front/khabgah_details.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_25_152425_create_hostel_details_table.php" />
+    <entry file="file://$PROJECT_DIR$/app/HostelDetails.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_food_categories_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="54" column="16" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="57" />
+        <state relative-caret-position="207">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_25_153133_create_rooms_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_25_151421_create_attachments_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_25_145205_create_hostels_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Food.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Attachment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AttachmentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="40" column="62" lean-forward="true" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
           <folding>
-            <element signature="n#section#0;n#!!top" />
-            <element signature="n#section#2;n#!!top" />
-            <element signature="n#section#3;n#!!top" />
+            <element signature="e#221#613#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout_front/partials/head.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout_front/partials/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="91" lean-forward="true" selection-start-line="15" selection-start-column="91" selection-end-line="15" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Hostel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HostelDetailsController.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+          <folding>
+            <element signature="e#40#55#0#PHP" expanded="true" />
+            <element signature="e#195#3958#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/front/khabgah_details.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <caret line="68" column="29" lean-forward="true" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pagination.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="72" column="23" lean-forward="true" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HostelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="72" column="4" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="76" selection-end-column="5" />
           <folding>
             <element signature="e#40#59#0#PHP" expanded="true" />
+            <element signature="e#314#1249#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/front/khabgah_list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="56" selection-end-column="23" />
         </state>
       </provider>
     </entry>

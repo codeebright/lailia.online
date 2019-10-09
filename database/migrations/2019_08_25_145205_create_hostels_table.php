@@ -18,6 +18,10 @@ class CreateHostelsTable extends Migration
           $table->string('name');
           $table->string('email')->nullable();
           $table->string('phone');
+          $table->integer('remark');
+          $table->string('fb')->nullable();
+          $table->text('description');
+          $table->text('roles');
           $table->unsignedInteger('owner_id');
           $table->boolean('type');
           $table->softDeletes();

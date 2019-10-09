@@ -10,13 +10,13 @@ class Attachment extends Model
     protected $fillable = ['file_size'];
 
 
-    public function hosteDetails()
+    public function hostels()
     {
-      return $this->belongsTo(HostelDetails::class);
+        return $this->belongsTo(Hostel::class);
     }
 
     public function homes()
     {
-      return $this->belongsTo(Home::class);
+        return $this->belongsTo(Home::class);
     }
 }

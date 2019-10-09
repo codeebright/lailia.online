@@ -32,8 +32,5 @@ class CreateAddressesTable extends Migration
     public function down()
     {
         Schema::dropIfExists('addresses');
-        $table->foreign('hostel_id')
-    ->references('id')->on('hostels')
-    ->onDelete('cascade');
     }
 }
