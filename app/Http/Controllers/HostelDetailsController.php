@@ -2,10 +2,13 @@
 
 
 namespace App\Http\Controllers;
+
+use App\Attachment;
 use App\Hostel;
 use App\FoodMenu;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Intervention\Image\Image;
 
 
 class HostelDetailsController extends Controller
@@ -30,7 +33,7 @@ class HostelDetailsController extends Controller
             ->where("week_days_id", "7");
 
         // lunch foods
-        $sat_lun = $food_menus->where('food_category_id', 2)->where( 'hostel_id', $hostel_id)
+        $sat_lun = $food_menus->where('food_category_id', 2)->where('hostel_id', $hostel_id)
             ->where("week_days_id", "1");
         $sun_lun = $food_menus->where("food_category_id", "2")->where('hostel_id', $hostel_id)
             ->where("week_days_id", "2");
@@ -46,7 +49,7 @@ class HostelDetailsController extends Controller
             ->where("week_days_id", "7");
 
         // night foods
-        $sat_nig = $food_menus->where('food_category_id', 3)->where( 'hostel_id', $hostel_id)
+        $sat_nig = $food_menus->where('food_category_id', 3)->where('hostel_id', $hostel_id)
             ->where("week_days_id", "1");
         $sun_nig = $food_menus->where("food_category_id", "3")->where('hostel_id', $hostel_id)
             ->where("week_days_id", "2");
@@ -62,9 +65,12 @@ class HostelDetailsController extends Controller
             ->where("week_days_id", "7");
 
         $hostel = Hostel::find($hostel_id);
+      $photos = $hostel->attachments()->paginate(4);
         return view('front/khabgah_details',
             compact([
+                'photos',
                 'hostel',
+                'new_img',
                 'sat_mor',
                 'sun_mor',
                 'mon_mor',
@@ -91,5 +97,6 @@ class HostelDetailsController extends Controller
             ]));
 
     }
+
 }
 

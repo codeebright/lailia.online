@@ -1,8 +1,7 @@
-<ul>
-    @foreach($hostel as $hostels)
-        <li> {{ $hostels->name }}</li>
-    @endforeach
-</ul>
+{{--@foreach($images as $image)--}}
+    {{--<img src="/assets-/app/media/img/blog/hostels-img/{{$image->file_name}}" alt="">--}}
+
+{{--@endforeach--}}
 
 {{--@foreach($hostel->attachments as $photo)--}}
 {{--<div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4 small-device-hid" id="load_more">--}}

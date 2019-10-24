@@ -2,28 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3e11abf-9ca9-40f0-84cd-e439eee8262f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/WeekDay.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pagination.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-bongah.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-bongah.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Attachment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Attachment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Food.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Food.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/FoodCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/FoodCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/FoodMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/FoodMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Hostel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Hostel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/HostelDetails.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Address.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HostelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HostelController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HostelDetailsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HostelDetailsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/StaticTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_25_145205_create_hostels_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_25_145205_create_hostels_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_25_151421_create_attachments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_25_151421_create_attachments_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_25_152425_create_hostel_details_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_25_155631_create_addresses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_25_155631_create_addresses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_foods_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_foods_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_25_160241_create_food_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_food_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_25_160653_create_static_tables_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_week_days_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_25_160856_create_food_menus_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_25_160034_create_food_menus_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/khabgah_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/khabgah_details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/khabgha_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/khabgah_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/khabgah_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/khabgah_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout_front/partials/footer-scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout_front/partials/footer-scripts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pagination.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pagination.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -45,32 +38,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HostelDetailsController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/front/khabgah_list.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
-              <folding>
-                <element signature="e#40#55#0#PHP" expanded="true" />
-                <element signature="e#195#3958#0#PHP" />
-              </folding>
+            <state relative-caret-position="1425">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HostelDetailsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="72" column="23" lean-forward="true" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/front/khabgah_list.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="56" selection-end-column="23" />
+            <state relative-caret-position="1625">
+              <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -78,20 +58,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/front/khabgah_details.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="68" column="29" lean-forward="true" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="63" />
+            <state relative-caret-position="5450">
+              <caret line="218" column="14" selection-start-line="218" selection-start-column="14" selection-end-line="218" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HostelController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/layout_front/partials/footer-scripts.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="72" column="4" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="76" selection-end-column="5" />
+            <state relative-caret-position="443">
+              <caret line="129" selection-start-line="129" selection-end-line="129" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Address.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding>
-                <element signature="e#40#59#0#PHP" expanded="true" />
-                <element signature="e#314#1249#0#PHP" />
+                <element signature="e#23#62#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,11 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_181542_create_requst_hostel_rooms_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/adminUser.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout/partials/head.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_25_152811_create_owners_table.php" />
         <option value="$PROJECT_DIR$/resources/views/layout/partials/adminParial/adminHead.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/test.html" />
         <option value="$PROJECT_DIR$/public/bootstraprtl/css/teststyle.css" />
@@ -144,11 +127,9 @@
         <option value="$PROJECT_DIR$/resources/views/khabgah_details.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/khabgha_list.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AttachmentController.php" />
-        <option value="$PROJECT_DIR$/resources/views/front/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Room.php" />
         <option value="$PROJECT_DIR$/public/bootstraprtl/css/custom.css" />
         <option value="$PROJECT_DIR$/app/StaticTable.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout_front/partials/footer-scripts.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layout_front/partials/head.blade.php" />
         <option value="$PROJECT_DIR$/app/FoodTime.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_10_02_101155_create_week_days_table.php" />
@@ -172,13 +153,20 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_08_25_145205_create_hostels_table.php" />
         <option value="$PROJECT_DIR$/resources/views/pagination..blade.php" />
         <option value="$PROJECT_DIR$/resources/views/front/khabgha_list.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HostelDetailsController.php" />
-        <option value="$PROJECT_DIR$/resources/views/front/khabgah_details.blade.php" />
         <option value="$PROJECT_DIR$/app/Hostel.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/front/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pagination.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HostelController.php" />
         <option value="$PROJECT_DIR$/resources/views/front/khabgah_list.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HostelController.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HostelDetailsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/front/khabgah_details.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layout_front/partials/footer-scripts.blade.php" />
+        <option value="$PROJECT_DIR$/config/scout.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Address.php" />
       </list>
     </option>
   </component>
@@ -268,6 +256,8 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/algolia/algoliasearch-client-php" />
+      <path value="$PROJECT_DIR$/vendor/laravel/scout" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -295,13 +285,7 @@
             <path>
               <item name="hostel" type="b2602c69:ProjectViewProjectNode" />
               <item name="hostel" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hostel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hostel" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -400,16 +384,34 @@
       <workItem from="1570466562577" duration="597000" />
       <workItem from="1570514573533" duration="1218000" />
       <workItem from="1570529271110" duration="3536000" />
+      <workItem from="1570615394110" duration="6812000" />
+      <workItem from="1570691034252" duration="2302000" />
+      <workItem from="1570697331401" duration="1718000" />
+      <workItem from="1570769608812" duration="494000" />
+      <workItem from="1570792492614" duration="651000" />
+      <workItem from="1570813964519" duration="940000" />
+      <workItem from="1570960814955" duration="1773000" />
+      <workItem from="1570962909780" duration="514000" />
+      <workItem from="1571031789587" duration="1071000" />
+      <workItem from="1571132119306" duration="1317000" />
+      <workItem from="1571477479986" duration="1165000" />
+      <workItem from="1571553498743" duration="1271000" />
+      <workItem from="1571636720413" duration="1199000" />
+      <workItem from="1571826770530" duration="2576000" />
+      <workItem from="1571851223609" duration="31000" />
+      <workItem from="1571895900503" duration="454000" />
+      <workItem from="1571897328906" duration="3758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85508000" />
+    <option name="totallyTimeSpent" value="113554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1386" height="788" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19155355" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19155355" />
       <window_info id="Structure" order="1" weight="0.24962293" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -444,55 +446,10 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/khabgha_list.blade.php" />
-    <entry file="file://$PROJECT_DIR$/public/img/1064.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets-/app/media/img/blog/blog1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Room.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/custome.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout_front/partials/footer-scripts.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/bootstraprtl/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="683" lean-forward="true" selection-start-line="683" selection-end-line="683" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/front/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/StaticTable.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_25_160856_create_food_menus_table.php" />
     <entry file="file://$PROJECT_DIR$/app/FoodTime.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_02_101155_create_week_days_table.php" />
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_25_155631_create_addresses_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -522,13 +479,6 @@
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_02_163959_create_food_categories_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_02_164016_create_food_menus_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_02_164031_create_week_days_table.php" />
-    <entry file="file://$PROJECT_DIR$/app/Address.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Facility.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -614,13 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Attachment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AttachmentController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="557">
@@ -652,53 +595,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HostelDetailsController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/front/myHome.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout_front/partials/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#55#0#PHP" expanded="true" />
-            <element signature="e#195#3958#0#PHP" />
-          </folding>
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/front/khabgah_details.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Attachment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="68" column="29" lean-forward="true" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="63" />
+        <state relative-caret-position="300">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Resources/Json/PaginatedResourceResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pagination.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        <state relative-caret-position="75">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/front/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="73" column="22" lean-forward="true" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="20" column="86" selection-start-line="20" selection-start-column="86" selection-end-line="20" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="228" column="59" selection-start-line="228" selection-start-column="59" selection-end-line="228" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="72" column="23" lean-forward="true" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+        <state relative-caret-position="557">
+          <caret line="73" column="82" selection-start-line="73" selection-start-column="82" selection-end-line="73" selection-end-column="96" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HostelController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="72" column="4" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="76" selection-end-column="5" />
+        <state relative-caret-position="230">
+          <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
           <folding>
             <element signature="e#40#59#0#PHP" expanded="true" />
-            <element signature="e#314#1249#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/front/khabgah_list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="56" selection-end-column="23" />
+        <state relative-caret-position="1425">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HostelDetailsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1625">
+          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/front/khabgah_details.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5450">
+          <caret line="218" column="14" selection-start-line="218" selection-start-column="14" selection-end-line="218" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout_front/partials/footer-scripts.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/scout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Address.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="e#23#62#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,9 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Hostel;
 use Illuminate\Support\Facades\input;
 use App\Address;
+
 /*use Illuminate\Http\Request;*/
 
 class HomeController extends Controller
@@ -16,27 +18,25 @@ class HomeController extends Controller
     public function index()
     {
 
-      $hostels = Hostel::all();
-      return view('front/home',compact('hostels'));
-    }
-
-    public function myHome()
-    {
-        $hostels = Hostel::all();
-        return view('front/home',compact('hostels'));
+        $hostels = DB::table('hostels')->orderBy('created_at' , 'desc')->take(5)->get();
+        return view('front/home', compact('hostels'));
     }
 
 
     // home search function by address
     public function homeSearch()
     {
-      $q = Input::get('q');
-      $type = Hostel::where('name','LIKE','%{$q}%')->get();
-      dd($type);
-      if(!empty($type))
-      {
-        return view('front/myHome')->withDetails($address)->withQuery($q);
-      }
-          else return back()->withMessage('آدرس مورد نظر پیدا نشد ');
+        $qu = Input::get('qu');
+        if (!empty($qu)) {
+            $address = Address::where('state', 'LIKE', '%' . $qu . '%')
+                ->orwhere('station', 'LIKE', '%' . $qu . '%')->get();
+            if (count($address) > 0)
+                return view('pagination')->withDetails($address)->withQuery($qu);
+        }
+        else{
+            return view('front/home')->withMessage('آدرس مورد نظر یافت نشد!');
+        }
+
     }
+
 }

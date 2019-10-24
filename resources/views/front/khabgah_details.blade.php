@@ -31,7 +31,7 @@
     <!-- All hostel images -->
     <section class="container mt-5">
         <div class="row justify-content-center">
-            @foreach($hostel->attachments as $photo)
+            @foreach($photos as $photo)
                 <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1" id="load_more">
                     <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
                         <img src="/assets-/app/media/img/blog/hostels-img/{{$photo->file_name}}"
@@ -51,10 +51,10 @@
                             </div>
                         </div>
                     </div>
-                    <br><br>
+                    <br>
                 </div>
             @endforeach
-                <button class="btn btn-primary">Show More</button>
+            {{$photos->links()}}
 
         </div>
     </section>
@@ -69,8 +69,8 @@
                     @foreach($hostel->facilities as $facilities)
                         <div class="col-md-4 col-sm-4">
                             <ul class="custom-li-padding">
-                                <li class="list-group" style="list-style-type: armenian;">
-                                    {{ $facilities->name }} : &nbsp;&nbsp;&nbsp; {{ $facilities->details }}
+                                <li class="list-group">
+                                    <b> {{ $facilities->name }} : &nbsp;&nbsp;&nbsp; {{ $facilities->details }}</b>
                                 </li>
                             </ul>
                         </div>

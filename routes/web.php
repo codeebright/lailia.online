@@ -60,7 +60,7 @@ Route::get('/home','HomeController@index');
 // Login User Route
 Route::get('login/user','OwnerController@login')->name('registration.create');
 
-Route::any('/search','HomeController@homeSearch')->name('homeseach');
+Route::post('/search','HomeController@homeSearch')->name('homeseach');
 
 
 // Do login Route
@@ -71,14 +71,14 @@ Route::post('register', 'OwnerController@store')->name('registration.store');
 
 // khabgah_detailes/khabgah_pages route
 Route::get('/hostel_list','HostelController@listHostel')->name('hostel.list');
-Route::get('/khabgah_details/{hostel_id}','HostelDetailsController@index')->name('khabgah_detailes.goToDetails');
+Route::get('/khabgah_details/{hostel_id}','HostelDetailsController@index')->name('hostel_details');
 
 Route::get('/pagination','HostelController@paginate');
 
 // Route::resource('user', 'OwnerController');
 //
 // Route::get('home', function(){
-//   return view('front/home');
+//   return view('front/default');
 // });
 // Route::post('login')
 // Route::resource('home', 'OwnerController');

@@ -75,4 +75,10 @@ class HostelController extends Controller
         $hostels = Hostel::all();
         return view('front/khabgah_list',compact('hostels'));
     }
+
+    public function paginate()
+    {
+        $images = Attachment::orderBy('file_id','desc')->take(4)->get();
+        return view('pagination',compact('images'));
+    }
 }
