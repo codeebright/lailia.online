@@ -1,74 +1,81 @@
 @extends('layouts.master')
 @section('title','صفحه اصلی')
 @section('content')
-
-<div class="form-group m-form__group row">
-                <label class="col-form-label col-lg-3 col-sm-12">Multi Select</label>
-                <div class="col-lg-4 col-md-9 col-sm-12">
-                  <select class="form-control m-select2" id="m_select2_3" name="param" multiple="multiple">
-                    <optgroup label="Alaskan/Hawaiian Time Zone">
-                      <option value="AK" selected>Alaska</option>
-                      <option value="HI">Hawaii</option>
-                    </optgroup>
-                    <optgroup label="Pacific Time Zone">
-                      <option value="CA">California</option>
-                      <option value="NV" selected>Nevada</option>
-                      <option value="OR">Oregon</option>
-                      <option value="WA">Washington</option>
-                    </optgroup>
-                    <optgroup label="Mountain Time Zone">
-                      <option value="AZ">Arizona</option>
-                      <option value="CO">Colorado</option>
-                      <option value="ID">Idaho</option>
-                      <option value="MT" selected>Montana</option>
-                      <option value="NE">Nebraska</option>
-                      <option value="NM">New Mexico</option>
-                      <option value="ND">North Dakota</option>
-                      <option value="UT">Utah</option>
-                      <option value="WY">Wyoming</option>
-                    </optgroup>
-                    <optgroup label="Central Time Zone">
-                      <option value="AL">Alabama</option>
-                      <option value="AR">Arkansas</option>
-                      <option value="IL">Illinois</option>
-                      <option value="IA">Iowa</option>
-                      <option value="KS">Kansas</option>
-                      <option value="KY">Kentucky</option>
-                      <option value="LA">Louisiana</option>
-                      <option value="MN">Minnesota</option>
-                      <option value="MS">Mississippi</option>
-                      <option value="MO">Missouri</option>
-                      <option value="OK">Oklahoma</option>
-                      <option value="SD">South Dakota</option>
-                      <option value="TX">Texas</option>
-                      <option value="TN">Tennessee</option>
-                      <option value="WI">Wisconsin</option>
-                    </optgroup>
-                    <optgroup label="Eastern Time Zone">
-                      <option value="CT">Connecticut</option>
-                      <option value="DE">Delaware</option>
-                      <option value="FL">Florida</option>
-                      <option value="GA">Georgia</option>
-                      <option value="IN">Indiana</option>
-                      <option value="ME">Maine</option>
-                      <option value="MD">Maryland</option>
-                      <option value="MA">Massachusetts</option>
-                      <option value="MI">Michigan</option>
-                      <option value="NH">New Hampshire</option>
-                      <option value="NJ">New Jersey</option>
-                      <option value="NY">New York</option>
-                      <option value="NC">North Carolina</option>
-                      <option value="OH">Ohio</option>
-                      <option value="PA">Pennsylvania</option>
-                      <option value="RI">Rhode Island</option>
-                      <option value="SC">South Carolina</option>
-                      <option value="VT">Vermont</option>
-                      <option value="VA">Virginia</option>
-                      <option value="WV">West Virginia</option>
-                    </optgroup>
-                  </select>
+    <div class="m-portlet">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+                    <h3 class="m-portlet__head-text">
+               اوقات غذای روزمره
+                    </h3>
                 </div>
-              </div>
+            </div>
+        </div>
+        <div class="m-portlet__body">
 
+            <!--begin::Section-->
+            <div class="m-section">
+                <div class="m-section__content">
+                    <table class="table table-striped m-table">
+                        <thead>
+                        <tr>
+                            <th>ایام هفته</th>
+                            <th>صبح</th>
+                            <th>چاشت</th>
+                            <th>شام</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">شنبه</th>
+                            <td>چای</td>
+                            <td>برنج</td>
+                            <td>لوبیا</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">یک شنبه</th>
+                            <td>شیر</td>
+                            <td>قورمه</td>
+                            <td>شورمه</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">دو شنبه</th>
+                            <td>تخم</td>
+                            <td>کباب</td>
+                            <td>قابلی</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">سه شنبه</th>
+                            <td>پنیر</td>
+                            <td>عدس</td>
+                            <td>کچالو</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">چهارشنبه</th>
+                            <td>شیر</td>
+                            <td>قورمه</td>
+                            <td>شورمه</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">پنج شنبه</th>
+                            <td>شیر</td>
+                            <td>قورمه</td>
+                            <td>شورمه</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>جمعه</b></th>
+                            <td>شیر</td>
+                            <td>قورمه</td>
+                            <td>شورمه</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
+            <!--end::Section-->
+        </div>
+
+        <!--end::Form-->
+    </div>
 @endsection

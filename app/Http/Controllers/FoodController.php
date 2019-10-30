@@ -1,10 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Food;
 use Illuminate\Http\Request;
-
 class FoodController extends Controller
 {
     /**
@@ -37,6 +35,10 @@ class FoodController extends Controller
     public function store(Request $request)
     {
         //
+
+        $food = new Food();
+        dd($food);
+
     }
 
     /**

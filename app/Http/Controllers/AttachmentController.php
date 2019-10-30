@@ -45,8 +45,29 @@ class AttachmentController extends Controller
     }
 
 
-
-     public function show()
+//store photo from dropdown ... ramazan
+     public function addphotos(Request $request)
      {
+
+         $image = $request->file('file');
+         $imageName = $image->getClientOriginalName();
+         $image->move(public_path('images'),$imageName);
+
+         $imageUpload = new Attachment;
+         $imageUpload->file_name = $imageName;
+         $imageUpload->save();
+         return response()->json(['success'=>$imageName]);
      }
+
+     //deleting photos from table ... ramazan
+    public function fileDestroy(Request $request)
+    {
+        $filename =  $request->get('file_name');
+        Attachment::where('file_name',$filename)->delete();
+        $path=public_path().'/images/'.$filename;
+        if (file_exists($path)) {
+            unlink($path);
+        }
+        return $filename;
+    }
 }

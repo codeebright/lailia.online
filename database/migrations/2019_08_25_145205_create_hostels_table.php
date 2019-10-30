@@ -19,7 +19,7 @@ class CreateHostelsTable extends Migration
           $table->string('name');
           $table->string('phone',12);
           $table->string('email',12);
-          $table->string('descrption');
+          $table->string('description')->nullable();
           $table->string('type');
           $table->string('website',12);
           $table->string('fb');

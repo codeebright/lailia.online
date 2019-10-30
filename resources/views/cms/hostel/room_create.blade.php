@@ -1,10 +1,9 @@
 @extends('layouts.master')
-@section('title','اضافه نمودن خوابگاه')
-
+@section('title','تنظیمات اتاق')
 @section('content')
     <div class="row justify-content-center">
         <div class="col-md-12">
-            @include('layouts.partials.errors');
+
             <div class="m-portlet__head-caption">
                 <div class="m-portlet__head-title">
 												<span class="m-portlet__head-icon m--hide">
@@ -12,13 +11,11 @@
 												</span>
 
                     <h3 class="m-portlet__head-text">
-                        مشخصات خوابگاه
+                        مشخات اتاق
                     </h3>
                 </div>
             </div>
-            @include('cms.hostel.hostelform')
+            @include('cms.hostel.room_form')
         </div>
     </div>
 @endsection
-
-{{--@include('layouts.partials.m-content')--}}

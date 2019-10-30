@@ -16,21 +16,60 @@
  *
  * =========================================
  * */
+route::group(['prefix' => 'admin'] , function(){
+    route::get('/hostel' , 'HostelController@index')->name('hostel.index');
+    route::get('/hostel/create' , 'HostelController@create')->name('hostel.create');
+    route::post('/hostel/create' , 'HostelController@store')->name('hostel.store');
+    Route::get('/hostel/delete/{hostel_id}' ,'HostelController@delete')->name('hostel.delete');
+    route::get('/hostel/edit/{hostel_id}' , 'HostelController@edit')->name('hostel.edit');
+    route::post('/hostel/edit/{hostel_id}' , 'HostelController@update')->name('hostel.update');
+// rooms route .. 'ramazan'
+//    route::get('/room' , 'HostelController@index')->name('hostel.index');
+    route::get('/room/create' , 'RoomController@create')->name('room.create');
+    route::post('/room/create' , 'RoomController@store')->name('room.store');
+    route::get('/room/{id}/delete' , 'RoomController@delete')->name('room.delete');
+    route::get('/room/edit/{id}' , 'RoomController@edit')->name('room.edit');
+    route::post('/room/edit/{id}' , 'RoomController@update')->name('room.update');
 
-// Hoste Resource route Ramazan
-Route::resource('hostel','HostelController');
-// Food Resource route 'Ramazan'
+    //owner routes .. 'ramazan'
+    route::get('/Owner' , 'OwnerController@index')->name('Owner.index');
+    route::get('/Owner/create' , 'OwnerController@create')->name('Owner.create');
+    route::post('/Owner/create' , 'OwnerController@store')->name('Owner.store');
+//    Route::get('/Owner/delete/{Owner_id}' ,'OwnerController@delete')->name('Owner.delete');
+    route::get('/Owner/edit/{Owner_id}' , 'OwnerController@edit')->name('Owner.edit');
+    route::post('/Owner/edit/{Owner_id}' , 'OwnerController@update')->name('Owner.update');
+});
+
+
+
+
+// Hostel Resource route Ramazan
+//Route::resource('hostel','HostelController');
+//dropdown routes create 'ramazan'
+Route::post('hostel/photos' ,'AttachmentController@addphotos')->name('add_photos');
+//photos delete route "ramazan"
+Route::post('hostel/photos/delete' ,'AttachmentController@fileDestroy')->name('fileDestroy');
+//delet the room  ... 'ramazan'
+//Route::get('rooms/delete/{room_id}' ,'RoomController@delete')->name('room.delete');
+ //Room resource route 'Ramazan'
+//Route::resource('room','RoomController');
+ //Food Resource route 'Ramazan'
 Route::resource('food','FoodController');
-// Room resource route 'Ramazan'
-Route::resource('room','RoomController');
+
 
 Route::get('/test', function () {
     return view('cms.hostel.test');
 });
-// Route::get('hostel', 'HostelController@index');
- Route::get('/profile', function(){
-     return view('cms.hostel.profile');
- })->name('profile');
+//// Route::get('hostel', 'HostelController@index');
+// Route::get('/profile', function(){
+//     return view('cms.hostel.profile');
+// })->name('profile');
+
+
+Route::get('/example', function(){
+    return view('cms.hostel.example');
+})->name('example');
+
 
 /*
  * Enf of CMS route
@@ -43,7 +82,7 @@ Route::get('/test', function () {
  * =====================================
  * */
 
-//foto route
+//photo route
 Route::get('/form',function(){
   return view('front/form');
 });
@@ -63,9 +102,12 @@ Route::post('register', 'OwnerController@store')->name('registration.store');
 
 // khabgah_detailes/khabgah_pages route
 
-Route::get('/hostel/list','hostelController@listHostel')->name('hostel.list');
+Route::get('hostel/list','hostelController@listHostel')->name('hostel.list');
 
-
+// Room Filtering
+// Route::get('hostel_detials', function(){
+//   return view('front/hostel_detials');
+// });
 
 // Room Filtering
 Route::get('room_filter', function(){

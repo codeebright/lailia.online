@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Hostel extends Model
 {
+    protected $guarded = ['fb'];
     // has one details
     public function hostelDetails()
     {
@@ -13,13 +14,13 @@ class Hostel extends Model
     }
 
     // hostel has one address
-    public function addresses()
+    public function address()
     {
       return $this->hasOne(Address::class);
     }
 
     // hostel has facilities
-    public function facilities()
+    public function facility()
     {
         return $this->hasMany(Facility::class);
     }
@@ -28,5 +29,16 @@ class Hostel extends Model
     public function foodMenus()
     {
         return $this->hasOne(FoodMenu::class);
+    }
+
+        // hostel has many photos
+        public function attachments()
+        {
+            return $this->hasMany(Attachment::class);
+        }
+    // hostel has many rooms
+    public function rooms()
+    {
+        return $this->hasMany(Room::class);
     }
 }

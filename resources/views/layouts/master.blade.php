@@ -8,6 +8,11 @@
 		<meta name="csrf-token" content="{{ csrf_token() }}">
 		<script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
 		<script>
+			$.ajaxSetup({
+				headers: {
+					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+				}
+			});
 			WebFont.load({
 			    google: {
 			        "families": ["Poppins:300,400,500,600,700", "Roboto:300,400,500,600,700"]
@@ -23,6 +28,7 @@
 		<link href="{{asset('assets/vendors/custom/fullcalendar/fullcalendar.bundle.rtl.css')}}" rel="stylesheet" type="text/css" />
 		<link rel="shortcut icon" href="{{asset('assets/demo/demo11/media/img/logo/favicon.ico')}}" />
 		<link href="{{asset('assets/vendors/custom/datatables/datatables.bundle.css')}}" rel="stylesheet" type="text/css" />
+
 		<style>
 			@font-face {
 				font-family: 'persian_font';
@@ -49,6 +55,7 @@
 		<script src="{{asset('assets/demo/demo11/custom/crud/forms/widgets/autosize.js')}}" type="text/javascript"></script>
 		<script src="{{asset('assets/demo/demo11/custom/components/base/SweetAlert2.js')}}" type="text/javascript"></script>
 		<script src="{{asset('assets/demo/demo11/custom/crud/forms/widgets/select2.js')}}" type="text/javascript"></script>
+		<script src="{{asset('assets/demo/demo11/custom/crud/forms/widgets/dropzone.js')}}" type="text/javascript"></script>
 		<script src="{{asset('assets/vendors/custom/datatables/datatables.bundle.js')}}" type="text/javascript"></script>
 
 		<script src="{{asset('assets/demo/demo11/custom/crud/datatables/basic/paginations.js')}}" type="text/javascript"></script>

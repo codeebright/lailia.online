@@ -1,28 +1,94 @@
 @extends('layouts.master')
-@section('title','خدمات نان و منیوی غذای')
+@section('title','جدول تنظمیات مینوی غذای')
 @section('content')
-    <div class="row">
-        <div class="col-md-12">
-    <div class="m-portlet__head-caption">
-        <div class="m-portlet__head-title">
-												<span class="m-portlet__head-icon m--hide">
-													<i class="la la-gear"></i>
-												</span>
+    @push('food_menue')
+        <div class="m-portlet">
+            <div class="m-portlet__head">
+                <div class="m-portlet__head-caption">
+                    <div class="m-portlet__head-title">
+                        <h3 class="m-portlet__head-text">
+                            اوقات غذای روزمره
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="m-portlet__body">
 
-            <h3 class="m-portlet__head-text">مینوی غذای
-            </h3>
+                <!--begin::Section-->
+                <div class="m-section">
+                    <div class="m-section__content">
+                        <table class="table table-striped m-table">
+                            <thead>
+                            <tr>
+                                <th>ایام هفته</th>
+                                <th>صبح</th>
+                                <th>چاشت</th>
+                                <th>شام</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">شنبه</th>
+                                <td>چای</td>
+                                <td>برنج</td>
+                                <td>لوبیا</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">یک شنبه</th>
+                                <td>شیر</td>
+                                <td>قورمه</td>
+                                <td>شورمه</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">دو شنبه</th>
+                                <td>تخم</td>
+                                <td>کباب</td>
+                                <td>قابلی</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">سه شنبه</th>
+                                <td>پنیر</td>
+                                <td>عدس</td>
+                                <td>کچالو</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">چهارشنبه</th>
+                                <td>شیر</td>
+                                <td>قورمه</td>
+                                <td>شورمه</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">پنج شنبه</th>
+                                <td>شیر</td>
+                                <td>قورمه</td>
+                                <td>شورمه</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><b>جمعه</b></th>
+                                <td>شیر</td>
+                                <td>قورمه</td>
+                                <td>شورمه</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!--end::Section-->
+            </div>
+
+            <!--end::Form-->
         </div>
-    </div>
-
-    <form class="m-form m-form--fit m-form--label-align-right ">
-
+    @endpush
+    <form class="m-form m-form--fit m-form--label-align-right" method="post" action="{{route('food.store')}}">
+        @csrf
         <div class="m-portlet__body">
             <div class="form-group  row">
                 <label class="col-form-label col-lg-2 col-sm-12 mt-2">صبح هنگام</label>
                 <div class="form-group  pr-1 ">
                     <label for="exampleInputEmail1 " class="mb-2 pl-2">شنبه</label>
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_1" style="width: 130px">
                         <option selected="">صبح</option>
                         <option value="1">تخم با جای</option>
                         <option value="2">پنیر</option>
@@ -32,7 +98,7 @@
                 <div class="form-group  pr-1 ">
                     <label for="exampleInputEmail1 " class="mb-2 pl-2">یک شبنه</label>
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_2" style="width: 130px">
                         <option selected=""></option>
                         <option value="1">تخم با جای</option>
                         <option value="2">پنیر</option>
@@ -42,7 +108,7 @@
                 <div class="form-group  pr-1 ">
                     <label for="exampleInputEmail1 " class="mb-2 pl-2">دو شبنه</label>
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_3" style="width: 130px">
                         <option selected="">صبح</option>
                         <option value="1">تخم با جای</option>
                         <option value="2">پنیر</option>
@@ -52,7 +118,7 @@
                 <div class="form-group  pr-1 ">
                     <label for="exampleInputEmail1 " class="mb-2 pl-2">سه شنبه</label>
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_4" style="width: 130px">
                         <option selected="">صبح</option>
                         <option value="1">تخم با جای</option>
                         <option value="2">پنیر</option>
@@ -62,7 +128,7 @@
                 <div class="form-group  pr-1 ">
                     <label for="exampleInputEmail1 " class="mb-2 pl-2">چهار شنبه</label>
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_5"style="width: 130px">
                         <option selected="">صبح</option>
                         <option value="1">تخم با جای</option>
                         <option value="2">پنیر</option>
@@ -72,7 +138,7 @@
                 <div class="form-group  pr-1 ">
                     <label for="exampleInputEmail1 " class="mb-2 pl-2">پنج شنبه</label>
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_6" style="width: 130px">
                         <option selected="">صبح</option>
                         <option value="1">تخم با جای</option>
                         <option value="2">پنیر</option>
@@ -82,7 +148,7 @@
                 <div class="form-group  pr-1 ">
                     <label for="exampleInputEmail1 " class="mb-2 pl-2">جمعه</label>
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_7" style="width: 130px">
                         <option selected="">صبح</option>
                         <option value="1">تخم با جای</option>
                         <option value="2">پنیر</option>
@@ -94,7 +160,7 @@
                 <label class="col-form-label col-lg-2 col-sm-12 ">چاشت</label>
                 <div class="form-group  pr-1 ">
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_8" style="width: 130px">
                         <option selected="">چاشت</option>
                         <option value="1">قابلی</option>
                         <option value="2">کباب</option>
@@ -104,7 +170,7 @@
                 </div>
                 <div class="form-group  pr-1 ">
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_9" style="width: 130px">
                         <option selected="">چاشت</option>
                         <option value="1">قابلی</option>
                         <option value="2">کباب</option>
@@ -114,7 +180,7 @@
                 </div>
                 <div class="form-group  pr-1 ">
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_10" style="width: 130px">
                         <option selected="">چاشت</option>
                         <option value="1">قابلی</option>
                         <option value="2">کباب</option>
@@ -124,7 +190,7 @@
                 </div>
                 <div class="form-group  pr-1 ">
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_11" style="width: 130px">
                         <option selected="">چاشت</option>
                         <option value="1">قابلی</option>
                         <option value="2">کباب</option>
@@ -134,7 +200,7 @@
                 </div>
                 <div class="form-group  pr-1 ">
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_12"style="width: 130px">
                         <option selected="">چاشت</option>
                         <option value="1">قابلی</option>
                         <option value="2">کباب</option>
@@ -144,7 +210,7 @@
                 </div>
                 <div class="form-group  pr-1 ">
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_13" style="width: 130px">
                         <option selected="">چاشت</option>
                         <option value="1">قابلی</option>
                         <option value="2">کباب</option>
@@ -154,7 +220,7 @@
                 </div>
                 <div class="form-group  pr-1 ">
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_14" style="width: 130px">
                         <option selected="">چاشت</option>
                         <option value="1">قابلی</option>
                         <option value="2">کباب</option>
@@ -167,7 +233,7 @@
                 <label class="col-form-label col-lg-2 col-sm-12">شام</label>
                 <div class="form-group  pr-1 ">
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_15" style="width: 130px">
                         <option selected="">شام</option>
                         <option value="1">قابلی</option>
                         <option value="2">کباب</option>
@@ -177,7 +243,7 @@
                 </div>
                 <div class="form-group  pr-1 ">
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_16" style="width: 130px">
                         <option selected="">شام</option>
                         <option value="1">قابلی</option>
                         <option value="2">کباب</option>
@@ -187,7 +253,7 @@
                 </div>
                 <div class="form-group  pr-1 ">
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_17" style="width: 130px">
                         <option selected="">شام</option>
                         <option value="1">قابلی</option>
                         <option value="2">کباب</option>
@@ -197,7 +263,7 @@
                 </div>
                 <div class="form-group  pr-1 ">
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_18" style="width: 130px">
                         <option selected="">شام</option>
                         <option value="1">قابلی</option>
                         <option value="2">کباب</option>
@@ -207,7 +273,7 @@
                 </div>
                 <div class="form-group  pr-1 ">
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_19" style="width: 130px">
                         <option selected="">شام</option>
                         <option value="1">قابلی</option>
                         <option value="2">کباب</option>
@@ -217,7 +283,7 @@
                 </div>
                 <div class="form-group  pr-1 ">
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_20" style="width: 130px">
                         <option selected="">شام</option>
                         <option value="1">قابلی</option>
                         <option value="2">کباب</option>
@@ -227,7 +293,7 @@
                 </div>
                 <div class="form-group  pr-1 ">
                     <div></div>
-                    <select class="custom-select form-control" style="width: 130px">
+                    <select class="form-control m-select2" name= "name" id="m_select2_2_21" style="width: 130px">
                         <option selected="">شام</option>
                         <option value="1">قابلی</option>
                         <option value="2">کباب</option>

@@ -6,6 +6,8 @@ use App\Hostel;
 use App\HostelDetails;
 use App\Address;
 use App\Facility;
+use App\Attachment;
+use App\Room;
 use Illuminate\Http\Request;
 use App\Http\Requests\HostelRequest;
 use App\Http\Requests\ownerRequest;
@@ -18,8 +20,18 @@ class HostelController extends Controller
      */
     public function index()
     {
-        return view('cms.hostel.hostel_index');
+
+        $hostels = Hostel::with('address')->get();
+        $hostels = Hostel::with('facility')->get();
+        $facilities = Facility::all();
+       // $address = Address::all();
+        $Rooms = Room::all();
+        return view('cms.hostel.hostel_index', compact('hostels' , 'Rooms' ));
     }
+
+
+
+
 
     /**
      * Show the form for creating a new Hostel CMS.
@@ -28,7 +40,7 @@ class HostelController extends Controller
      */
     public function create()
     {
-        return view('cms.hostel.hostel_create');
+        return view('cms.hostel.hostel_create')->with($panel_title = 'ایجاد لیلیه جدید');
     }
 
     /**
@@ -38,7 +50,24 @@ class HostelController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
+
     {
+//
+//
+//        $hostel = [
+//            'name' => request()->input('name'),
+//            'type' => request()->input('type'),
+//            'phone' => request()->input('phone'),
+//            'email' => request()->input('email'),
+//            'description' => request()->input('description'),
+//        ];
+//
+//
+//        $Hostel_opject = Hostel::create($hostel);
+//        if ($Hostel_opject instanceof Hostel){
+//            return redirect()->route('hostel.index')->with('success', 'لیلییه با موفقییت علاو گردید');
+//
+//        }
 
         $hostel = new Hostel;
         $hostel->name = $request->name;
@@ -46,7 +75,7 @@ class HostelController extends Controller
         $hostel->type = $request->type;
         $hostel->phone = $request->phone;
         $hostel->email = $request->email;
-        $hostel->descrption = $request->descrption;
+        $hostel->description = $request->description;
         $hostel->save();
 
         $address = new Address();
@@ -66,6 +95,17 @@ class HostelController extends Controller
                $facility->facility_name = $name;
                $facility->save();
              }
+
+//        $image = $request->file('file');
+//        $imageName = $image->getClientOriginalName();
+//        $image->move(public_path('images'),$imageName);
+//
+//        $attachments = new Attachment();
+//        $attachments->filename = $imageName;
+//        $attachments->save();
+//        return response()->json(['success'=>$imageName]);
+
+
 
 
 
@@ -93,9 +133,18 @@ class HostelController extends Controller
      * @param  \App\hostels  $hostels
      * @return \Illuminate\Http\Response
      */
-    public function edit(hostels $hostels)
+    public function edit($id)
     {
         //
+        if ($id && ctype_digit($id)){
+            $hostel = Hostel::find($id);
+            // if the object is exist
+            if ($hostel && $hostel instanceof Hostel){
+
+                return view('cms/hostel/hostel_create', compact('hostel'))->with('success', 'لیلیه را ورایش میتوانید');
+            }
+        }
+
     }
 
     /**
@@ -105,9 +154,23 @@ class HostelController extends Controller
      * @param  \App\hostels  $hostels
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, hostels $hostels)
+    public function update(Request $request , $id)
     {
         //
+
+
+        $input = [
+            'name' => request()->input('name'),
+            'type' => request()->input('type'),
+            'phone' => request()->input('phone'),
+            'email' => request()->input('email'),
+            'description' => request()->input('description'),
+        ];
+
+        $hostel = Hostel::find($id);
+        $hostel->update($input);
+        return redirect()->route('hostel.index');
+
     }
 
     /**
@@ -116,10 +179,19 @@ class HostelController extends Controller
      * @param  \App\hostels  $hostels
      * @return \Illuminate\Http\Response
      */
-    public function destroy(hostels $hostels)
+    public function delete($id)
     {
-        //
+        // delet the hostel ... ramazan
+        if ($id && ctype_digit($id)){
+            $hostel = Hostel::find($id);
+            // if the object is exist
+            if ($hostel && $hostel instanceof Hostel){
+                $hostel->delete();
+                return redirect()->back()->with('success', 'لیلیه حذف گردید.');
+            }
+        }
     }
+
 
     /*
      * List Hostel front
