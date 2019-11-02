@@ -1,6 +1,6 @@
 <!--begin::Form-->
 {{--@if(isset($hostel))--}}
-<form class="m-form m-form--fit m-form--label-align-rightx" method="patch" action="" enctype="multipart/form-data">
+<form class="m-form m-form--fit m-form--label-align-rightx" method="post" action="" enctype="multipart/form-data">
     {{--@else--}}
     @csrf
     <div class="m-portlet__body">
@@ -54,16 +54,17 @@
             <div class="col-lg-4 m-form__group-sub">
                 <label class="form-control-label">ولایت :</label>
                 <select class="form-control m-select2" id="m_select2_2_1" name="province">
-                    <option value="{{old('province', isset($address) ? $hostel-$address->province: '')}}">{{old('province', isset($address) ? $hostel-$address->province: '')}}</option>
+                    <option value="{{old('province', isset($hostel->address) ? $hostel->address->province: '')}}">{{old('province', isset($hostel->address) ? $hostel->address->province: '')}}</option>
                     <option value="قندهار">قندهار</option>
                     <option value="مزار">مزار</option>
                     <option value="کابل">کابل</option>
                 </select>
             </div>
+
             <div class="col-lg-4 m-form__group-sub">
                 <label class="form-control-label"> ناحیه :</label>
                 <select class="form-control m-select2" id="m_select2_2_2" name="state">
-                    <option value="">لیله شما مربوط کدام ناحیه میگردد</option>
+                    <option value="{{old('state', isset($hostel->address) ? $hostel->address->state: '')}}">{{old('state', isset($hostel->address) ? $hostel->address->state: '')}}</option>
                     <option value="ناحیه اول">اول</option>
                     <option value="دوم">دوم</option>
                     <option value="سوم">سوم</option>
@@ -77,7 +78,7 @@
             <div class="col-lg-4 m-form__group-sub">
                 <label class="form-control-label">* سرک:</label>
                 <select class="form-control m-select2" id="m_select2_2_8" name="rood">
-                    <option value="">لیلیه شما در کدام سرک موقعیت دارد</option>
+                    <option value="{{old('rood', isset($hostel->address) ? $hostel->address->rood: '')}}">{{old('province', isset($hostel->address) ? $hostel->address->rood: '')}}</option>
                     <option value="شهید مزاری">شهید مزاری</option>
                     <option value="دارلامان">دارلامان</option>
                     <option value="کارته چهار">سرک کارته چهار</option>
@@ -93,7 +94,7 @@
             <div class="col-lg-4 m-form__group-sub">
                 <label class="form-control-label">* ایستگا:</label>
                 <select class="form-control m-select2" id="m_select2_2_4" name="station">
-                    <option value="">لیلیه شما مربوط کدام ایستگاهیگردد</option>
+                    <option value="{{old('station', isset($hostel->address) ? $hostel->address->station: '')}}">{{old('station', isset($hostel->address) ? $hostel->address->station: '')}}</option>
                     <option value="شفاخانه">شفاخانه</option>
                     <option value="گولای">گولای</option>
                     <option value="سرپل">سر پل</option>
@@ -106,7 +107,7 @@
             <div class="col-lg-4 m-form__group-sub">
                 <label class="form-control-label">* کوچه:</label>
                 <select class="form-control m-select2" id="m_select2_2_5" name="alley">
-                    <option value="">لیله در چندمین کوچه از استگاه موقعیت دارد</option>
+                    <option value="{{old('alley', isset($hostel->address) ? $hostel->address->alley: '')}}">{{old('alley', isset($hostel->address) ? $hostel->address->alley: '')}}</option>
                     <option value="اولین">اولین</option>
                     <option value="دومین">دومین</option>
                     <option value="روبرو">روبرو</option>
@@ -119,7 +120,7 @@
             <div class="col-lg-4 m-form__group-sub">
                 <label class="form-control-label">* نمبر اپارتمان:</label>
                 <select class="form-control m-select2" id="m_select2_2_7" name="home_number">
-                    <option value="">چندمین خانه از کوچه</option>
+                    <option value="{{old('home_number', isset($hostel->address) ? $hostel->address->home_number: '')}}">{{old('home_number', isset($hostel->address) ? $hostel->address->home_number: '')}}</option>
                     <option value="یک">نمبر ۱</option>
                     <option value="دوم">نمبر ۲</option>
                     <option value="سوم">نمبر ۳</option>
@@ -201,15 +202,23 @@
         <div class="form-group m-form__group row">
             <label class=" col-lg-12 col-sm-12 " style="">امکانات ترا انتخاب کیند</label>
             <div class="col-md-12 col-sm-12">
+
+
                 <select class="form-control m-select2" id="m_select2_2_3" name="facility_name[]"
                         multiple="multiple">
-                    <optgroup label="Eastern Time Zone">
-                        <option value="انترنت">انترنت</option>
+                    <optgroup label="امکانات لیله را انتخاب کنید">
+                      {{--  @foreach($hostel->facility as $id => $facility_id)
+                            <option value="{{ $facility_id }}"> {{ $facility }} </option>
+                        @endforeach--}}
+                        <option value=" انترنت"> انترنت رایگان</option>
                         <option value="کتابخانه">کتابخانه</option>
                         <option value="حوض">حوض</option>
                         <option value="محیط سبز">محیط سبز</option>
+
                     </optgroup>
                 </select>
+
+
             </div>
         </div>
     </div>
@@ -227,6 +236,7 @@
                                   placeholder="قوانین ومقرارت لیله را وارید کنید (از اشخاص مبتلا به مواد مخدر معذوریم)"
                                   type="text" id="m_autosize_2" name="description" rows="3"
                                   style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 72px;">
+                            {{old('description', isset($hostel) ? $hostel->description: '')}}
 
                         </textarea>
         </div>

@@ -17,7 +17,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- begin::Head -->
 <head>
     <meta charset="utf-8" />
-    <title>Metronic | Login Page - 5</title>
+    <title>admin | Login Page </title>
     <meta name="description" content="Latest updates and statistic charts">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
@@ -66,13 +66,13 @@ License: You must have a valid license purchased only from themeforest(the above
                             </a>
                         </div>
                         <div class="m-login__title">
-                            <h3>JOIN OUR GREAT METRO COMMUNITY GET FREE ACCOUNT</h3>
+                            <h3>خوابگاه تانرا عضو ( مرکز لیلیه های افغانستان ) با یک حساب کاربری  رایگان بسازید </h3>
                         </div>
                         <div class="m-login__desc">
-                            Amazing Stuff is Lorem Here.Grownng Team
+                            برای به کرایه دادن سریع اتاق های تان عضو شوید
                         </div>
                         <div class="m-login__form-action">
-                            <button type="button" id="m_login_signup" class="btn btn-outline-focus m-btn--pill">Get An Account</button>
+                            <button type="button" id="m_login_signup" class="btn btn-outline-focus m-btn--pill">ساختن حساب </button>
                         </div>
                     </div>
                 </div>
@@ -85,74 +85,74 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="m-login__contanier">
                 <div class="m-login__signin">
                     <div class="m-login__head">
-                        <h3 class="m-login__title">Login To Your Account</h3>
+                        <h3 class="m-login__title">ورود به حساب</h3>
                     </div>
                     <form class="m-login__form m-form" action="">
                         <div class="form-group m-form__group">
-                            <input class="form-control m-input" type="text" placeholder="Username" name="username" autocomplete="off">
+                            <input class="form-control m-input" type="text" placeholder="نام کامل" name="username" autocomplete="off">
                         </div>
                         <div class="form-group m-form__group">
-                            <input class="form-control m-input m-login__form-input--last" type="Password" placeholder="Password" name="password">
+                            <input class="form-control m-input m-login__form-input--last" type="Password" placeholder="رمز عبور" name="password">
                         </div>
                         <div class="row m-login__form-sub">
                             <div class="col m--align-left">
                                 <label class="m-checkbox m-checkbox--focus">
-                                    <input type="checkbox" name="remember"> Remember me
+                                    <input type="checkbox" name="remember"> مرا بخاطر بسپار
                                     <span></span>
                                 </label>
                             </div>
                             <div class="col m--align-right">
-                                <a href="javascript:;" id="m_login_forget_password" class="m-link">Forget Password ?</a>
+                                <a href="javascript:;" id="m_login_forget_password" class="m-link">رمز عبور را فراموش کرده اید؟</a>
                             </div>
                         </div>
                         <div class="m-login__form-action">
-                            <button id="m_login_signin_submit" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air">Sign In</button>
+                            <button id="m_login_signin_submit" href="{{route('hostel.index')}}" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air">ورود</button>
                         </div>
                     </form>
                 </div>
                 <div class="m-login__signup">
                     <div class="m-login__head">
-                        <h3 class="m-login__title">Sign Up</h3>
-                        <div class="m-login__desc">Enter your details to create your account:</div>
+                        <h3 class="m-login__title">ساختن حساب کار بری جدید</h3>
+                        <div class="m-login__desc">مشخصات تانر برای ساختن حساب وارید کنید.</div>
                     </div>
                     <form class="m-login__form m-form" action="">
                         <div class="form-group m-form__group">
-                            <input class="form-control m-input" type="text" placeholder="Fullname" name="fullname">
+                            <input class="form-control m-input" type="text" placeholder="نام کامل" name="fullname">
                         </div>
                         <div class="form-group m-form__group">
-                            <input class="form-control m-input" type="text" placeholder="Email" name="email" autocomplete="off">
+                            <input class="form-control m-input" type="text" placeholder="ایمیل" name="email" autocomplete="off">
                         </div>
                         <div class="form-group m-form__group">
-                            <input class="form-control m-input" type="password" placeholder="Password" name="password">
+                            <input class="form-control m-input" type="password" placeholder="رمز عبور" name="password">
                         </div>
                         <div class="form-group m-form__group">
-                            <input class="form-control m-input m-login__form-input--last" type="password" placeholder="Confirm Password" name="rpassword">
+                            <input class="form-control m-input m-login__form-input--last" type="password" placeholder="تاید رمز عبور" name="rpassword">
                         </div>
-                        <div class="m-login__form-sub">
-                            <label class="m-checkbox m-checkbox--focus">
-                                <input type="checkbox" name="agree"> I Agree the <a href="#" class="m-link m-link--focus">terms and conditions</a>.
-                                <span></span>
-                            </label>
+                       {{-- <div class="m-login__form-sub">
+                            --}}{{--<label class="m-checkbox m-checkbox--focus">--}}{{--
+                                --}}{{--<input type="checkbox" name="agree"> موافق هستم <a href="#" class="m-link m-link--focus">با مقرارت و قوانین</a>.--}}{{--
+                                --}}{{--<span></span>--}}{{--
+                            --}}{{--</label>--}}{{--
                             <span class="m-form__help"></span>
-                        </div>
+                        </div>--}}
                         <div class="m-login__form-action">
-                            <button id="m_login_signup_submit" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air">Sign Up</button>
-                            <button id="m_login_signup_cancel" class="btn btn-outline-focus m-btn m-btn--pill m-btn--custom">Cancel</button>
+                            <button id="m_login_signup_submit" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air">حساب ساخته شود</button>
+                            <button id="m_login_signup_cancel" class="btn btn-outline-focus m-btn m-btn--pill m-btn--custom">انصراف</button>
                         </div>
                     </form>
                 </div>
                 <div class="m-login__forget-password">
                     <div class="m-login__head">
-                        <h3 class="m-login__title">Forgotten Password ?</h3>
-                        <div class="m-login__desc">Enter your email to reset your password:</div>
+                        <h3 class="m-login__title">فراموشی رمز عبور</h3>
+                        <div class="m-login__desc">برا دوباره ساختن رمز عبور ایمیل آدرس خود را وارید کنید</div>
                     </div>
                     <form class="m-login__form m-form" action="">
                         <div class="form-group m-form__group">
-                            <input class="form-control m-input" type="text" placeholder="Email" name="email" id="m_email" autocomplete="off">
+                            <input class="form-control m-input" type="text" placeholder="ایمیل ادرس" name="email" id="m_email" autocomplete="off">
                         </div>
                         <div class="m-login__form-action">
-                            <button id="m_login_forget_password_submit" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air">Request</button>
-                            <button id="m_login_forget_password_cancel" class="btn btn-outline-focus m-btn m-btn--pill m-btn--custom ">Cancel</button>
+                            <button id="m_login_forget_password_submit" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air">درخواست</button>
+                            <button id="m_login_forget_password_cancel" class="btn btn-outline-focus m-btn m-btn--pill m-btn--custom ">انصراف</button>
                         </div>
                     </form>
                 </div>

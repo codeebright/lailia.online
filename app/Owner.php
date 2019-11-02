@@ -9,5 +9,10 @@ class Owner extends Model
     //
     protected $table = 'owners';
     protected $guarded = 'LinkedIn';
-     
+
+    // hostel has hostel
+    public function hostel()
+    {
+        return $this->hasMany(Hostel::class);
+    }
 }

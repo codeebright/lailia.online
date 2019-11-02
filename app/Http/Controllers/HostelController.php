@@ -20,11 +20,8 @@ class HostelController extends Controller
      */
     public function index()
     {
-
-        $hostels = Hostel::with('address')->get();
-        $hostels = Hostel::with('facility')->get();
-        $facilities = Facility::all();
-       // $address = Address::all();
+        // get hostel address and facility and send to blade 'ramazan'
+        $hostels = Hostel::with('address' , 'facility' , 'owner')->get();
         $Rooms = Room::all();
         return view('cms.hostel.hostel_index', compact('hostels' , 'Rooms' ));
     }
@@ -87,7 +84,6 @@ class HostelController extends Controller
         $address->station = $request->station;
         $address->home_number = $request->home_number;
         $address->save();
-
         foreach ($request->facility_name as  $name) {
                // code...
                $facility = new Facility;
@@ -135,18 +131,18 @@ class HostelController extends Controller
      */
     public function edit($id)
     {
-        //
+        // make edit hostel ... 'ramazan'
         if ($id && ctype_digit($id)){
             $hostel = Hostel::find($id);
-            // if the object is exist
+            // if the object is
             if ($hostel && $hostel instanceof Hostel){
 
-                return view('cms/hostel/hostel_create', compact('hostel'))->with('success', 'لیلیه را ورایش میتوانید');
+                return view('cms/hostel/hostel_create', compact('hostel'));
             }
         }
 
     }
-
+//$hostels = Hostel::with('address')->get();
     /**
      * Update the specified resource in storage.
      *
@@ -156,8 +152,7 @@ class HostelController extends Controller
      */
     public function update(Request $request , $id)
     {
-        //
-
+        // make update hostel details 'ramazan'
 
         $input = [
             'name' => request()->input('name'),
@@ -169,6 +164,23 @@ class HostelController extends Controller
 
         $hostel = Hostel::find($id);
         $hostel->update($input);
+
+        // make update the hostel address ... 'ramazan'
+        $address = Address::find($id);
+        $address->province = $request->get('province');
+        $address->state = $request->get('state');
+        $address->rood = $request->get('rood');
+        $address->alley= $request->get('alley');
+        $address->station= $request->get('station');
+        $address->home_number= $request->get('home_number');
+        $address->save();
+
+        foreach ($request->facility_name as  $name) {
+            $facility = new Facility;
+            $facility->facility_name = $name;
+            $facility->save();
+        }
+
         return redirect()->route('hostel.index');
 
     }

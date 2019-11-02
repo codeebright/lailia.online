@@ -150,16 +150,16 @@ class OwnerController extends Controller
      */
     public function update(Request $request , $id)
     {
-
-        $share = Owner::find($id);
-        $share->name = $request->get('name');
-        $share->email = $request->get('email');
-        $share->phone_number = $request->get('phone_number');
-        $share->fb= $request->get('fb');
-        $share->insta= $request->get('insta');
-        $share->linkedIn= $request->get('linkedIn');
-        $share->twitter= $request->get('twitter');
-        $share->save();
+        // make update the hostel owner
+        $owner = Owner::find($id);
+        $owner->name = $request->get('name');
+        $owner->email = $request->get('email');
+        $owner->phone_number = $request->get('phone_number');
+        $owner->fb= $request->get('fb');
+        $owner->insta= $request->get('insta');
+        $owner->linkedIn= $request->get('linkedIn');
+        $owner->twitter= $request->get('twitter');
+        $owner->save();
         return redirect()->back();
     }
 
@@ -171,7 +171,6 @@ class OwnerController extends Controller
      */
     public function destroy($id)
     {
-
         // delet the account ... ramazan
         if ($id && ctype_digit($id)){
             $owner = Owner::find($id);

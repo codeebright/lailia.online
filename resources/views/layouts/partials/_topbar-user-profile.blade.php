@@ -15,23 +15,18 @@
                     <ul class="m-nav m-nav--skin-light">
                         <li class="m-nav__section m--hide"> <span class="m-nav__section-text">بخش</span> </li>
                         <li class="m-nav__item">
-                            <a href="{{route('Owner.index')}}" class="m-nav__link"> <i class="m-nav__link-icon flaticon-profile-1"></i> <span class="m-nav__link-title">  									<span class="m-nav__link-wrap">      										<span class="m-nav__link-text">پروفایل من</span> <span class="m-nav__link-badge"><span class="m-badge m-badge--success">2</span></span>
+                            <a href="" class="m-nav__link"> <i class="m-nav__link-icon flaticon-profile-1"></i> <span class="m-nav__link-title">  									<span class="m-nav__link-wrap"><span class="m-nav__link-text">واریش پروفایل</span> <span class="m-nav__link-badge"><span class="m-badge m-badge--success">2</span></span>
                                 </span>
                                 </span>
+
                             </a>
+
                         </li>
                         <li class="m-nav__item">
-                            <a href="?page=profile" class="m-nav__link"> <i class="m-nav__link-icon flaticon-share"></i> <span class="m-nav__link-text">فعالیت ها</span> </a>
+                            <a href="?page=profile" class="m-nav__link"> <i class="m-nav__link-icon flaticon-share"></i> <span class="m-nav__link-text">تنظیمات</span> </a>
                         </li>
                         <li class="m-nav__item">
-                            <a href="?page=profile" class="m-nav__link"> <i class="m-nav__link-icon flaticon-chat-1"></i> <span class="m-nav__link-text">پیام ها</span> </a>
-                        </li>
-                      {{--  <li class="m-nav__separator m-nav__separator--fit"> </li>
-                        <li class="m-nav__item">
-                            <a href="?page=profile" class="m-nav__link"> <i class="m-nav__link-icon flaticon-info"></i> <span class="m-nav__link-text">FAQ</span> </a>
-                        </li>--}}
-                        <li class="m-nav__item">
-                            <a href="?page=profile" class="m-nav__link"> <i class="m-nav__link-icon flaticon-lifebuoy"></i> <span class="m-nav__link-text">همایت</span> </a>
+                            <a href="?page=profile" class="m-nav__link"> <i class="m-nav__link-icon flaticon-share"></i> <span class="m-nav__link-text">ساختن اکانت جدید</span> </a>
                         </li>
                         <li class="m-nav__separator m-nav__separator--fit"> </li>
                         <li class="m-nav__item"> <a href="" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">خروج</a> </li>

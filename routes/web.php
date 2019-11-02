@@ -40,7 +40,9 @@ route::group(['prefix' => 'admin'] , function(){
     route::post('/Owner/edit/{Owner_id}' , 'OwnerController@update')->name('Owner.update');
 });
 
-
+Route::get('/adminLogin', function () {
+    return view('cms.hostel.login');
+});
 
 
 // Hostel Resource route Ramazan
