@@ -7,6 +7,7 @@ use App\HostelDetails;
 use App\Address;
 use App\Facility;
 use App\Attachment;
+use App\Owner;
 use App\Room;
 use Illuminate\Http\Request;
 use App\Http\Requests\HostelRequest;
@@ -21,9 +22,9 @@ class HostelController extends Controller
     public function index()
     {
         // get hostel address and facility and send to blade 'ramazan'
-        $hostels = Hostel::with('address' , 'facility' , 'owner')->get();
+        $hostels = Hostel::with('address' , 'facility')->get();
         $Rooms = Room::all();
-        return view('cms.hostel.hostel_index', compact('hostels' , 'Rooms' ));
+        return view('cms.hostel.hostel_index', compact('hostels' , 'Rooms' , 'owner'));
     }
 
 

@@ -49,6 +49,7 @@ class AttachmentController extends Controller
      public function addphotos(Request $request)
      {
 
+
          $image = $request->file('file');
          $imageName = $image->getClientOriginalName();
          $image->move(public_path('images'),$imageName);

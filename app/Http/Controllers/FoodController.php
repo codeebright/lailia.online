@@ -36,8 +36,7 @@ class FoodController extends Controller
     {
         //
 
-        $food = new Food();
-        dd($food);
+
 
     }
 

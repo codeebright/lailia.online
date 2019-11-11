@@ -1,4 +1,4 @@
-<?php
+5<?php
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +17,7 @@
  * =========================================
  * */
 route::group(['prefix' => 'admin'] , function(){
-    route::get('/hostel' , 'HostelController@index')->name('hostel.index');
+    route::get('/hostel/' , 'HostelController@index')->name('hostel.index');
     route::get('/hostel/create' , 'HostelController@create')->name('hostel.create');
     route::post('/hostel/create' , 'HostelController@store')->name('hostel.store');
     Route::get('/hostel/delete/{hostel_id}' ,'HostelController@delete')->name('hostel.delete');
@@ -40,11 +40,12 @@ route::group(['prefix' => 'admin'] , function(){
     route::post('/Owner/edit/{Owner_id}' , 'OwnerController@update')->name('Owner.update');
 });
 
+ //Food Resource route 'Ramazan'
+Route::resource('food','FoodController');
+
 Route::get('/adminLogin', function () {
     return view('cms.hostel.login');
 });
-
-
 // Hostel Resource route Ramazan
 //Route::resource('hostel','HostelController');
 //dropdown routes create 'ramazan'
@@ -55,8 +56,7 @@ Route::post('hostel/photos/delete' ,'AttachmentController@fileDestroy')->name('f
 //Route::get('rooms/delete/{room_id}' ,'RoomController@delete')->name('room.delete');
  //Room resource route 'Ramazan'
 //Route::resource('room','RoomController');
- //Food Resource route 'Ramazan'
-Route::resource('food','FoodController');
+
 
 
 Route::get('/test', function () {

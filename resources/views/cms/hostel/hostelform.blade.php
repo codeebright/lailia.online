@@ -138,67 +138,6 @@
                                                  data-original-title="آدرس خوابگا را دقیق وارید نماید تا محصلین به راحتی خوابگا را پیدا نماید."></i>
                 امکانات وتجهیزات خوابگاه</h3>
         </div>
-        <!-- <div id="m_repeater_1">
-            <div class="form-group  m-form__group row" id="m_repeater_1">
-                <div data-repeater-list="" class="col-lg-12">
-                    <div data-repeater-item="" class="form-group m-form__group row align-items-center">
-                        <div class="col-lg-5">
-
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-
-                                </div>
-                                <select class="form-control m-input form-control-danger" id="exampleSelect1" name="facility_name[]">
-                                    <option>حمام</option>
-                                    <option>انترنت</option>
-                                    <option>حولی</option>
-                                    <option>کتابخانه</option>
-                                    <option>محیط سبز</option>
-                                    <option>پرسونل</option>
-                                    <option>خدمتکار</option>
-                                </select>
-                            </div>
-
-                        </div>
-
-
-                        <div class="col-lg-5">
-
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-
-                                </div>
-                                <input class="form-control m-input form-control-danger" id="exampleSelect1" name="descrption">
-
-                                </input>
-                            </div>
-
-                        </div>
-                        <div class="col-md-2">
-                            <div data-repeater-delete="" class="btn-sm btn btn-danger m-btn m-btn--icon m-btn--pill">
-                                                    <span>
-                                                        <i class="la la-trash-o"></i>
-                                                        <span> حذف</span>
-                                                    </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="m-form__group form-group row">
-
-                <div class="col-lg-4">
-                    <div class="col ml-3">
-                        <div data-repeater-create="" class="btn btn btn-primary m-btn m-btn--icon ">
-                                                    <span>
-                                                        <i class="la la-plus"></i>
-                                                        <span>علاوه</span>
-                                                    </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <div class="form-group m-form__group row">
             <label class=" col-lg-12 col-sm-12 " style="">امکانات ترا انتخاب کیند</label>
             <div class="col-md-12 col-sm-12">
@@ -207,14 +146,10 @@
                 <select class="form-control m-select2" id="m_select2_2_3" name="facility_name[]"
                         multiple="multiple">
                     <optgroup label="امکانات لیله را انتخاب کنید">
-                      {{--  @foreach($hostel->facility as $id => $facility_id)
-                            <option value="{{ $facility_id }}"> {{ $facility }} </option>
-                        @endforeach--}}
                         <option value=" انترنت"> انترنت رایگان</option>
                         <option value="کتابخانه">کتابخانه</option>
                         <option value="حوض">حوض</option>
                         <option value="محیط سبز">محیط سبز</option>
-
                     </optgroup>
                 </select>
 
@@ -256,6 +191,7 @@
     <div class="m-portlet__foot m-portlet__foot--fit">
         <div class="m-form__actions pull-left">
             <button type="submit" class="btn btn-primary" name="submit">ذخیره</button>
+            <button type="submit" id="button" class="btn btn-primary">Submit</button>
             <button type="reset" class="btn btn-secondary">لغوه</button>
         </div>
     </div>
