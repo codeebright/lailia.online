@@ -65,10 +65,8 @@ class HostelDetailsController extends Controller
             ->where("week_days_id", "7");
 
         $hostel = Hostel::find($hostel_id);
-      $photos = $hostel->attachments()->paginate(4);
-        return view('front/khabgah_details',
+        return view('front.khabgah_details',
             compact([
-                'photos',
                 'hostel',
                 'new_img',
                 'sat_mor',
@@ -97,6 +95,7 @@ class HostelDetailsController extends Controller
             ]));
 
     }
+
 
 }
 

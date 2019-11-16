@@ -59,7 +59,7 @@
     /*end*/
 
     .hostel{
-        background-image: url("/assets-/app/media/img/bg/dbg-img/modern.jpg");
+        background-image: url("");
         box-sizing: border-box;
         -webkit-background-size: cover;
         -moz-background-size: cover;

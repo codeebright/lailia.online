@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAttachmentsTable extends Migration
+class CreateHostelPhotosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,10 @@ class CreateAttachmentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('attachments', function (Blueprint $table) {
+        Schema::create('hostel_photos', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('file_size')->nullable();
-            $table->string('img_name');
-            $table->integer('hostel_id')->default(1);
-            $table->integer('room_id')->default(1);
-            $table->softDeletes();
+            $table->string('file_name');
+            $table->integer('hostel_id');
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ class CreateAttachmentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('attachments');
+        Schema::dropIfExists('hostel_photos');
     }
 }

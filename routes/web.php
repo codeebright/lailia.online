@@ -22,6 +22,8 @@
  * */
 
 // Hoste Resource route Ramazan
+use App\Address;
+
 Route::resource('hostel','HostelController');
 // Food Resource route 'Ramazan'
 Route::resource('food','FoodController');
@@ -51,17 +53,25 @@ Route::get('/test', function () {
  * */
 
 //foto route
+
+//form for uploading hostel images
 Route::get('/form',function(){
   return view('front/form');
 });
 Route::post('/form', 'AttachmentController@save');
+
+// form for uploading rooms images
+Route::get('/room_form',function (){
+    return view('front/roomform');
+});
+Route::post('/room_form','AttachmentController@store');
+
 Route::get('/home','HomeController@index');
 
 // Login User Route
 Route::get('login/user','OwnerController@login')->name('registration.create');
-
-Route::post('/search','HomeController@homeSearch')->name('homeseach');
-
+// search result
+Route::post('/search','HomeController@homeSearch')->name('home_search');
 
 // Do login Route
 Route::post('login', 'OwnerController@login')->name('post_login');
@@ -70,7 +80,7 @@ Route::post('login', 'OwnerController@login')->name('post_login');
 Route::post('register', 'OwnerController@store')->name('registration.store');
 
 // khabgah_detailes/khabgah_pages route
-Route::get('/hostel_list','HostelController@listHostel')->name('hostel.list');
+Route::any('/hostel_list/{page?}','HostelController@listHostel')->name('hostel.list');
 Route::get('/khabgah_details/{hostel_id}','HostelDetailsController@index')->name('hostel_details');
 
 Route::get('/pagination','HostelController@paginate');

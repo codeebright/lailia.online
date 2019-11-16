@@ -33,11 +33,10 @@
         <div class="justify-content-center thin-underline-1"></div>
         <div class="row justify-content-center">
             @foreach($hostels as $hostel)
-                @foreach($hostel->attachments as $photo)
                     <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1 mt-3">
                         <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
                             <a href="">
-                                <img src="/assets-/app/media/img/blog/hostels-img/{{$photo->file_name}}"
+                                <img src="/assets-/app/media/img/blog/hostels-img/{{$hostel->hostelPhotos->first()->file_name}}"
                                      class="card-img-top card-img custom-card-img-height" alt=""></a>
                             <div class="car-body">
                                 <div class="card-footer">
@@ -52,14 +51,63 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                @endforeach
-
             @endforeach
 
         </div>
+        <div class="show_more" id="show_more">
+            <input type="hidden" id="increment" name="" value="0">
+        </div>
+        <a href="#"  onclick="showMoreHostel('{{route('hostel.list')}}','show_more')">Show More Pics</a>
     </section>
-
 @endsection
-<b></b>
+
+<script type="text/javascript">
+
+        // Ajax Function
+        function makeServerRequest(url, page, div_id) {
+            $.ajax({
+                url: url,
+                type: 'post',
+                data: {
+                  "_token": "{{csrf_token()}}",
+                  page
+                },
+                success: function (data) {
+                  $('#'+div_id).prepend(data);
+                },
+                error: function (jqXhr, data) {
+
+                    if (jqXhr.status === 401) //redirect if not authenticated user.
+                        $(location).prop('pathname', 'auth/login');
+                    if (jqXhr.status === 422) {
+                        //process validation errors here.
+                        var errors = jqXhr.responseJSON.errors; //this will get the errors response data.
+                        //show them somewhere in the markup
+                        errorsHtml = '<div class="alert alert-danger">';
+                        var i = 0;
+                        $.each(errors, function (key, value) {
+                            errorsHtml += value[0]; //showing only the first error.
+                            if (i == 0) {
+                                return false;
+                            }
+                        });
+                        errorsHtml += '</di>';
+                        $('#' + div_id).html(errorsHtml); //appending to a <div id="form-errors"></div> inside form
+                    } else {
+                        /// do some thing else
+                    }
+                }
+            })
+        }
+
+function showMoreHostel(url,div_id)
+{
+  var increment = $('#increment').val();
+  increment++;
+  $('#increment').val(increment);
+  var params = increment;
+  makeServerRequest(url,params,div_id);
+}
+
+</script>

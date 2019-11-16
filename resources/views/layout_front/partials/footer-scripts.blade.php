@@ -4,6 +4,7 @@
 <script src="{{asset('bootstraprtl/js/bootstrap.js')}}"></script>
 <script src="{{asset('bootstraprtl/js/fontawesome.js')}}"></script>
 <script src="{{asset('bootstraprtl/js/proper.js')}}"></script>
+<script src="{{ asset('/Owl/js/owl.carousel.min.js') }}"></script>
 
 <script>
     $(document).ready(function () {
@@ -103,7 +104,7 @@
             }
         })
     }
-
+      
 
     // Login Function
     function login(url, form_id, div_id) {
@@ -112,18 +113,44 @@
     }
 </script>
 
+{{-- owl carousel --}}
+
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:4,
+                nav:true,
+                loop:false
+            }
+        }
+    })
+</script>
+{{-- end owl --}}
+
 {{-- load more images --}}
-{{--<script>--}}
-    {{--function load_more() {--}}
-        {{--$('#message').show();--}}
-        {{--$.ajax({--}}
-            {{--url: '{{ url('hostel_details') }}',--}}
-            {{--type: 'get',--}}
-            {{--data: $(this).serialize(),--}}
-            {{--success: function (response) {--}}
-                {{--$("#images").html(response);--}}
-                {{--$("#load_more").hide();--}}
-            {{--}--}}
-        {{--})--}}
-    {{--}--}}
-{{--</script>--}}
+<script>
+    function load_more() {
+        $('#message').show();
+        $.ajax({
+            url: '{{ url('hostel_details') }}',
+            type: 'get',
+            data: $(this).serialize(),
+            success: function (response) {
+                $("#images").html(response);
+                $("#load_more").hide();
+            }
+        })
+    }
+</script>

@@ -4,9 +4,35 @@
 
     <!-- Small-hostel-properties -->
     <section class="container-fluid hostel">
-        <!-- right-small-card / description-card -->
-        <div class="card small-right-card">
+        {{-- slide show part --}}
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                @foreach($hostel->hostelPhotos->take(3) as $photo)
+                <div class="carousel-item @if($loop->first) active @endif">
+                    <img class="d-block w-100"
+                         src="/assets-/app/media/img/blog/hostels-img/{{$photo->file_name}}"
+                         alt="First slide" height="520">
+                </div>
+                @endforeach
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    {{-- end slid show part --}}
 
+    <!-- right-small-card / description-card -->
+        <div class="card small-right-card">
             <div class="card-title text-center">
                 <div class="mt-4"></div>
                 <i class="fa fa-home mt-4 text-center" style="font-size:45px; "></i>
@@ -31,31 +57,27 @@
     <!-- All hostel images -->
     <section class="container mt-5">
         <div class="row justify-content-center">
-            @foreach($photos as $photo)
-                <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1" id="load_more">
-                    <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                        <img src="/assets-/app/media/img/blog/hostels-img/{{$photo->file_name}}"
-                             class="card-img-top card-img custom-card-img-height"
-                             alt="">
-                        <div class="car-body">
-                            <div class="card-footer">
-                                <div class="custom-circle"><p class="custom-circle-text card-text"><b>
-                                            @if($hostel->type == 1)
-                                                {{ 'ذکور'}}
-                                            @else {{ 'اناث' }}
-                                            @endif
-                                        </b></p></div>
-                                <div class="custom-prices card-text text-left"> کرایه فی ماه
-                                    : {{ $hostel->remark }} افغانی
-                                </div>
+            <div class="owl-carousel owl-theme">
+            @foreach($hostel->attachments as $photo)
+                <div class="item card card-shadow" style="border-radius: 0%;">
+                    <img src="/assets-/app/media/img/blog/rooms-img/{{$photo->img_name}}"
+                         height="200" class="card-img-top card-img custom-card-img-height">
+                    <div class="car-body">
+                        <div class="card-footer">
+                            <div class="custom-circle"><p class="custom-circle-text card-text"><b>
+                                        @if($hostel->type == 1)
+                                            {{ 'ذکور'}}
+                                        @else {{ 'اناث' }}
+                                        @endif
+                                    </b></p></div>
+                            <div class="custom-prices card-text text-left"> کرایه فی ماه
+                                : {{ $hostel->remark }} افغانی
                             </div>
                         </div>
                     </div>
-                    <br>
                 </div>
-            @endforeach
-            {{$photos->links()}}
-
+                @endforeach
+            </div>
         </div>
     </section>
 

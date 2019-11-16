@@ -20,7 +20,6 @@ class HostelController extends Controller
 
     public function store(Request $request)
     {
-
         $hostel = new Hostel;
         $hostel->name = $request->name;
         $hostel->owner_id = 1; //Aut::user()->id;
@@ -47,38 +46,48 @@ class HostelController extends Controller
 
         return back()->with('success','Data is stored successfully');
 
-
     }
     public function show()
     {
-        //
     }
 
     public function edit()
     {
-        //
     }
 
     public function update(Request $request)
     {
-        //
     }
 
     public function destroy()
     {
-        //
     }
 
     // list hostels
-    public function listHostel()
+    public function listHostel(Request $request)
     {
-        $hostels = Hostel::all();
-        return view('front/khabgah_list',compact('hostels'));
+        $page = $request->page;
+        if($page=='')
+        {
+          $page = 0;
+          $skip = $page*4;
+        }
+        else
+           $skip = $page*4;
+
+        $hostels = Hostel::skip($skip)->take(4)->get();
+
+        if($page==0)
+          return view('front/khabgah_list',compact('hostels'));
+        else
+          return view('front/khabgah_show_more',compact('hostels'));
     }
+
+
 
     public function paginate()
     {
-        $images = Attachment::orderBy('file_id','desc')->take(4)->get();
+        $images = Attachment::all();
         return view('pagination',compact('images'));
     }
 }

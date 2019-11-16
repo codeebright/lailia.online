@@ -15,6 +15,12 @@ class Hostel extends Model
         return $this->hasMany(Attachment::Class);
     }
 
+    // has many Hostels photo
+    public function hostelPhotos()
+    {
+        return $this->hasMany(HostelPhoto::class);
+    }
+
     //has many rooms
     public function rooms()
     {
