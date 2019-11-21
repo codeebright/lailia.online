@@ -1,3 +1,4 @@
+<<<<<<< current
 <section class="container-fluid header p-0">
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brandd ml-5" href="#"><span class="logo fa fa-home"></span></a>
@@ -248,3 +249,5 @@
         </div>
     </div>
 </div>
+=======
+>>>>>>> before discard
