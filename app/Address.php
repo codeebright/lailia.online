@@ -11,7 +11,7 @@ class Address extends Model
 {
     use Searchable;
     // Address belongs to hostel
-    public function hostels()
+    public function hostel()
     {
       return $this->belongsTo(Hostel::class);
     }

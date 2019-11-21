@@ -9,8 +9,9 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Hostel extends Model
 {
-    // hasMany Attachments
-    public function attachments()
+    protected $guarded = ['fb'];
+    // has one details
+    public function hostelDetails()
     {
         return $this->hasMany(Attachment::Class);
     }
@@ -28,13 +29,13 @@ class Hostel extends Model
     }
 
     // hostel has one address
-    public function addresses()
+    public function address()
     {
         return $this->hasOne(Address::class);
     }
 
     // hostel has facilities
-    public function facilities()
+    public function facility()
     {
         return $this->hasMany(Facility::class);
     }
@@ -49,5 +50,20 @@ class Hostel extends Model
     public function foodCategories()
     {
         return $this->hasMany(FoodCategory::class);
+    }
+
+        // hostel has many photos
+        public function attachments()
+        {
+            return $this->hasMany(Attachment::class);
+        }
+    // hostel has many rooms
+    public function rooms()
+    {
+        return $this->hasMany(Room::class);
+    }
+    public function owner()
+    {
+        return $this->belongsTo(Owner::class);
     }
 }

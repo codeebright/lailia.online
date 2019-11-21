@@ -13,9 +13,13 @@
                 @include('layouts.partials._subheader-default')
                 <!--[html-partial:include:{"file":"partials\/_subheader-default.html"}]/-->
                 <div class="m-content">
+                    @stack('alert-for-page')
+                    @stack('hostel-view')
+                    @stack('food_menue')
+                    @stack('profile')
                 <div class="m-portlet" id="m_portlet">
                     <div class="m-portlet__head">
-                      {{--  <div class="m-portlet__head-caption">
+                        <div class="m-portlet__head-caption">
                             <div class="m-portlet__head-title">
                                          <span class="m-portlet__head-icon">
                                             <i class="flaticon-calendar"></i>
@@ -24,16 +28,19 @@
                                     @yield('title')
                                 </h3>
                             </div>
-                        </div>--}}
-                    {{--    <div class="m-portlet__head-tools">
+                        </div>
+
+                        <div class="m-portlet__head-tools">
                             <ul class="m-portlet__nav">
                                 <li class="m-portlet__nav-item">
                                     @stack('create-button')
                                 </li>
                             </ul>
-                        </div>--}}
+                        </div>
                     </div>
+
                     <div class="m-portlet__body">
+
                         @yield('content')
                     </div>
                 </div>
