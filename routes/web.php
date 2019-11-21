@@ -1,3 +1,4 @@
+<<<<<<< current
 <?php
 /*
 |--------------------------------------------------------------------------
@@ -183,3 +184,91 @@ Route::get('room_detail', function(){
 // Route::get('my-home', 'HomeController@myHome');
 //
 // Route::get('my-users', 'HomeController@myUsers');
+=======
+<?php
+use Illuminate\Support\Facades\Input;
+use App\Address;
+
+// Hoste Resource route Ramazan
+
+Route::resource('hostel','HostelController');
+// Food Resource route 'Ramazan'
+Route::resource('food','FoodController');
+// Room resource route 'Ramazan'
+Route::resource('room','RoomController');
+
+Route::get('/test', function () {
+    return view('cms.hostel.test');
+});
+// Route::get('hostel', 'HostelController@index');
+ Route::get('/profile', function(){
+     return view('cms.hostel.profile');
+ })->name('profile');
+
+/*
+ * Enf of CMS route
+ * */
+/*
+ * =====================================
+ * Start of Front Routes
+ * =====================================
+ * */
+
+//foto route
+Route::get('/form',function(){
+  return view('front/form');
+});
+Route::post('/form', 'AttachmentController@save');
+Route::get('/','HomeController@index')->name('front.homee');
+Route::get('/hom','HomeController@index')->name('hom');
+
+// Login User Route
+Route::get('login/user','OwnerController@login')->name('registration.create');
+Route::any('/search','HomeController@homeSearch')->name('homeseach');
+
+// Do login Route
+//Do Register Route
+Route::post('loginn', 'OwnerController@login')->name('post_login');
+Route::post('reg', 'OwnerController@store')->name('post_register');
+
+// Route::get('home', 'OwnerController@index')->name('home');
+Route::post('registerr', 'OwnerController@store')->name('registration.store');
+
+// khabgah_detailes/khabgah_pages route
+
+Route::get('/hostel/list','hostelController@listHostel')->name('hostel.list');
+
+Route::get('/khabgah_details/{hostel_id}','HostelDetailsController@index')->name('khabgah_detailes.goToDetails');
+
+// Room Filtering
+Route::get('room_filter', function(){
+  return view('front/roomFilter_index');
+})->name('filter');
+
+// Room Detail
+Route::get('room_detail', function(){
+    return view('front/roomDetail_index');
+});
+
+//Do search
+
+Route::post('/search', function (){
+    $q = Input::get('q');
+
+    if ($q != ""){
+        $add = Address::where('state', 'LIKE', '%' . $q . '%')
+            ->orwhere('station', 'LIKE', '%' . $q . '%')
+            ->get();
+        if (count($add) > 0 ){
+            return view('front/roomFilter_index')->withDetails($add)->withQuery($q);
+        }
+    }
+    return view('hom');
+})->name('search');
+
+
+//login route
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+>>>>>>> before discard

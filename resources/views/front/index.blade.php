@@ -24,9 +24,10 @@
                 </div>
                 <div class="input-group mb-3">
 
-                  <form class="input-group" action="/search" method="post" role="search">
+                  <form class="input-group" action="{{ route('search') }}" method="post" role="search">
                     @csrf
-                    <input type="text" class="form-control custom-border-left custom-border-dark" placeholder="ادرس اتاق و یا خوابگا را وارید کنید" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <input type="text" class="form-control custom-border-left custom-border-dark"
+                           placeholder="ادرس اتاق و یا خوابگا را وارید کنید" name="q">
                     <div class="input-group-append">
                         <button  class="btn btn-outline-secondary search-box-btn btn-lg" type="submit">جستجو</button>
                     </div>
@@ -42,7 +43,7 @@
         <h5 class="text-center" style="text-shadow:  1px 1px 2px black; color: #1b1e21">بهترین خوابگاها در شهر</h5>
         <div class="justify-content-center thin-underline-1"></div>
 
-        <div class="row justify-content-center">
+        {{-- <div class="row justify-content-center">
           @foreach($hostels as $hostel)
           @foreach($hostel->hostelDetails->attachments as $photo)
             <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1  mt-4 small-device-hid ">
@@ -70,7 +71,7 @@
             </div>
             @endforeach
             @endforeach
-        </div>
+        </div> --}}
     </section>
     <!---Map--->
     <section class="container custom-margin">
