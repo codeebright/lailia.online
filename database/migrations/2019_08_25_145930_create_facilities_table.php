@@ -15,8 +15,7 @@ class CreateFacilitiesTable extends Migration
     {
         Schema::create('facilities', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->longText('details');
+            $table->string('facility_name');
             $table->unsignedInteger('hostel_id');
             $table->softDeletes();
             $table->timestamps();
