@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Address extends Model
 {
     // Address belongs to hostel
-    public function hostels()
+    public function hostel()
     {
       return $this->belongsTo(Hostel::class);
     }

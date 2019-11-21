@@ -8,7 +8,7 @@
                     <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1">
                         <a href="{{route('hostel.index')}}" class="m-menu__link ">
                             <i class="m-menu__link-icon flaticon-download"></i>
-                            <span class="m-menu__link-text">لیس اتاق ها</span>
+                            <span class="m-menu__link-text">لیلیه و لیست اتاق ها</span>
                         </a>
                     </li>
                     <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1">

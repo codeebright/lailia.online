@@ -7,12 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class Attachment extends Model
 {
     protected $primarykey = 'file_id';
-    protected $fillable = ['file_size'];
+    protected $fillable = ['file_size' , 'file_path'];
 
 
-    public function hosteDetails()
+    public function hostels()
     {
-      return $this->belongsTo(HostelDetails::class);
+      return $this->belongsTo(Hostel::class);
     }
 
     public function homes()

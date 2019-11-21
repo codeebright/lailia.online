@@ -20134,7 +20134,7 @@ strong {
 }
 
 .m-dropdown.m-dropdown--align-right.m-dropdown--align-push .m-dropdown__wrapper {
-	margin-left: -20px
+	margin-left: -168px;
 }
 
 .m-dropdown.m-dropdown--align-left .m-dropdown__wrapper {
@@ -20142,7 +20142,7 @@ strong {
 }
 
 .m-dropdown.m-dropdown--align-left.m-dropdown--align-push .m-dropdown__wrapper {
-	margin-right: -20px
+	margin-right: -168px
 }
 
 .m-dropdown.m-dropdown--align-center .m-dropdown__wrapper {
@@ -44947,7 +44947,7 @@ select.m-select2 {
 .m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__logo {
 	display: table;
 	width: 100%;
-	padding-top: 10rem
+	padding-top: 4rem
 }
 
 .m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__logo>a {
