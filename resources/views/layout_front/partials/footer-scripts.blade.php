@@ -53,11 +53,11 @@
         $(document).ready(function () {
             $("#btn-login").click(function () {
                 $("#second").show();
-                $("#first").hide();
+                $("#first, #third, #fourth").hide();
             });
             $("#btn-register").click(function () {
                 $("#third").show();
-                $("#first").hide();
+                $("#first, #second, #fourth").hide();
             });
             $("#login-register").click(function () {
                 $("#third").show();
@@ -68,7 +68,14 @@
                 $("#second").show();
                 $("#third").hide();
             });
+
+            //Forgot Password script
+            $("#forgot").click(function () {
+                $("#fourth").show();
+                $("#second, #third").hide();
+            });
         });
+
 
         // Ajax Function
         function makeRequest(url,params,div_id)

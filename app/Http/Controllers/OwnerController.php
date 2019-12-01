@@ -15,7 +15,7 @@ class OwnerController extends Controller
      */
     public function index()
     {
-      
+
         $owner = DB::select('select * from owners WHERE id = "1" ');
         return view('owner',compact('owner'));
 

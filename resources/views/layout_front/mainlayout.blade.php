@@ -7,7 +7,9 @@
 </head>
 <body dir="rtl">
 @include('layout_front.partials.nav')
-@include('layout_front.partials.header')
+{{-- @include('layout_front.partials.header') --}}
+@include('auth.login')
+
 @yield('content')
 @include('layout_front.partials.footer')
 @include('layout_front.partials.footer-scripts')

@@ -7,6 +7,9 @@
 <head>
 
     <style>
+    body{
+      background-color: #efffcc;
+    }
         .sticky {
             z-index: 55;
             position: -webkit-sticky;
@@ -65,7 +68,7 @@
 
     </style>
 </head>
-<body dir="rtl" style="background-color: #f8f9fa">
+<body dir="rtl" >
 <!-- Room-Detail -->
 <div class="container">
 
