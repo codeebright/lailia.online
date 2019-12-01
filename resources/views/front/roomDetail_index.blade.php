@@ -1,3 +1,4 @@
+
 @extends('layout_front.mainlayout')
 
 @section('content')

@@ -83,6 +83,11 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/algolia/algoliasearch-client-php" />
+      <path value="$PROJECT_DIR$/vendor/laravel/scout" />
     </include_path>
   </component>
+<<<<<<< HEAD
 </project>
+=======
+>>>>>>> 0cffe09c9bc6264f143c86a9f3d6391b250d5571

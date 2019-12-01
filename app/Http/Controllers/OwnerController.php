@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Owner;
 use Illuminate\Http\Request;
 use App\Http\Requests\LoginRequest;
+<<<<<<< HEAD
 
 class OwnerController extends Controller
 {
@@ -35,7 +36,7 @@ class OwnerController extends Controller
         ]);
 
         if (Auth::attempt(['phone' => $request['phone'], 'password' => $request['password']])){
-            return redirect()->route('adminUser');
+            return redirect()->route(''); //name of this route is not Specified
         }
         return redirect()->back();
     }
@@ -68,11 +69,14 @@ class OwnerController extends Controller
         ],[
             'name.required' => 'نام خود را وارید نکردید',
             'password.required' => 'رمز عبور خود را وارید نکردید',
+            'phone.required' => 'نمبر موبایل خود را وارید نکردید.',
+            'phone.max' => 'نمبر موبایل شما 10 کرکتر باشد.',
+            'email.required' => 'ایمل خود را وارید نکردید.',
             'password.min' => 'رمز عبور حدالقل 8 کرکتر باشد',
             'password_confirm.required' => 'تاید رمز عبور خود را وارید نکردید',
             'password_confirm.same' => 'رمز عبور تان مطابقت ندارد',
         ]);
-        //Pushed
+
 
         $name = $request['name'];
         $phone = $request['phone'];
@@ -137,3 +141,4 @@ class OwnerController extends Controller
         //
     }
 }
+>>>>>>> before discard

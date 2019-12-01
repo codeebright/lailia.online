@@ -8,25 +8,31 @@
                     <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1">
                         <a href="{{route('hostel.index')}}" class="m-menu__link ">
                             <i class="m-menu__link-icon flaticon-download"></i>
-                            <span class="m-menu__link-text">لیس اتاق ها</span>
+                            <span class="m-menu__link-text">لیلیه و لیست اتاق ها</span>
                         </a>
                     </li>
                     <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1">
                         <a href="{{route('room.create')}}" class="m-menu__link ">
                             <i class="m-menu__link-icon flaticon-paper-plane"></i>
-                            <span class="m-menu__link-text">تنظیمات اتاق</span>
+                            <span class="m-menu__link-text">اذافه نمودن اتاق</span>
                         </a>
                     </li>
                     <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1">
                         <a href="{{route('hostel.create')}}" class="m-menu__link ">
                             <i class="m-menu__link-icon flaticon-paper-plane"></i>
-                            <span class="m-menu__link-text">تنظیمات خوابگاه</span>
+                            <span class="m-menu__link-text">ساختن لیلیه جدید</span>
                         </a>
                     </li>
                 <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1">
                     <a href="{{route('food.index')}}" class="m-menu__link ">
                         <i class="m-menu__link-icon flaticon-paper-plane"></i>
-                        <span class="m-menu__link-text">خدمات نان و منوغدا</span>
+                        <span class="m-menu__link-text">تنظیم مینوی غذا </span>
+                    </a>
+                </li>
+                <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1">
+                    <a href="{{route('hostels_list')}}" class="m-menu__link ">
+                        <i class="m-menu__link-icon flaticon-paper-plane"></i>
+                        <span class="m-menu__link-text">لیست لیلیه ها</span>
                     </a>
                 </li>
 

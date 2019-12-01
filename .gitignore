@@ -18,7 +18,6 @@
 /vendor
 /.idea
 /.idea/*
-/idea
 .env
 .phpunit.result.cache
 Homestead.json

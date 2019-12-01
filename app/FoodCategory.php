@@ -6,9 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class FoodCategory extends Model
 {
-    // belongsTo
-    public function foodMenus()
+
+    // belongsTo hostels
+    public function hostels()
     {
-        return $this->belongsTo(FoodMenu::class);
+        return $this->belongsTo(Hostel::class);
     }
+
 }

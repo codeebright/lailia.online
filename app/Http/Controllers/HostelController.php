@@ -2,20 +2,30 @@
 
 namespace App\Http\Controllers;
 
+use App\Attachment;
 use App\Hostel;
+use App\HostelDetails;
+use App\Address;
+use App\Facility;
+use App\Attachment;
+use App\Owner;
+use App\Room;
 use Illuminate\Http\Request;
-
+use App\Http\Requests\HostelRequest;
+use App\Http\Requests\ownerRequest;
 class HostelController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        return view('cms.hostel.hostel_index');
+        // get hostel address and facility and send to blade 'ramazan'
+        $hostels = Hostel::with('address' , 'facility')->get();
+        $Rooms = Room::all();
+        return view('cms.hostel.hostel_index', compact('hostels' , 'Rooms' , 'owner'));
     }
+
+
+
+
 
     /**
      * Show the form for creating a new Hostel CMS.
@@ -24,118 +34,96 @@ class HostelController extends Controller
      */
     public function create()
     {
-        return view('cms.hostel.hostel_config');
+        return view('cms.hostel.hostel_create')->with($panel_title = 'ایجاد لیلیه جدید');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
-    {
-        //
 
+    {
         $hostel = new Hostel;
         $hostel->name = $request->name;
         $hostel->owner_id = 1; //Aut::user()->id;
         $hostel->type = $request->type;
-
+        $hostel->phone = $request->phone;
+        $hostel->email = $request->email;
+        $hostel->description = $request->description;
         $hostel->save();
-
-
-        $hostel_details = new HostelDetails();
-        $hostel_details->hostel_id = $hostel->id;
-        $hostel_details->phone = $request->phone;
-        $hostel_details->email = $request->email;
-        $hostel_details->descrption = $request->descrption;
-
-        $hostel_details->save();
 
         $address = new Address();
         $address ->hostel_id = $hostel->id;
         $address->province = $request->province;
         $address->state = $request->state;
-        $address->street = $request->street;
+        $address->rood = $request->rood;
         $address->alley = $request->alley;
         $address->station = $request->station;
+        $address->home_number = $request->home_number;
         $address->save();
+        foreach ($request->facility_name as  $name) {
+               // code...
+               $facility = new Facility;
+               $facility->hostel_id = $hostel->id;
+               $facility->facility_name = $name;
+               $facility->save();
+             }
+
+//        $image = $request->file('file');
+//        $imageName = $image->getClientOriginalName();
+//        $image->move(public_path('images'),$imageName);
+//
+//        $attachments = new Attachment();
+//        $attachments->filename = $imageName;
+//        $attachments->save();
+//        return response()->json(['success'=>$imageName]);
 
 
-        /*  if(count($request->facilities)>0)
-          {
-              $facility = new Facility();
-              $facility_input = $request->facilities;
-              $details        = $request->descriptions;
-              for($i=0; $i<count($request->facilities); $i++)
-              {
-                  $facility->name = $facility_input[$i];
-                  $facility->details = $details[$i];
-                  $facility->hostel_id = $hostel->id;
-                  $facility->save();
-              }
-          }*/
+
+
 
 
         return back()->with('success','Data is stored successfully');
 
-
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\hostels  $hostels
-     * @return \Illuminate\Http\Response
-     */
-    public function show(hostels $hostels)
+    public function show()
     {
-        //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\hostels  $hostels
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(hostels $hostels)
+    public function edit()
     {
-        //
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\hostels  $hostels
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, hostels $hostels)
+    public function update(Request $request)
     {
-        //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\hostels  $hostels
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(hostels $hostels)
+    public function destroy()
     {
-        //
     }
 
-    /*
-     * List Hostel front
-     * */
-
-    public function listHostel()
+    // list hostels
+    public function listHostel(Request $request)
     {
-        $hostels = Hostel::all();
-        return view('front/khabgha_list',['hostels' => $hostels]);
+        $page = $request->page;
+        if($page=='')
+        {
+          $page = 0;
+          $skip = $page*4;
+        }
+        else
+           $skip = $page*4;
+
+        $hostels = Hostel::skip($skip)->take(4)->get();
+
+        if($page==0)
+          return view('front/khabgah_list',compact('hostels'));
+        else
+          return view('front/khabgah_show_more',compact('hostels'));
     }
 
+
+
+    public function paginate()
+    {
+        $images = Attachment::all();
+        return view('pagination',compact('images'));
+    }
 }
