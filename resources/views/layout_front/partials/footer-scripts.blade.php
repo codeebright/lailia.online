@@ -104,7 +104,7 @@
             }
         })
     }
-      
+
 
     // Login Function
     function login(url, form_id, div_id) {
@@ -117,7 +117,7 @@
 
 <script>
     $('.owl-carousel').owlCarousel({
-        loop:true,
+        loop:false,
         margin:10,
         responsiveClass:true,
         responsive:{

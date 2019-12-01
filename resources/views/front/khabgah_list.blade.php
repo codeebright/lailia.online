@@ -14,15 +14,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5"></div>
-                <div class="col-md-3 ">
-                    <select class="form-control form-control-lg btn mt-3" type="button"
-                            style="height: 50px;border-radius: unset">
-                        <option>بر اسساس ارازنترین</option>
-                        <option>بر اسساس بهترین</option>
-                        <option>بر استاس بشترین بازدید</option>
-                    </select>
-                </div>
+                {{--<div class="col-md-5"></div>--}}
+                {{--<div class="col-md-3 ">--}}
+                    {{--<select class="form-control form-control-lg btn mt-3" type="button"--}}
+                            {{--style="height: 50px;border-radius: unset">--}}
+                        {{--<option>بر اسساس ارازنترین</option>--}}
+                        {{--<option>بر اسساس بهترین</option>--}}
+                        {{--<option>بر استاس بشترین بازدید</option>--}}
+                    {{--</select>--}}
+                {{--</div>--}}
             </div>
         </section>
     </section>
@@ -35,7 +35,7 @@
             @foreach($hostels as $hostel)
                     <div class=" col-12 col-sm-6 col-md-6  col-lg-3 px-1 mt-3">
                         <div class="card card-shadow custom-height-1 " style="border-radius: 0%">
-                            <a href="">
+                            <a href="{{route('hostel_details',$hostel->id)}}">
                                 <img src="/assets-/app/media/img/blog/hostels-img/{{$hostel->hostelPhotos->first()->file_name}}"
                                      class="card-img-top card-img custom-card-img-height" alt=""></a>
                             <div class="car-body">
@@ -58,7 +58,9 @@
         <div class="show_more" id="show_more">
             <input type="hidden" id="increment" name="" value="0">
         </div>
-        <a href="#"  onclick="showMoreHostel('{{route('hostel.list')}}','show_more')">Show More Pics</a>
+        <a href="#"  onclick="showMoreHostel('{{route('hostel.list')}}','show_more')">
+           <button class="btn btn-info">Show More Pics</button>
+        </a>
     </section>
 @endsection
 

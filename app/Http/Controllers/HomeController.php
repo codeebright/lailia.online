@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Hostel;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\input;
 use App\Address;
 
@@ -18,32 +19,35 @@ class HomeController extends Controller
     public function index()
     {
 
-        $hostels = Hostel::all();
+        $hostels = DB::table('hostels')
+            ->join('attachments','attachments.id','=','hostels.id')
+        ->select('hostels.*','attachments.*')
+        ->where('hostel_id',1)->get();
         return view('front/home', compact('hostels'));
     }
 
 
     // home search function by address
-//    public function homeSearch()
-//    {
-//        $qu = Input::get('qu');
-//        if (!empty($qu)) {
-//            $address = Address::where('state', 'LIKE', '%' . $qu . '%')
-//                ->orwhere('station', 'LIKE', '%' . $qu . '%')->get();
-//            if (count($address) > 0)
-//                return view('pagination')->withDetails($address)->withQuery($qu);
-//        }
-//        else{
-//            return view('front/home')->withMessage('آدرس مورد نظر یافت نشد!');
-//        }
-//
-//    }
+    public function homeSearch()
+    {
 
-//algolia search
-//    public function homeSearch()
-//    {
-//        $qu = Address::search('search')->get();
-//        return view('pagination',compact('qu'));
-//
-//    }
+        $q =  Input::get('q');
+        if ($q != ''){
+            $address = DB::table('hostels')
+                ->join('addresses','addresses.id','=','hostels.id')
+                ->join('hostel_photos','hostel_photos.id','=','hostels.id')
+                ->where('state','LIKE','%'.$q.'%')
+                ->orwhere('rood','LIKE','%'.$q.'%')
+                ->orwhere('station','LIKE','%'.$q.'%')
+                ->orwhere('alley','LIKE','%'.$q.'%')
+                ->select('addresses.*','hostels.*','hostel_photos.file_name')->get();
+            if (count($address)>0)
+              return view('front/roomFilter',compact('address'))->withDetails($address)->withQuery($q);
+        }
+        else{
+            return back()->withMessage('جستجوی مورد نظر یافت نشد!');
+        }
+    }
+
 }
+

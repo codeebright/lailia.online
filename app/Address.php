@@ -7,7 +7,7 @@ use Laravel\Scout\Searchable;
 
 class Address extends Model
 {
-    use Searchable;
+//    use Searchable;
     // Address belongs to hostel
     public function hostels()
     {
