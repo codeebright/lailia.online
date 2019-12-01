@@ -145,11 +145,26 @@
 
                 <select class="form-control m-select2" id="m_select2_2_3" name="facility_name[]"
                         multiple="multiple">
+
                     <optgroup label="امکانات لیله را انتخاب کنید">
-                        <option value=" انترنت"> انترنت رایگان</option>
-                        <option value="کتابخانه">کتابخانه</option>
+
+
+                        {{--<option value="{{ $facility}}" {{ (old("facility_name") == $facility ? "selected":"") }}>{{ $facility}}</option>--}}
+                        {{--<option value="{{ $facility->id }}" {{ (collect(old('facility'))->contains($facility->id)) ? 'selected':'' }}>{{ $facility->name }}</option>--}}
+                        {{--@endforeach--}}
+                        {{--@foreach($hostel->facility as $fa)--}}
+                        {{--<option value="کتابخانه">{{isset($hostel) && $hostel->facility == $fa ? 'selected' : ''}}</option>--}}
+                        {{--@endforeach--}}
                         <option value="حوض">حوض</option>
                         <option value="محیط سبز">محیط سبز</option>
+                        <option value="محیط سبز">محیط سبز</option>
+                        <option value="محیط سبز">محیط سبز</option>
+                        <option value="محیط سبز">محیط سبز</option>
+                        <option value="محیط سبز">محیط سبز</option>
+
+                        {{--@foreach($hostel->facility as $tag)--}}
+                            {{--<option value="{{$tag->id}}" {{in_array($tag->id, old("facility_name") ?: []) ? "selected": ""}}>{{$tag->facility_name}}</option>--}}
+                        {{--@endforeach--}}
                     </optgroup>
                 </select>
 
@@ -198,3 +213,4 @@
 </form>
 
 <!--end::Form-->
+>>>>>>> b3b864b59c711e1570b8fefbf90c2b77bb60fa4f

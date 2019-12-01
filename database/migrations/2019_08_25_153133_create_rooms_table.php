@@ -15,11 +15,15 @@ class CreateRoomsTable extends Migration
     {
         Schema::create('rooms', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name',12);
-            $table->string('type',12)->default('1')->comment('0 => without Launch, 1 => with Launch');
+            $table->string('owner_id');
+            $table->string('hostel_id');
+            $table->string('room_number',12);
             $table->string('area');
             $table->string('total_bed');
-            $table->string('full_bed');
+            $table->string('empty_bed');
+            $table->string('room_rent');
+            $table->string('room_description');
+            $table->string('food_service');
             $table->timestamps();
         });
     }

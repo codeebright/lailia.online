@@ -1,3 +1,4 @@
+
 @extends('layouts.master')
 @section('title','ورایش حساب شخصی')
 @push('profile')
@@ -51,7 +52,7 @@
                                         <a href="#" class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">
                                             <i class="la la-gear"></i>
                                         </a>
-                                    
+
                                     </div>
                                 </li>
                             </ul>

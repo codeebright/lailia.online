@@ -16,4 +16,9 @@ class Attachment extends Model
     {
         return $this->belongsTo(Home::class);
     }
+
+    public function rooms()
+    {
+      return $this->belongsTo(Hostel::class);
+    }
 }

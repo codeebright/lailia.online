@@ -1,3 +1,4 @@
+
 @extends('layout_front.mainlayout')
 
 @section('content')
@@ -167,6 +168,7 @@
             <div class="col-md-8 mt-5 p-0">
                 <header class="txt-line mb-4"><span class=""></span><h5>امکانات</h5></header>
                 <div class="row posts">
+
                     <div class="col-md-6">
                         <article class="post">
                             <div class="info">
