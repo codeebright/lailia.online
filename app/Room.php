@@ -14,4 +14,8 @@ class Room extends Model
     {
         return $this->belongsTo(Room::class);
     }
+    public function attachment()
+    {
+        return $this->hasMany(Attachment::class);
+    }
 }

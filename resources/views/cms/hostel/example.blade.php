@@ -3,7 +3,7 @@
 @section('title','تنظیمات اتاق')
 @section('content')
 
-    <h3 class="jumbotron">Laravel Multiple Images Upload Using Dropzone</h3>
+    <h3 class="jumbotron"></h3>
     <form method="post" action="{{url('hostel/photos')}}" enctype="multipart/form-data" class="dropzone" id="dropzone">
         @csrf
     </form>
@@ -51,19 +51,4 @@
                 }
             };
     </script>
-    @endsection
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@endsection

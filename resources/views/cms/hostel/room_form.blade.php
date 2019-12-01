@@ -160,24 +160,80 @@
             </div>
         </div>
 
-        <div class="form-group m-form__group row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="m-dropzone dropzone m-dropzone--success dz-clickable" action="inc/api/dropzone/upload.php" id="m-dropzone-three">
-                    <div class="m-dropzone__msg dz-message needsclick">
-                        <h3 class="m-dropzone__msg-title">عکس های اتاق را برای بارگذاری در انیجا یکشید  ویا کیلیک کنید.</h3>
-                        <span class="m-dropzone__msg-desc">تنها عکس قابل بارگذاری میباشد</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+          <!-- <div class="form-group m-form__group row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="m-dropzone dropzone m-dropzone--success dz-clickable" action="inc/api/dropzone/upload.php" id="m-dropzone-three">
+                      <div class="m-dropzone__msg dz-message needsclick">
+                          <h3 class="m-dropzone__msg-title">عکس های اتاق را برای بارگذاری در انیجا یکشید  ویا کیلیک کنید.</h3>
+                          <span class="m-dropzone__msg-desc">تنها عکس قابل بارگذاری میباشد</span>
+                      </div>
+                  </div>
+              </div>
+          </div> -->
+
         <div class="m-portlet__foot m-portlet__foot--fit">
             <div class="m-form__actions pull-left">
-                <button type="submit" class="btn btn-primary">ذخیره</button>
-                <button type="reset" class="btn btn-secondary">لغوه</button>
+                <button type="submit" class="btn btn-primary " >ذخیره</button>
+                <button type="reset" class="btn btn-secondary" >لغوه</button>
             </div>
         </div>
     </div>
 
 </form>
+<!-- <h3 class="jumbotron"></h3> -->
+<div class="col-md-10">
+  <form method="post" action="{{url('hostel/photos')}}" enctype="multipart/form-data" class="dropzone m-dropzone   m-dropzone--success dz-clickable" id="dropzone">
+      @csrf
+      <div class="m-dropzone__msg dz-message needsclick">
+          <h3 class="m-dropzone__msg-title">عکس های اتاق را برای بارگذاری در انیجا یکشید  ویا کیلیک کنید.</h3>
+          <span class="m-dropzone__msg-desc">تنها عکس قابل بارگذاری میباشد</span>
+      </div>
+  </form>
+</div>
+
+<!-- <script type="text/javascript">
+
+    Dropzone.options.dropzone =
+        {
+            maxFilesize: 12,
+            renameFile: function(file) {
+                var dt = new Date();
+                var time = dt.getTime();
+                return time+file.name;
+            },
+            acceptedFiles: ".jpeg,.jpg,.png,.gif",
+            addRemoveLinks: true,
+            timeout: 50000,
+            removedfile: function(file)
+            {
+                var name = file.upload.file_name;
+                $.ajax({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+                    },
+                    type: 'POST',
+                    url: '{{ url("hostel/photos/delete") }}',
+                    data: {file_name: name},
+                    success: function (data){
+                        console.log("فایل به موفقیت برطرف شد");
+                    },
+                    error: function(e) {
+                        console.log(e);
+                    }});
+                var fileRef;
+                return (fileRef = file.previewElement) != null ?
+                    fileRef.parentNode.removeChild(file.previewElement) : void 0;
+            },
+
+            success: function(file, response)
+            {
+                console.log(response);
+            },
+            error: function(file, response)
+            {
+                return false;
+            }
+        };
+</script> -->
 
 <!--end::Form-->

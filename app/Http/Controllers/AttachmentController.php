@@ -54,10 +54,16 @@ class AttachmentController extends Controller
          $imageName = $image->getClientOriginalName();
          $image->move(public_path('images'),$imageName);
 
+         // $hostel = new Hostel;
+
+
          $imageUpload = new Attachment;
+         // $imageUpload->hostel_id = $hostel->id;
          $imageUpload->file_name = $imageName;
          $imageUpload->save();
          return response()->json(['success'=>$imageName]);
+
+
      }
 
      //deleting photos from table ... ramazan
