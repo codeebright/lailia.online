@@ -6,14 +6,30 @@ use Illuminate\Database\Eloquent\Model;
 
 class FoodMenu extends Model
 {
-    // has foods
+    //belongsTo hostel
+    public function hostels()
+    {
+        return $this->belongsTo(Hostel::class);
+    }
+
+    // hasMany foods
     public function foods()
     {
         return $this->belongsTo(Food::class,'food_id','id');
     }
 
-    public function foodCategories()
+    //hasMany foodCategory
+    public function categories()
     {
-        return $this->hasMany(FoodCategory::class);
+        return $this->belongsTo(FoodCategory::class,'food_category_id','id');
     }
+
+    //hasMany weekDays
+    public function weekDays()
+    {
+        return $this->belongsTo(WeekDay::class,'week_days_id','id');
+    }
+
+
+
 }
